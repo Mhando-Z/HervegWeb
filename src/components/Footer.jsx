@@ -23,9 +23,12 @@ function Footer() {
     >
       <div className="container px-4 mx-auto text-center md:text-left">
         <div className="flex flex-col justify-between w-full md:flex-row gap-x-20">
-          <div className="flex flex-col items-center justify-center flex-grow mb-6 md:justify-start md:items-start">
+          <div className="flex flex-col items-center justify-center grow mb-6 md:justify-start md:items-start">
             <Image src={logo} alt="Logo" className="mb-4 h-auto w-[200px]" />
-            <p className="text-center">CRDB WORKERS SACCOSS</p>
+            <p className="text-sm max-w-sm">
+              Our mission is to combat malnutrition and promote sustainable
+              agriculture in rural farming communities of Tanzania.
+            </p>
           </div>
           <div className="grid grid-cols-1 gap-5 md:grid-cols-3 gap-x-20">
             <div className="w-full mb-6 ">
