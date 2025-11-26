@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
           <NavBar />
         </div>
         {/* main section */}
-        <div>{children}</div>
+        <div className="grow">{children}</div>
 
         {/* footer section */}
         <div>
