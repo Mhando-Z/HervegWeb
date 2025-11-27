@@ -127,10 +127,24 @@ export default function Footer() {
 
         {/* Copyright Section */}
         <div className="pt-8 mt-12 border-t border-green-700">
-          <div className="flex flex-col items-center justify-center text-center">
+          <div className="flex flex-col md:flex-row md:justify-between items-center justify-center text-center">
             <p className="text-sm text-gray-300">
               Copyright © {currentYear} _HERVeg.05. All Right Reserved
             </p>
+            <div className="flex mt-4 text-xl sm:mt-0">
+              <button className="mx-2 text-gray-200 hover:text-blue-600">
+                <FaFacebook />
+              </button>
+              <button className="mx-2 text-gray-200 hover:text-orange-600">
+                <RiInstagramFill />
+              </button>
+              <button className="mx-2 text-gray-200 hover:text-red-600">
+                <FaYoutube />
+              </button>
+              <button className="mx-2 text-gray-200 hover:text-black">
+                <FaSquareXTwitter />
+              </button>
+            </div>
           </div>
         </div>
       </div>
