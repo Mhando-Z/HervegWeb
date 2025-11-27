@@ -64,8 +64,7 @@ function Footer() {
         <div className="pt-8 mt-8 border-t border-gray-700">
           <div className="flex flex-col items-center justify-between sm:flex-row">
             <p className="text-gray-600">
-              &copy; {currentYear} CRDB WORKERS SACCOSS, Inc. All rights
-              reserved.
+              &copy; {currentYear} -HERVeg.05, Inc. All rights reserved.
             </p>
             <div className="flex mt-4 text-xl sm:mt-0">
               <button className="mx-2 text-gray-600 hover:text-blue-600">
