@@ -10,81 +10,130 @@ import { FaYoutube } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 import logo from "../../public/HerVeg.png";
+import tractor from "../../public/tractor23.png";
+// icons
+import { GoMail } from "react-icons/go";
+import { BsHouseDoor } from "react-icons/bs";
 
-function Footer() {
+export default function Footer() {
   const currentYear = new Date().getFullYear();
   return (
     <motion.footer
-      className="py-8 bg-green-50 text-gray-950 dark:bg-slate-800 dark:text-gray-300"
+      className="relative py-12 bg-[#1a4d3a] text-white overflow-hidden"
       initial={{ opacity: 1, y: 100 }}
       viewport={{ once: true }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <div className="container px-4 mx-auto text-center md:text-left">
-        <div className="flex flex-col justify-between w-full md:flex-row gap-x-20">
-          <div className="flex flex-col items-center justify-center grow mb-6 md:justify-start md:items-start">
-            <Image src={logo} alt="Logo" className="mb-4 h-auto w-[200px]" />
-            <p className="text-sm max-w-sm">
+      {/* Background illustration */}
+      <div className="absolute bottom-0 right-0 w-1/2 h-full opacity-10">
+        <div className="absolute bottom-0 right-20 w-lg h-96">
+          <Image
+            src={tractor}
+            alt="farmer on a tractor"
+            className="w-full h-full"
+          />
+        </div>
+      </div>
+
+      <div className="container relative z-10 px-4 mx-auto">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3 lg:gap-16">
+          {/* Logo and Mission */}
+          <div className="flex flex-col">
+            <Image
+              src={logo}
+              alt="HERVeg.05 Logo"
+              className="mb-6 h-auto w-[180px]"
+            />
+            <p className="text-sm leading-relaxed max-w-sm">
               Our mission is to combat malnutrition and promote sustainable
               agriculture in rural farming communities of Tanzania.
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-3 gap-x-20">
-            <div className="w-full mb-6 ">
-              <h4 className="mb-4 font-semibold">Solutions</h4>
-              <ul>
-                <li className="mb-2">Marketing</li>
-                <li className="mb-2">Analytics</li>
-                <li className="mb-2">Commerce</li>
-                <Link href="/admin/">
-                  <li className="mb-2">Admin</li>
+
+          {/* Explore Section */}
+          <div>
+            <h4 className="mb-6 text-lg font-semibold">Explore</h4>
+            <ul className="space-y-3">
+              <li>
+                <Link
+                  href="/about"
+                  className="hover:text-green-300 transition-colors"
+                >
+                  About Us
                 </Link>
-              </ul>
-            </div>
-            <div className="w-full mb-6 ">
-              <h4 className="mb-4 font-semibold">Company</h4>
-              <ul>
-                <li className="mb-2">About</li>
-                <li className="mb-2">Blog</li>
-                <li className="mb-2">Jobs</li>
-                <li className="mb-2">Partners</li>
-              </ul>
-            </div>
-            <div className="w-full mb-6 ">
-              <h4 className="mb-4 font-semibold">Contacts</h4>
-              <ul>
-                <li className="mb-2">Dar es Salaam Tanzania</li>
-                <li className="mb-2">Privacy</li>
-                <li className="mb-2">Terms</li>
-              </ul>
+              </li>
+              <li>
+                <Link
+                  href="/model"
+                  className="hover:text-green-300 transition-colors"
+                >
+                  Our Model
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/faqs"
+                  className="hover:text-green-300 transition-colors"
+                >
+                  FAQs
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="hover:text-green-300 transition-colors"
+                >
+                  Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/impact"
+                  className="hover:text-green-300 transition-colors"
+                >
+                  HERVeg.05 Impact
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Info Section */}
+          <div>
+            <h4 className="mb-6 text-lg font-semibold">Contact Info</h4>
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <div className="bg-green-500 p-3 rounded-full shrink-0">
+                  <BsHouseDoor className="text-xl text-white" />
+                </div>
+                <div>
+                  <p className="text-sm font-semibold mb-1">ADDRESS:</p>
+                  <p className="text-sm">59101 Njombe Mjini, Tanzania</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="bg-green-500 p-3 rounded-full shrink-0">
+                  <GoMail className="text-xl text-white" />
+                </div>
+                <div>
+                  <p className="text-sm font-semibold mb-1">EMAIL:</p>
+                  <p className="text-sm">info@herveg.org</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div className="pt-8 mt-8 border-t border-gray-700">
-          <div className="flex flex-col items-center justify-between sm:flex-row">
-            <p className="text-gray-600">
-              &copy; {currentYear} -HERVeg.05, Inc. All rights reserved.
+
+        {/* Copyright Section */}
+        <div className="pt-8 mt-12 border-t border-green-700">
+          <div className="flex flex-col items-center justify-center text-center">
+            <p className="text-sm text-gray-300">
+              Copyright © {currentYear} _HERVeg.05. All Right Reserved
             </p>
-            <div className="flex mt-4 text-xl sm:mt-0">
-              <button className="mx-2 text-gray-600 hover:text-blue-600">
-                <FaFacebook />
-              </button>
-              <button className="mx-2 text-gray-600 hover:text-orange-600">
-                <RiInstagramFill />
-              </button>
-              <button className="mx-2 text-gray-600 hover:text-red-600">
-                <FaYoutube />
-              </button>
-              <button className="mx-2 text-gray-600 hover:text-black">
-                <FaSquareXTwitter />
-              </button>
-            </div>
           </div>
         </div>
       </div>
     </motion.footer>
   );
 }
-
-export default Footer;
