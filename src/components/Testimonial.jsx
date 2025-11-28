@@ -93,7 +93,7 @@ export default function Testimonial() {
         backgroundRepeat: "no-repeat",
         // backgroundColor: "rgba(0,0,0,0.5)",
       }}
-      className="min-h-screen w-full dark:text-gray-100 inset-0 flex items-center justify-center p-4"
+      className="min-h-screen w-full  dark:text-gray-100 inset-0 flex items-center justify-center p-4"
     >
       <div className="max-w-4xl  w-full z-10">
         <motion.div
@@ -240,7 +240,7 @@ export default function Testimonial() {
                 setCurrent(index);
               }}
               className={`h-2 rounded-full transition-all ${
-                index === current ? "w-8 bg-green-600" : "w-2 bg-gray-300"
+                index === current ? "w-8 bg-white" : "w-2 bg-gray-300"
               }`}
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
