@@ -50,7 +50,7 @@ function NavBar() {
 
             {/* Desktop Menu */}
             <motion.div
-              className="hidden md:flex items-center gap-2 px-4 py-2 bg-white/90 dark:bg-gray-800/90 backdrop-blur-xl rounded-full shadow-lg border border-gray-200 dark:border-gray-700"
+              className="hidden md:flex items-center gap-2 px-4 py-2 bg-white/90 dark:bg-gray-800/90 backdrop-blur-xl rounded-full shadow border border-gray-200 dark:border-gray-700"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
