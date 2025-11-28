@@ -2,7 +2,9 @@
 
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import landscape from "../../public/landscapes.png";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -83,8 +85,17 @@ export default function Testimonial() {
   }, [isPaused, current]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br  from-purple-50 via-white to-blue-50 flex items-center justify-center p-4">
-      <div className="max-w-4xl w-full">
+    <div
+      style={{
+        backgroundImage: `url(${landscape.src})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        // backgroundColor: "rgba(0,0,0,0.5)",
+      }}
+      className="min-h-screen w-full dark:text-gray-100 inset-0 flex items-center justify-center p-4"
+    >
+      <div className="max-w-4xl  w-full z-10">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -99,9 +110,9 @@ export default function Testimonial() {
           </p>
         </motion.div>
 
-        <div className="relative">
+        <div className="bg-white">
           <div
-            className="bg-white rounded-2xl shadow overflow-hidden"
+            className=" rounded-2xl shadow overflow-hidden"
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
           >
@@ -117,33 +128,33 @@ export default function Testimonial() {
                   x: { type: "spring", stiffness: 300, damping: 30 },
                   opacity: { duration: 0.2 },
                 }}
+                className="bg-white rounded-2xl shadow overflow-hidden p-12 z-10"
                 drag="x"
                 dragConstraints={{ left: 0, right: 0 }}
                 dragElastic={1}
                 onDragEnd={(e, { offset, velocity }) => {
                   const swipe = swipePower(offset.x, velocity.x);
-                  if (swipe < -swipeConfidenceThreshold) {
-                    paginate(1);
-                  } else if (swipe > swipeConfidenceThreshold) {
-                    paginate(-1);
-                  }
+                  if (swipe < -swipeConfidenceThreshold) paginate(1);
+                  else if (swipe > swipeConfidenceThreshold) paginate(-1);
                 }}
-                className="p-12"
               >
+                <motion.div
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
+                  className="mb-6"
+                >
+                  <Quote className="w-16 h-16 text-green-500 opacity-20" />
+                </motion.div>
                 <div className="flex flex-col items-center text-center">
-                  <motion.div
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
-                    transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-                    className="mb-6"
-                  >
-                    <Quote className="w-16 h-16 text-green-500 opacity-20" />
-                  </motion.div>
-
                   <motion.img
                     initial={{ scale: 0, rotate: -180 }}
                     animate={{ scale: 1, rotate: 0 }}
-                    transition={{ delay: 0.1, type: "spring", stiffness: 200 }}
+                    transition={{
+                      delay: 0.1,
+                      type: "spring",
+                      stiffness: 200,
+                    }}
                     src={testimonials[current].image}
                     alt={testimonials[current].name}
                     className="w-24 h-24 rounded-full object-cover mb-6 ring-4 ring-green-100"
@@ -191,6 +202,14 @@ export default function Testimonial() {
                     </p>
                   </motion.div>
                 </div>
+                <motion.div
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
+                  className="mt-4 flex justify-end items-end"
+                >
+                  <Quote className="w-16 h-16 text-green-500 opacity-20" />
+                </motion.div>
               </motion.div>
             </AnimatePresence>
           </div>
