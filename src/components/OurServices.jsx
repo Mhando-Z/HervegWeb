@@ -7,7 +7,7 @@ import { FaCartArrowDown } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Link from "next/link";
 // image import
-import direct from "../../public/ibrahim.png";
+import direct from "../../public/ibu2.png";
 import Image from "next/image";
 
 function OurServices() {
@@ -92,7 +92,7 @@ function OurServices() {
             <Image
               src={direct}
               alt="Professional"
-              className="w-full h-[620px] object-cover object-right"
+              className="w-full h-[520px] object-cover object-right"
             />
             <div className="absolute top-0 left-0 via-15% right-0 bg-linear-to-t from-white via-transparent to-transparent bottom-0 dark:bg-linear-to-t dark:from-slate-900 dark:to-transparent dark:via-transparent"></div>
           </motion.div>
