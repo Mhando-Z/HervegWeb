@@ -9,7 +9,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import Link from "next/link";
-import logo from "../../public/HerVeg.png";
+import logo from "../../public/whitelogo.png";
 import tractor from "../../public/tractor23.png";
 // icons
 import { GoMail } from "react-icons/go";
