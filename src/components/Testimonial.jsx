@@ -47,7 +47,7 @@ export default function Testimonial() {
   const slideVariants = {
     enter: (direction) => ({
       x: direction > 0 ? 1000 : -1000,
-      opacity: 0,
+      opacity: 1,
     }),
     center: {
       zIndex: 1,
@@ -57,7 +57,7 @@ export default function Testimonial() {
     exit: (direction) => ({
       zIndex: 0,
       x: direction < 0 ? 1000 : -1000,
-      opacity: 0,
+      opacity: 1,
     }),
   };
 
@@ -112,7 +112,7 @@ export default function Testimonial() {
 
         <div className="">
           <div
-            className="bg-white rounded-2xl shadow overflow-hidden"
+            className=" rounded-2xl shadow overflow-hidden"
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
           >
@@ -126,7 +126,7 @@ export default function Testimonial() {
                 exit="exit"
                 transition={{
                   x: { type: "spring", stiffness: 300, damping: 30 },
-                  opacity: { duration: 0.2 },
+                  opacity: { duration: 0 },
                 }}
                 className="bg-white rounded-2xl shadow overflow-hidden p-12 z-10"
                 drag="x"
