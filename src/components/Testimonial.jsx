@@ -110,9 +110,9 @@ export default function Testimonial() {
           </p>
         </motion.div>
 
-        <div className="bg-white">
+        <div className="">
           <div
-            className=" rounded-2xl shadow overflow-hidden"
+            className="bg-white rounded-2xl shadow overflow-hidden"
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
           >
