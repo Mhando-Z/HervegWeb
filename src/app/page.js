@@ -1,4 +1,5 @@
 import ContactUs from "@/components/ContactUs";
+import Testimonial from "@/components/Testimonial";
 import Image from "next/image";
 
 export default function Home() {
@@ -61,6 +62,7 @@ export default function Home() {
           </a>
         </div>
       </main>
+      <Testimonial />
       {/* contact Us section */}
       <ContactUs />
     </div>
