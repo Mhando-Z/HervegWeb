@@ -141,13 +141,11 @@ export default function FAQ() {
               {/* Question Button */}
               <button
                 onClick={() => toggleAccordion(index)}
-                className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-inset transition-all duration-200"
+                className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none  focus:bg-yellow-500  transition-all duration-200"
               >
                 <span
                   className={`text-lg font-semibold pr-8 ${
-                    expandedIndex === index
-                      ? "text-emerald-700"
-                      : "text-gray-800"
+                    expandedIndex === index ? "text-gray-900" : "text-gray-800"
                   }`}
                 >
                   {faq.question}
@@ -160,7 +158,7 @@ export default function FAQ() {
                   <ChevronDown
                     className={`w-6 h-6 ${
                       expandedIndex === index
-                        ? "text-emerald-600"
+                        ? "text-gray-600"
                         : "text-gray-400"
                     }`}
                   />
