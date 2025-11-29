@@ -122,7 +122,7 @@ export default function FAQ() {
                 <motion.div
                   animate={{ rotate: expandedIndex === index ? 180 : 0 }}
                   transition={{ duration: 0.3 }}
-                  className="flex-shrink-0"
+                  className="shrink-0"
                 >
                   <ChevronDown
                     className={`w-6 h-6 ${
