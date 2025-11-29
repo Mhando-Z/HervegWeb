@@ -390,7 +390,7 @@ function Gallery() {
                     alt={item.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="absolute bottom-0 left-0 right-0 p-3">
                       <p className="text-white text-sm font-medium truncate">
                         {item.title}
@@ -412,7 +412,7 @@ function Gallery() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={handleLoadMore}
-                  className="px-8 py-3 bg-gradient-to-r from-amber-600 to-amber-700 text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all"
+                  className="px-8 py-3 bg-linear-to-r from-amber-600 to-amber-700 text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all"
                 >
                   Load More Photos
                 </motion.button>
@@ -460,7 +460,7 @@ function Gallery() {
                   className="w-full h-full object-contain rounded-2xl shadow-2xl"
                 />
 
-                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent rounded-b-2xl">
+                <div className="absolute bottom-0 left-0 right-0 p-6 bg-linear-to-t from-black/80 to-transparent rounded-b-2xl">
                   <h3 className="text-white text-xl md:text-2xl font-bold mb-1">
                     {gallery[lightboxIndex]?.title}
                   </h3>
