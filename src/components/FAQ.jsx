@@ -14,18 +14,31 @@ const faqData = [
   {
     question: "How does HERVeg.05 work with farmers?",
     answer:
-      "We partner directly with local farmers to provide resources, training, and support for sustainable vegetable farming practices. Our team works closely with farming communities to understand their needs and develop tailored solutions.",
+      "HERVEg.05 leverages Village Saving and Loan Associations (VSLA) groups as a way to efficiently reach large numbers of vulnerable people. By working within these established groups, we can ensure that we are reaching those most in need. This approach maximizes our impact and resource utilization.Here's a breakdown of the benefits of this model:",
+    list: [
+      "  Reaching more farmers: We can connect with a larger number of farmers in a shorter time frame.",
+      "  Efficient resource allocation: We leverage existing community structures to streamline program delivery.",
+      " Building Trust Together: We believe that building trust and fostering lasting relationships with our community is fundamental to our success.",
+      ' Community building: We promote a sense of community and shared responsibility within VSLA groups. This approach maximizes our impact and resource utilization, making our model "BIG, SIMPLE, and CHEAP."',
+    ],
   },
+
   {
     question: "Where does HERVeg.05 operate?",
     answer:
-      "HERVeg.05 currently operates across multiple regions, focusing on areas where sustainable farming practices can have the most significant impact. We're continuously expanding our geographical reach to serve more communities.",
+      "HERVEg.05 prioritizes working in areas with high malnutrition rates. We focus our efforts on vulnerable communities within Tanzania to create the most significant impact. Currently we are working in Njombe region and planning to expand in Ruvuma, Iringa, Mbeya, Rukwa, Kigoma and Songwe regions.",
   },
   {
     question:
       "What is HERVeg.05's vision, and how does it translate into our core values?",
     answer:
-      "Our vision is to create a sustainable future through regenerative agriculture and community empowerment. This translates into our core values of sustainability, innovation, community partnership, and environmental stewardship.",
+      "HERVeg.05 envisions a Tanzania free from malnutrition, where empowered farmers, particularly women, can achieve sustainable livelihoods. Our core values directly contribute to achieving this vision:",
+    list: [
+      " Empowering Impact: We combine efficiency and innovation to optimize resources, streamline processes, and maximize the positive change we bring to communities.",
+      "  Unwavering Quality: We are committed to providing high-quality seeds, training, and support, empowering our farmers with the tools they need to succeed.",
+      " Building Trust Together: We believe that building trust and fostering lasting relationships with our community is fundamental to our success.",
+      "  Collaborative Spirit: We champion teamwork and collaboration, recognizing that powerful solutions come from working together.",
+    ],
   },
   {
     question: "How is HERVeg.05's Team Structured to Support Farmers?",
@@ -35,22 +48,42 @@ const faqData = [
   {
     question: "Can I donate to HERVEg.05?",
     answer:
-      "Yes! We welcome donations from individuals and organizations who share our vision. Your contributions help us expand our programs, support more farmers, and promote sustainable agriculture practices.",
+      'Absolutely! We are grateful for your interest in supporting our mission. We have a streamlined process in place to accept donations to help us empower even more communities. Your generous contribution can make a real difference in the lives of Tanzanian farmers and their families. To donate, you can easily visit our website\'s "Contact" page.',
   },
   {
     question: "How does HERVeg.05 measure the impact of its program?",
     answer:
-      "We use comprehensive metrics including crop yields, soil health indicators, farmer income improvements, environmental impact assessments, and community feedback to measure and track our program's success.",
+      "HERVEg.05 prioritizes sustainability through:HERVEg.05 prioritizes sustainability through:",
+    list: [
+      "Knowledge transfer: Our program emphasizes education and skill-building, empowering farmers to maintain and replicate success beyond the initial support provided.",
+      "  Focus on return on investment (ROI): We measure program effectiveness and impact, using data to demonstrate success and attract further funding and support for expansion.",
+      " Constant Innovation: We at HERVEg.05 believe in continuous improvement. We actively seek new methods and technologies to enhance our program's effectiveness and reach.",
+      "  Scalability by Design: The program's core elements, like mobile payments and training modules, are designed to be easily replicated and expanded to reach a wider range of communities.",
+      "   Focus on Impact and Value: Our core mission is to create lasting change. We prioritize solutions that deliver tangible benefits to farmers, such as improved nutrition, financial security, and sustainable farming practices.",
+    ],
   },
   {
     question: "How prepared is HERVEg.05 for the next 10 years?",
     answer:
-      "We have developed a robust 10-year strategic plan that includes expansion goals, technology integration, partnership development, and scalable program frameworks to ensure long-term sustainability and growth.",
+      "HERVEg.05 is committed to long-term impact. We are actively planning for the next decade with a focus on:",
+    list: [
+      "Scale (Expansion): We aim to strategically expand our program to reach more communities experiencing malnutrition in Tanzania.",
+      " Human-Centered Design and Value Creation: We believe in empowering farmers. We'll actively involve them in program development through a Human-Centered Design approach.",
+      " Innovation: We continuously explore innovative approaches to address evolving challenges and enhance program effectiveness.",
+      " Monitoring and Evaluation: We remain committed to a robust monitoring and evaluation system By focusing on these key areas, HERVEg.05 is well-positioned to make a significant contribution to tackling malnutrition and building a stronger, more sustainable agricultural future for Tanzania for the next decade and beyond.",
+    ],
   },
   {
     question: "How do we define our impact?",
     answer:
-      "Our impact is defined through multiple dimensions: environmental restoration, farmer livelihoods improvement, community resilience building, and the promotion of sustainable food systems that benefit both people and the planet.",
+      "HERVEg.05 defines its impact as the positive and measurable change we create in the lives of farmers and their communities. This encompasses: increased agricultural productivity, improved livelihoods, enhanced food security, and strengthened community resilience through sustainable practices.",
+    list: [
+      "Improved Nutritional Outcomes: Increased dietary diversity, reduced malnutrition rates, and better overall health within participating households.",
+      "Enhanced Livelihoods: Increased agricultural productivity, higher incomes from vegetable sales, and greater household food security for participating farmers.",
+      "Empowerment and Knowledge Gain: Improved knowledge of nutrition and sustainable farming practices among participating farmers, leading to long-term self-sufficiency.",
+    ],
+    remark:
+      "By measuring these key areas, HERVEg.05 can effectively demonstrate our contribution to a healthier, more prosperous future for Tanzanian farming communities",
   },
 ];
 
@@ -153,6 +186,17 @@ export default function FAQ() {
                       >
                         {faq.answer}
                       </motion.p>
+                      {/* Bullet list renderer */}
+                      {faq.list && faq.list.length > 0 && (
+                        <ul className="list-decimal ml-6 space-y-2">
+                          {faq.list.map((item, i) => (
+                            <li key={i} className="text-gray-700">
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                      {faq.remark && <p className="mt-2 ">{faq.remark}</p>}
                     </div>
                   </motion.div>
                 )}
