@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, delay } from "framer-motion";
 import { ChevronLeft, ChevronRight, X, Camera, Grid3x3 } from "lucide-react";
 
 import Image from "next/image";
@@ -142,14 +142,14 @@ function Gallery() {
     if (!isAutoPlaying) return;
 
     const interval = setInterval(() => {
-      setMainIndex((prev) => (prev + 1) % gallery.length);
+      setMainIndex((prev) => (prev + 1) % gallery?.length);
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [gallery.length, isAutoPlaying]);
+  }, [gallery?.length, isAutoPlaying]);
 
   const handleLoadMore = () => {
-    setVisibleCount((prev) => Math.min(prev + 4, gallery.length));
+    setVisibleCount((prev) => Math.min(prev + 4, gallery?.length));
   };
 
   const openLightbox = (index) => {
@@ -165,9 +165,9 @@ function Gallery() {
   const navigateLightbox = (direction) => {
     setLightboxIndex((prev) => {
       if (direction === "next") {
-        return (prev + 1) % gallery.length;
+        return (prev + 1) % gallery?.length;
       } else {
-        return (prev - 1 + gallery.length) % gallery.length;
+        return (prev - 1 + gallery?.length) % gallery?.length;
       }
     });
   };
@@ -179,13 +179,12 @@ function Gallery() {
       opacity: 1,
       transition: {
         staggerChildren: 0.08,
-        delayChildren: 0.1,
       },
     },
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 20, scale: 0.95 },
+    hidden: { opacity: 1, y: 20, scale: 0.95 },
     visible: {
       opacity: 1,
       y: 0,
@@ -255,7 +254,7 @@ function Gallery() {
                     transition={{ delay: 0.3 }}
                     className="text-sm text-white/80"
                   >
-                    {mainIndex + 1} of {gallery.length}
+                    {mainIndex + 1} of {gallery?.length}
                   </motion.p>
                 </div>
 
@@ -266,7 +265,7 @@ function Gallery() {
                     whileTap={{ scale: 0.9 }}
                     onClick={() =>
                       setMainIndex(
-                        (prev) => (prev - 1 + gallery.length) % gallery.length
+                        (prev) => (prev - 1 + gallery?.length) % gallery?.length
                       )
                     }
                     className="p-3 rounded-full bg-white/90 backdrop-blur-sm text-slate-900 shadow-lg hover:bg-white transition-colors"
@@ -278,7 +277,7 @@ function Gallery() {
                     whileHover={{ scale: 1.1, x: 5 }}
                     whileTap={{ scale: 0.9 }}
                     onClick={() =>
-                      setMainIndex((prev) => (prev + 1) % gallery.length)
+                      setMainIndex((prev) => (prev + 1) % gallery?.length)
                     }
                     className="p-3 rounded-full bg-white/90 backdrop-blur-sm text-slate-900 shadow-lg hover:bg-white transition-colors"
                     aria-label="Next"
@@ -290,7 +289,7 @@ function Gallery() {
 
               {/* Progress Indicators */}
               <div className="flex gap-2 mt-4 justify-center">
-                {gallery.slice(0, 5).map((_, idx) => (
+                {gallery?.slice(0, 5).map((_, idx) => (
                   <motion.button
                     key={idx}
                     onClick={() => setMainIndex(idx)}
@@ -312,7 +311,7 @@ function Gallery() {
             {/* Thumbnail Sidebar */}
             <div className="hidden lg:block">
               <div className="h-[600px] overflow-y-auto pr-2 space-y-3 scrollbar-thin scrollbar-thumb-slate-300 scrollbar-track-transparent">
-                {gallery.slice(0, visibleCount).map((item, idx) => (
+                {gallery?.slice(0, visibleCount).map((item, idx) => (
                   <motion.div
                     key={item.id}
                     variants={itemVariants}
@@ -354,7 +353,7 @@ function Gallery() {
               variants={containerVariants}
               className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-4"
             >
-              {gallery.slice(0, visibleCount).map((item, idx) => (
+              {gallery?.slice(0, visibleCount).map((item, idx) => (
                 <motion.div
                   key={item.id}
                   variants={itemVariants}
@@ -380,7 +379,7 @@ function Gallery() {
             </motion.div>
 
             {/* Load More Button */}
-            {visibleCount < gallery.length && (
+            {visibleCount < gallery?.length && (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -443,7 +442,7 @@ function Gallery() {
                     {gallery[lightboxIndex]?.title}
                   </h3>
                   <p className="text-white/70 text-sm">
-                    {lightboxIndex + 1} of {gallery.length}
+                    {lightboxIndex + 1} of {gallery?.length}
                   </p>
                 </div>
 
