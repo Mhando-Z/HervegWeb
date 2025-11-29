@@ -198,10 +198,9 @@ function Gallery() {
   };
 
   const imageVariants = {
-    hidden: { opacity: 0, scale: 1.1 },
+    hidden: { opacity: 1 },
     visible: {
       opacity: 1,
-      scale: 1,
       transition: {
         duration: 0.6,
         ease: [0.22, 1, 0.36, 1],
