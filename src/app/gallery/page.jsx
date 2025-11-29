@@ -299,7 +299,7 @@ function Gallery() {
                     whileHover={{ scale: 1.05 }}
                   >
                     <motion.div
-                      className="absolute inset-0 bg-amber-600"
+                      className="absolute inset-0 bg-green-600"
                       initial={{ scaleX: 0 }}
                       animate={{ scaleX: mainIndex === idx ? 1 : 0 }}
                       transition={{ duration: 0.3 }}
@@ -322,7 +322,7 @@ function Gallery() {
                     onClick={() => setMainIndex(idx)}
                     className={`relative h-[290px] rounded-xl overflow-hidden cursor-pointer transition-all ${
                       mainIndex === idx
-                        ? "ring-4 ring-amber-500 shadow-xl"
+                        ? "ring-4 ring-green-500 shadow-xl"
                         : "ring-2 ring-transparent hover:ring-slate-300 shadow-md"
                     }`}
                   >
@@ -334,7 +334,7 @@ function Gallery() {
                     <div
                       className={`absolute inset-0 transition-opacity ${
                         mainIndex === idx
-                          ? "bg-amber-500/20"
+                          ? "bg-black/20"
                           : "bg-black/0 hover:bg-black/10"
                       }`}
                     />
@@ -347,7 +347,7 @@ function Gallery() {
           {/* Grid Gallery */}
           <motion.div variants={itemVariants}>
             <div className="flex items-center gap-2 mb-6">
-              <Grid3x3 className="w-5 h-5 text-amber-600" />
+              <Grid3x3 className="w-5 h-5 text-green-600" />
               <h2 className="text-2xl font-bold text-slate-900">All Photos</h2>
             </div>
 
@@ -391,7 +391,7 @@ function Gallery() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={handleLoadMore}
-                  className="px-8 py-3 bg-linear-to-r from-amber-600 to-amber-700 text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all"
+                  className="px-8 py-3 bg-linear-to-r from-green-600 to-green-700 text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all"
                 >
                   Load More Photos
                 </motion.button>
