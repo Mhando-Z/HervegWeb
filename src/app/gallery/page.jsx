@@ -211,28 +211,7 @@ function Gallery() {
 
   return (
     <div className="min-h-screen bg-linear-to-br from-slate-50 via-white to-slate-100 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto">
-        {/* Header */}
-        {/* <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-12"
-        >
-          <div className="inline-flex items-center gap-2 mb-3 px-4 py-1.5 bg-amber-100 rounded-full">
-            <Camera className="w-4 h-4 text-amber-700" />
-            <span className="text-sm font-medium text-amber-900">
-              Gallery Collection
-            </span>
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-3 tracking-tight">
-            Visual Stories
-          </h1>
-          <p className="text-slate-600 text-lg max-w-2xl mx-auto">
-            Explore our curated collection of stunning moments captured in time
-          </p>
-        </motion.div> */}
-
+      <div className="container mx-auto md:mt-20">
         <motion.div
           initial="hidden"
           animate="visible"
