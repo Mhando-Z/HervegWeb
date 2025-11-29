@@ -383,13 +383,13 @@ function Gallery() {
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="flex justify-center mt-8"
+                className="flex justify-end mt-8"
               >
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={handleLoadMore}
-                  className="px-8 py-3 bg-linear-to-r from-green-600 to-green-700 text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all"
+                  className="px-8 py-3 text-green-800 cursor-pointer font-medium rounded-full  transition-all"
                 >
                   Load More Photos
                 </motion.button>
