@@ -17,7 +17,6 @@ export default function RootLayout({ children }) {
         </div>
         {/* main section */}
         <div className="grow">{children}</div>
-
         {/* footer section */}
         <div>
           <Footer />
