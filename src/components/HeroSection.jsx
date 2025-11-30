@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import image1 from "../../public/hero/01.jpg";
-import image2 from "../../public/hero/02.jpg";
 import image3 from "../../public/hero/03.jpg";
 import image4 from "../../public/hero/04.jpg";
 import image5 from "../../public/hero/05.jpg";
@@ -130,7 +129,7 @@ function HeroSection() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={handlePrev}
-            className="p-3 text-green-700 border border-gray-500 rounded-full shadow-lg hover:bg-opacity-10 hover:text-white hover:bg-green-50"
+            className="p-3 text-green-700 border border-gray-500 rounded-full shadow-lg hover:bg-opacity-10 hover:text-white hover:bg-green-50/20"
           >
             <FaAngleLeft />
           </motion.button>
@@ -138,7 +137,7 @@ function HeroSection() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={handleNext}
-            className="p-3 text-green-700 border border-gray-500 rounded-full shadow-lg hover:bg-opacity-10 hover:text-white hover:bg-green-50"
+            className="p-3 text-green-700 border border-gray-500 rounded-full shadow-lg hover:bg-opacity-10 hover:text-white hover:bg-green-50/20"
           >
             <FaAngleRight />
           </motion.button>
