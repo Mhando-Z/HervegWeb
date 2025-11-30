@@ -16,8 +16,6 @@ function NavBar() {
   const pathname = usePathname();
   const [Visible, setIsVisible] = useState(false);
 
-  console.log(pathname);
-
   const toggleVisibility = () => {
     if (window.pageYOffset > 600) {
       setIsVisible(true);

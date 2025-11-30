@@ -92,7 +92,7 @@ function OurServices() {
             <Image
               src={direct}
               alt="Professional"
-              className="w-full h-[560px] object-cover object-right"
+              className="w-full xl:h-[560px] md:h-full object-cover object-right"
             />
             <div className="absolute top-0 left-0 via-15% right-0 bg-linear-to-t from-white via-transparent to-transparent bottom-0 dark:bg-linear-to-t dark:from-slate-900 dark:to-transparent dark:via-transparent"></div>
           </motion.div>
@@ -132,7 +132,7 @@ function OurServices() {
                   {/* Numbered circle */}
                   <motion.div
                     variants={circleVariants}
-                    className={`flex-shrink-0 w-16 h-16 ${service.color} rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg group-hover:scale-110 transition-transform duration-300`}
+                    className={`shrink-0 w-16 h-16 ${service.color} rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg group-hover:scale-110 transition-transform duration-300`}
                   >
                     {service.number}
                   </motion.div>
