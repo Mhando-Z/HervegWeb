@@ -1,12 +1,33 @@
+"use client";
+
 // Switcher.jsx
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Moon, Sun } from "lucide-react";
 import useDarkSide from "./useDarkSide";
+import { usePathname } from "next/navigation";
+import { useContext } from "react";
 
 const Switcher = () => {
   const [colorTheme, setTheme] = useDarkSide();
   const [isDark, setIsDark] = useState(colorTheme === "light");
+  const location = usePathname();
+  const [Visible, setIsVisible] = useState(false);
+
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 600) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
+  }, []);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
@@ -63,7 +84,7 @@ const Switcher = () => {
                 className="absolute inset-0"
               >
                 <Moon
-                  className="w-5 h-5 text-white"
+                  className="w-6 h-6 text-white"
                   strokeWidth={2}
                   fill="white"
                 />
@@ -79,9 +100,17 @@ const Switcher = () => {
                 className="absolute inset-0"
               >
                 <Sun
-                  className="w-5 h-5 text-black"
+                  className={`w-6 h-6  ${
+                    location !== "/"
+                      ? "text-black"
+                      : Visible
+                      ? "text-black"
+                      : "text-white"
+                  }`}
                   strokeWidth={2}
-                  fill="black"
+                  fill={`${
+                    location !== "/" ? "black" : Visible ? "black" : "white"
+                  }`}
                 />
               </motion.div>
             )}

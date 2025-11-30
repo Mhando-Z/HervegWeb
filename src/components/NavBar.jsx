@@ -1,11 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiMenu, FiX } from "react-icons/fi";
 import { Home, Info, Image as ImageIcon, BookOpen } from "lucide-react";
 import Image from "next/image";
 import logo from "../../public/HerVeg.png";
+import logo1 from "../../public/whitelogo.png";
 import Switcher from "@/Darktheme/Switcher";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -13,6 +14,24 @@ import { usePathname } from "next/navigation";
 function NavBar() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  const [Visible, setIsVisible] = useState(false);
+
+  console.log(pathname);
+
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 600) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
+  }, []);
 
   const navLinks = [
     { point: "/", path: "/", label: "Home", icon: Home },
@@ -43,7 +62,16 @@ function NavBar() {
                 <Image
                   src={logo}
                   alt="Historical association of Tanzania Logo"
-                  className="lg:w-40 w-[120px]"
+                  className={`lg:w-40 w-[120px] ${
+                    Visible ? "block" : "hidden"
+                  }`}
+                />
+                <Image
+                  src={pathname === "/" ? logo1 : logo}
+                  alt="Historical association of Tanzania Logo"
+                  className={`lg:w-40 w-[120px]  ${
+                    Visible ? "hidden" : "block"
+                  }`}
                 />
               </Link>
             </motion.div>
