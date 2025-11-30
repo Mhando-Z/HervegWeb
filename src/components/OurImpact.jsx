@@ -2,6 +2,13 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
+// image import
+import image1 from "../../public/images/21.jpg";
+import image2 from "../../public/images/07.jpg";
+import image3 from "../../public/images/12.jpg";
+import image4 from "../../public/images/23.jpeg";
+import image5 from "../../public/images/34.jpeg";
 
 const ServiceCard = ({ image, title, description, delay }) => {
   return (
@@ -12,8 +19,8 @@ const ServiceCard = ({ image, title, description, delay }) => {
       whileHover={{ y: -8, transition: { duration: 0.3 } }}
       className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
     >
-      <div className="h-48 overflow-hidden bg-gradient-to-br from-green-50 to-green-100">
-        <motion.img
+      <div className="h-48 overflow-hidden bg-linear-to-br from-green-50 to-green-100">
+        <Image
           src={image}
           alt={title}
           className="w-full h-full object-cover"
@@ -32,35 +39,30 @@ const ServiceCard = ({ image, title, description, delay }) => {
 export default function OurImpact() {
   const services = [
     {
-      image:
-        "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=600&h=400&fit=crop",
+      image: image2,
       title: "Who We Serve",
       description:
         "Women and youth farmers facing hunger, exclusion, malnutrition, and climate stress.",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=600&h=400&fit=crop",
+      image: image3,
       title: "Smart Savings",
       description: "Mobile-based savings. No loans, no debt, full control.",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600&h=400&fit=crop",
+      image: image5,
       title: "Custom Bundles",
       description:
         "Biofortified maize, nutrient-rich vegetables, vaccinated chickens for better nutrition, income, and soil.",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop",
+      image: image4,
       title: "Last Mile Delivery",
       description:
         "Inputs delivered directly to villages, precisely when needed.",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop",
+      image: image1,
       title: "Hands-On Training",
       description:
         "Learning by doing: poultry care, composting, climate-smart farming.",
