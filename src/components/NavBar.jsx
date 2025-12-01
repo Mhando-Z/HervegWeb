@@ -10,6 +10,7 @@ import logo1 from "../../public/whitelogo.png";
 import Switcher from "@/Darktheme/Switcher";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import logo2 from "../../public/leaflogo.png";
 
 function NavBar() {
   const [open, setOpen] = useState(false);
