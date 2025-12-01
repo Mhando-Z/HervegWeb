@@ -15,7 +15,7 @@ function OurServices() {
     {
       icon: <FaMoneyBillTrendUp className="text-2xl" />,
       path: "/servce/loans/",
-      title: "Providing Loans",
+      title: "Providing Training",
       description:
         "Comprehensive loan solutions tailored to meet diverse financial requirements and support member growth opportunities.",
       number: "01",
@@ -23,7 +23,7 @@ function OurServices() {
     },
     {
       icon: <FaCartArrowDown className="text-2xl" />,
-      title: "Savings Deposit",
+      title: "Packaging and Delivery",
       path: "/servce/savings/",
       description:
         "Secure savings programs designed to help members build financial stability and achieve long-term financial objectives.",
@@ -32,7 +32,7 @@ function OurServices() {
     },
     {
       icon: <HiUserGroup className="text-2xl" />,
-      title: "Shares",
+      title: "Training ",
       path: "/servce/shares/",
       description:
         "Strategic shareholding opportunities that provide members with ownership benefits and sustainable financial growth.",
