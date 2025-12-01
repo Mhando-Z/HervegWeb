@@ -297,7 +297,7 @@ export function Carousel() {
                 transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
                 className="mb-6"
               >
-                <Quote className="w-16 h-16 text-green-500 opacity-20" />
+                <Quote className="w-16 h-16 text-yellow-200 opacity-20" />
               </motion.div>
               <div className="flex flex-col items-center justify-center text-center">
                 {/* profile picture */}
@@ -369,7 +369,7 @@ export function Carousel() {
                 transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
                 className="mb-6 flex flex-col justify-end items-end"
               >
-                <Quote className="w-16 h-16 text-green-500 opacity-20" />
+                <Quote className="w-16 h-16 text-yellow-200 opacity-20" />
               </motion.div>
             </motion.div>
           </AnimatePresence>
@@ -377,13 +377,13 @@ export function Carousel() {
           {/* Navigation Buttons */}
           <button
             onClick={() => paginate(-1)}
-            className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full p-3 transition-all duration-200 hover:scale-110"
+            className="absolute hidden md:block left-4 top-1/2 -translate-y-1/2 z-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full p-3 transition-all duration-200 hover:scale-110"
           >
             <ChevronLeft className="w-6 h-6 text-white" />
           </button>
           <button
             onClick={() => paginate(1)}
-            className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full p-3 transition-all duration-200 hover:scale-110"
+            className="absolute hidden md:block right-4 top-1/2 -translate-y-1/2 z-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full p-3 transition-all duration-200 hover:scale-110"
           >
             <ChevronRight className="w-6 h-6 text-white" />
           </button>
