@@ -92,7 +92,7 @@ function NavBar() {
                 return (
                   <Link key={link.label} href={link.path}>
                     <motion.button
-                      className="relative px-5 py-2 rounded-full text-sm font-medium transition-colors duration-200"
+                      className="relative px-5 py-2 rounded-full cursor-pointer text-sm font-medium transition-colors duration-200"
                       initial={{ opacity: 0, y: -20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: index * 0.1 }}
