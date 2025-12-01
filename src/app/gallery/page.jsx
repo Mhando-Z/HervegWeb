@@ -26,6 +26,9 @@ import nineteen from "../../../public/images/19.jpg";
 import twenty from "../../../public/images/20.jpg";
 import twentyone from "../../../public/images/21.jpg";
 import twentytwo from "../../../public/images/22.jpg";
+import twentythree from "../../../public/hero/04.jpg";
+import twentyfour from "../../../public/images/34.jpeg";
+import twentyfive from "../../../public/images/23.jpeg";
 
 const data = [
   {
@@ -35,7 +38,7 @@ const data = [
   },
   {
     id: 2,
-    image_url: two,
+    image_url: twentythree,
     title: "image two",
   },
   {
@@ -105,7 +108,7 @@ const data = [
   },
   {
     id: 18,
-    image_url: eighteen,
+    image_url: two,
     title: "image eighteen",
   },
   {
@@ -127,6 +130,21 @@ const data = [
     id: 22,
     image_url: twentytwo,
     title: "image twentytwo",
+  },
+  {
+    id: 23,
+    image_url: eighteen,
+    title: "image twentythree",
+  },
+  {
+    id: 24,
+    image_url: twentyfour,
+    title: "image twentyfour",
+  },
+  {
+    id: 25,
+    image_url: twentyfive,
+    title: "image twentyfive",
   },
 ];
 
