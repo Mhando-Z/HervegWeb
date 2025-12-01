@@ -112,37 +112,6 @@ const testimonials = [
 export default function Testimonial() {
   const [current, setCurrent] = useState(0);
   const [direction, setDirection] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
-
-  const slideVariants = {
-    enter: (direction) => ({
-      x: direction > 0 ? 1000 : -1000,
-      opacity: 1,
-    }),
-    center: {
-      zIndex: 1,
-      x: 0,
-      opacity: 1,
-    },
-    exit: (direction) => ({
-      zIndex: 0,
-      x: direction < 0 ? 1000 : -1000,
-      opacity: 1,
-    }),
-  };
-
-  const swipeConfidenceThreshold = 10000;
-  const swipePower = (offset, velocity) => {
-    return Math.abs(offset) * velocity;
-  };
-
-  const paginate = (newDirection) => {
-    setDirection(newDirection);
-    setCurrent(
-      (prev) =>
-        (prev + newDirection + testimonials.length) % testimonials.length
-    );
-  };
 
   // BACKGROUND ANIMATION CONTROL
   const sectionRef = useRef(null);
@@ -161,16 +130,6 @@ export default function Testimonial() {
     if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
   }, []);
-
-  useEffect(() => {
-    if (isPaused) return;
-
-    const timer = setInterval(() => {
-      paginate(1); // slide to next
-    }, 5000);
-
-    return () => clearInterval(timer);
-  }, [isPaused, current]);
 
   return (
     <motion.div
@@ -202,11 +161,7 @@ export default function Testimonial() {
         </motion.div>
 
         <div className="">
-          <div
-            className=" rounded-2xl shadow overflow-hidden"
-            onMouseEnter={() => setIsPaused(true)}
-            onMouseLeave={() => setIsPaused(false)}
-          >
+          <div className="overflow-hidden">
             <Carousel />
           </div>
         </div>
@@ -288,7 +243,7 @@ export function Carousel() {
                   paginate(-1);
                 }
               }}
-              className="absolute inset-0  bg-linear-to-br from-green-600 to-emerald-700 cursor-grab active:cursor-grabbing p-8"
+              className="absolute inset-0 bg-linear-to-br from-green-600 to-emerald-700 cursor-grab active:cursor-grabbing p-8"
             >
               {/* left quote */}
               <motion.div
