@@ -184,7 +184,7 @@ export default function Testimonial() {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
-      className="min-h-screen w-full  dark:text-gray-100 inset-0 flex items-center justify-center p-4"
+      className="min-h-screen w-full dark:text-gray-100 inset-0 flex items-center justify-center p-4"
     >
       <div className="max-w-4xl  w-full z-10">
         <motion.div
@@ -207,122 +207,206 @@ export default function Testimonial() {
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
           >
-            <AnimatePresence initial={false} custom={direction} mode="wait">
-              <motion.div
-                key={current}
-                custom={direction}
-                variants={slideVariants}
-                initial="enter"
-                animate="center"
-                exit="exit"
-                transition={{
-                  x: { type: "spring", stiffness: 300, damping: 30 },
-                }}
-                className="bg-white rounded-2xl shadow overflow-hidden p-12 z-10"
-                drag="x"
-                dragConstraints={{ left: 0, right: 0 }}
-                dragElastic={1}
-                onDragEnd={(e, { offset, velocity }) => {
-                  const swipe = swipePower(offset.x, velocity.x);
-                  if (swipe < -swipeConfidenceThreshold) paginate(1);
-                  else if (swipe > swipeConfidenceThreshold) paginate(-1);
-                }}
-              >
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-                  className="mb-6"
-                >
-                  <Quote className="w-16 h-16 text-green-500 opacity-20" />
-                </motion.div>
-                <div className="flex flex-col items-center text-center">
-                  <motion.img
-                    initial={{ scale: 0, rotate: -180 }}
-                    animate={{ scale: 1, rotate: 0 }}
-                    transition={{
-                      delay: 0.1,
-                      type: "spring",
-                      stiffness: 200,
-                    }}
-                    src={testimonials[current].image}
-                    alt={testimonials[current].name}
-                    className="w-24 h-24 rounded-full object-cover mb-6 ring-4 ring-green-100"
-                  />
-
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.3 }}
-                    className="flex gap-1 mb-6"
-                  >
-                    {[...Array(testimonials[current].rating)].map((_, i) => (
-                      <motion.svg
-                        key={i}
-                        initial={{ opacity: 0, scale: 0 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ delay: 0.4 + i * 0.1 }}
-                        className="w-6 h-6 fill-yellow-400"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                      </motion.svg>
-                    ))}
-                  </motion.div>
-
-                  <motion.p
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.4 }}
-                    className="text-gray-700 text-xl mb-6 italic leading-relaxed"
-                  >
-                    "{testimonials[current].content}"
-                  </motion.p>
-
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.5 }}
-                  >
-                    <h3 className="text-xl font-bold text-gray-900">
-                      {testimonials[current].name}
-                    </h3>
-                    <p className="text-yellow-700 font-medium">
-                      {testimonials[current].role}
-                    </p>
-                  </motion.div>
-                </div>
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-                  className="mt-4 flex justify-end items-end"
-                >
-                  <Quote className="w-16 h-16 text-green-500 opacity-20" />
-                </motion.div>
-              </motion.div>
-            </AnimatePresence>
+            <Carousel />
           </div>
-        </div>
-
-        <div className="flex justify-center gap-2 mt-8">
-          {testimonials.map((_, index) => (
-            <motion.button
-              key={index}
-              onClick={() => {
-                setDirection(index > current ? 1 : -1);
-                setCurrent(index);
-              }}
-              className={`h-2 rounded-full transition-all ${
-                index === current ? "w-8 bg-white" : "w-2 bg-gray-300"
-              }`}
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.9 }}
-              aria-label={`Go to testimonial ${index + 1}`}
-            />
-          ))}
         </div>
       </div>
     </motion.div>
+  );
+}
+
+export function Carousel() {
+  const [current, setCurrent] = useState(0);
+  const [direction, setDirection] = useState(0);
+
+  const slideVariants = {
+    enter: (direction) => ({
+      x: direction > 0 ? 1000 : -1000,
+      opacity: 0,
+    }),
+    center: {
+      zIndex: 1,
+      x: 0,
+      opacity: 1,
+    },
+    exit: (direction) => ({
+      zIndex: 0,
+      x: direction < 0 ? 1000 : -1000,
+      opacity: 0,
+    }),
+  };
+
+  const swipeConfidenceThreshold = 10000;
+  const swipePower = (offset, velocity) => {
+    return Math.abs(offset) * velocity;
+  };
+
+  const paginate = (newDirection) => {
+    setDirection(newDirection);
+    setCurrent((prev) => {
+      const next = prev + newDirection;
+      if (next < 0) return testimonials.length - 1;
+      if (next >= testimonials.length) return 0;
+      return next;
+    });
+  };
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      paginate(1);
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, [current]);
+
+  return (
+    <div className="flex items-center justify-center p-4">
+      <div className="w-full max-w-4xl">
+        <div className="relative h-[600px] overflow-hidden rounded-2xl shadow">
+          <AnimatePresence initial={false} custom={direction}>
+            {/* main section */}
+            <motion.div
+              key={current}
+              custom={direction}
+              variants={slideVariants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              transition={{
+                x: { type: "spring", stiffness: 300, damping: 30 },
+                opacity: { duration: 0.2 },
+              }}
+              drag="x"
+              dragConstraints={{ left: 0, right: 0 }}
+              dragElastic={1}
+              onDragEnd={(e, { offset, velocity }) => {
+                const swipe = swipePower(offset.x, velocity.x);
+
+                if (swipe < -swipeConfidenceThreshold) {
+                  paginate(1);
+                } else if (swipe > swipeConfidenceThreshold) {
+                  paginate(-1);
+                }
+              }}
+              className="absolute inset-0  bg-linear-to-br from-green-600 to-emerald-700 cursor-grab active:cursor-grabbing p-8"
+            >
+              {/* left quote */}
+              <motion.div
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
+                className="mb-6"
+              >
+                <Quote className="w-16 h-16 text-green-500 opacity-20" />
+              </motion.div>
+              <div className="flex flex-col items-center justify-center text-center">
+                {/* profile picture */}
+                <motion.img
+                  initial={{ scale: 0, rotate: -180 }}
+                  animate={{ scale: 1, rotate: 0 }}
+                  transition={{
+                    delay: 0.1,
+                    type: "spring",
+                    stiffness: 200,
+                  }}
+                  src={testimonials[current].image}
+                  alt={testimonials[current].name}
+                  className="w-24 h-24 rounded-full object-cover mb-6 ring-4 ring-green-100"
+                />
+
+                {/* rating  */}
+                <motion.div
+                  initial={{ opacity: 1 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.3 }}
+                  className="flex gap-1 mb-6"
+                >
+                  {[...Array(testimonials[current].rating)].map((_, i) => (
+                    <motion.svg
+                      key={i}
+                      initial={{ opacity: 1, scale: 0 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: 0.4 + i * 0.1 }}
+                      className="w-6 h-6 fill-yellow-400"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                    </motion.svg>
+                  ))}
+                </motion.div>
+
+                <motion.p
+                  initial={{ y: 20, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: 0.3 }}
+                  className="text-lg md:text-xl text-white/95 text-center max-w-2xl mb-6 italic"
+                >
+                  "{testimonials[current].content}"
+                </motion.p>
+
+                <motion.h3
+                  initial={{ y: 20, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: 0.4 }}
+                  className="text-2xl md:text-3xl font-bold text-white"
+                >
+                  {testimonials[current].name}
+                </motion.h3>
+
+                <motion.p
+                  initial={{ y: 20, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: 0.5 }}
+                  className="text-base md:text-lg text-white/80"
+                >
+                  {testimonials[current].role}
+                </motion.p>
+              </div>
+              {/* right quote */}
+              <motion.div
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
+                className="mb-6 flex flex-col justify-end items-end"
+              >
+                <Quote className="w-16 h-16 text-green-500 opacity-20" />
+              </motion.div>
+            </motion.div>
+          </AnimatePresence>
+
+          {/* Navigation Buttons */}
+          <button
+            onClick={() => paginate(-1)}
+            className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full p-3 transition-all duration-200 hover:scale-110"
+          >
+            <ChevronLeft className="w-6 h-6 text-white" />
+          </button>
+          <button
+            onClick={() => paginate(1)}
+            className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full p-3 transition-all duration-200 hover:scale-110"
+          >
+            <ChevronRight className="w-6 h-6 text-white" />
+          </button>
+
+          {/* Dots Indicator */}
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex gap-2">
+            {testimonials.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => {
+                  setDirection(index > current ? 1 : -1);
+                  setCurrent(index);
+                }}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  index === current
+                    ? "w-8 bg-white"
+                    : "w-2 bg-white/50 hover:bg-white/75"
+                }`}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
