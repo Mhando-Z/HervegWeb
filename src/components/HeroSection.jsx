@@ -43,7 +43,7 @@ function HeroSection() {
   const [Visible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
-    if (window.pageYOffset > 10) {
+    if (window.pageYOffset > 5) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
