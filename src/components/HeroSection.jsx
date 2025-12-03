@@ -40,6 +40,22 @@ const data = [
 function HeroSection() {
   const [value, setValue] = useState(0);
   const [direction, setDirection] = useState(1);
+  const [Visible, setIsVisible] = useState(false);
+
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 10) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
+  }, []);
 
   // timer Logic
   useEffect(() => {
@@ -79,7 +95,11 @@ function HeroSection() {
   };
 
   return (
-    <div className="relative w-screen h-screen overflow-hidden">
+    <div
+      className={`relative w-screen h-screen overflow-hidden  ${
+        Visible ? "mask-b-from-95%" : ""
+      }`}
+    >
       {/* Full Screen Background Images */}
       {data.map((item, index) => (
         <motion.div
