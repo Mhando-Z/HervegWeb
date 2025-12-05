@@ -1,12 +1,14 @@
 import React from "react";
 import HeroSect from "./HeroSect";
+import OurStory from "./OurStory";
 
 function AboutUs() {
   return (
     <div>
-      <div>
-        <HeroSect />
-      </div>
+      {/* hero section */}
+      <HeroSect />
+      {/* ourstory section */}
+      <OurStory />
     </div>
   );
 }
