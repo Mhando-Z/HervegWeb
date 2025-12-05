@@ -103,7 +103,7 @@ const FoundingStory = () => {
 
       {/* Challenges Section */}
       <motion.section
-        className="py-16 px-6 md:px-12 lg:px-24 bg-black"
+        className="py-16 px-6 md:px-12 lg:px-24"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -111,7 +111,7 @@ const FoundingStory = () => {
       >
         <div className="max-w-6xl mx-auto">
           <motion.h3
-            className="text-3xl md:text-4xl font-bold mb-12 text-center text-yellow-400"
+            className="text-3xl md:text-4xl font-bold mb-12 text-center text-green-700"
             variants={itemVariants}
           >
             The Daily Struggles
@@ -132,10 +132,10 @@ const FoundingStory = () => {
           </div>
 
           <motion.div className="mt-12 text-center" variants={itemVariants}>
-            <p className="text-2xl font-semibold text-green-400 mb-4">
+            <p className="text-2xl font-semibold text-green-800 mb-4">
               Still, they persevere.
             </p>
-            <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+            <p className="text-lg  max-w-3xl mx-auto">
               Many come together in women's savings groups, supporting one
               another, saving little by little, and sharing knowledge. These
               groups are full of potential—they just need a boost to reach it.
@@ -146,7 +146,7 @@ const FoundingStory = () => {
 
       {/* The Turning Point */}
       <motion.section
-        className="py-16 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-black to-green-900"
+        className="py-16 px-6 md:px-12 lg:px-24  "
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -163,12 +163,12 @@ const FoundingStory = () => {
             <Lightbulb className="w-20 h-20 text-yellow-400 mx-auto mb-6" />
           </motion.div>
 
-          <h3 className="text-4xl md:text-5xl font-bold mb-6 text-yellow-400">
+          <h3 className="text-4xl md:text-5xl font-bold mb-6 text-green-700">
             That's Why HERVeg.05 Was Founded
           </h3>
 
           <motion.p
-            className="text-xl text-gray-300 max-w-4xl mx-auto mb-8"
+            className="text-xl max-w-4xl mx-auto mb-8"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -184,7 +184,7 @@ const FoundingStory = () => {
 
       {/* Video/Image Section */}
       <motion.section
-        className="py-16 px-6 md:px-12 lg:px-24 bg-green-900"
+        className="py-16 px-6 md:px-12 lg:px-24 "
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
