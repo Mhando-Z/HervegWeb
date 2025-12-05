@@ -282,7 +282,7 @@ const FoundingStory = () => {
       >
         <div className="max-w-5xl mx-auto">
           <motion.div
-            className="bg-black p-10 md:p-16 rounded-2xl border-4 border-yellow-400 shadow-2xl"
+            className="bg-linear-to-b from-green-950 to-green-800 p-10 md:p-16 rounded-2xl border-4 border-yellow-400 shadow-2xl"
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
           >
