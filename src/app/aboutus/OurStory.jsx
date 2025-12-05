@@ -196,7 +196,7 @@ const FoundingStory = () => {
             transition={{ duration: 0.3 }}
           >
             {/* Placeholder for video/image */}
-            <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900">
+            <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center">
                 <Users className="w-24 h-24 text-green-400 mx-auto mb-4" />
                 <p className="text-gray-400 text-lg">
@@ -212,7 +212,7 @@ const FoundingStory = () => {
 
       {/* Solutions Section */}
       <motion.section
-        className="py-16 px-6 md:px-12 lg:px-24 bg-black"
+        className="py-16 px-6 md:px-12 lg:px-24 "
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -220,7 +220,7 @@ const FoundingStory = () => {
       >
         <div className="max-w-6xl mx-auto">
           <motion.h3
-            className="text-3xl md:text-4xl font-bold mb-12 text-center text-green-400"
+            className="text-3xl md:text-4xl font-bold mb-12 text-center text-green-700"
             variants={itemVariants}
           >
             What We Provide
@@ -235,7 +235,7 @@ const FoundingStory = () => {
                 whileHover={{ scale: 1.03, x: 10 }}
               >
                 <div className="flex items-start gap-4">
-                  <CheckCircle className="w-8 h-8 text-yellow-400 flex-shrink-0 mt-1" />
+                  <CheckCircle className="w-8 h-8 text-yellow-400 shrink-0 mt-1" />
                   <p className="text-lg text-white">{solution.text}</p>
                 </div>
               </motion.div>
@@ -246,7 +246,7 @@ const FoundingStory = () => {
 
       {/* Goal Section */}
       <motion.section
-        className="py-16 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-black to-green-900"
+        className="py-16 px-6 md:px-12 lg:px-24 "
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -261,10 +261,10 @@ const FoundingStory = () => {
             <TrendingUp className="w-16 h-16 text-yellow-400 mx-auto mb-6" />
           </motion.div>
 
-          <h3 className="text-3xl md:text-4xl font-bold mb-6 text-yellow-400">
+          <h3 className="text-3xl md:text-4xl font-bold mb-6 text-green-700">
             Our Goal
           </h3>
-          <p className="text-xl text-gray-300 mb-12">
+          <p className="text-xl  mb-12">
             Help farmers grow more food, increase income, and improve their
             families' lives—all while letting them make the decisions
             themselves.
@@ -274,7 +274,7 @@ const FoundingStory = () => {
 
       {/* Key Principle Section */}
       <motion.section
-        className="py-20 px-6 md:px-12 lg:px-24 bg-green-900"
+        className="py-20 px-6 md:px-12 lg:px-24 "
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
