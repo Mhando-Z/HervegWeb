@@ -77,10 +77,10 @@ export default function HeroSect() {
           whileInView="visible"
           variants={containerVariants}
         >
-          <div className="relative px-4 mx-auto max-w-7xl sm:static sm:px-6 lg:px-8">
+          <div className="relative px-4 mx-auto max-w-7xl  sm:static sm:px-6 lg:px-8">
             <motion.div className="sm:max-w-lg">
               <motion.h1
-                className="text-4xl text-green-700 md:max-w-[390px] font-roboto  max-w-[290px] xl:max-w-lg font-black tracking-tight md:text-5xl xl:text-6xl"
+                className="text-4xl text-green-700 md:max-w-[390px] font-roboto  max-w-[290px] xl:max-w-lg font-bold tracking-tight md:text-5xl xl:text-6xl"
                 variants={itemVariants}
               >
                 Fighting Malnutrition, One Farm at a Time
