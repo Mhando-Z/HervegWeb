@@ -121,7 +121,7 @@ const FoundingStory = () => {
             {challenges.map((challenge, index) => (
               <motion.div
                 key={index}
-                className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-lg border-2 border-green-600 hover:border-yellow-400 transition-colors"
+                className="bg-linear-to-r from-green-900 to-green-800 p-6 rounded-lg border-2 border-green-600 hover:border-yellow-400 transition-colors"
                 variants={cardVariants}
                 whileHover={{ scale: 1.05, y: -5 }}
               >
@@ -230,7 +230,7 @@ const FoundingStory = () => {
             {solutions.map((solution, index) => (
               <motion.div
                 key={index}
-                className="bg-gradient-to-r from-green-900 to-green-800 p-8 rounded-lg border-2 border-yellow-400 hover:border-green-400 transition-colors"
+                className="bg-linear-to-r from-green-900 to-green-800 p-8 rounded-lg border-2 border-yellow-400 hover:border-green-400 transition-colors"
                 variants={cardVariants}
                 whileHover={{ scale: 1.03, x: 10 }}
               >
