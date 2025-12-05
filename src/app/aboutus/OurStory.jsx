@@ -13,7 +13,7 @@ import {
   Handshake,
 } from "lucide-react";
 import Image from "next/image";
-import agents from "../../../public/aboutus/01.png";
+import agents from "../../../public/aboutus/011.png";
 
 const FoundingStory = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
