@@ -191,9 +191,9 @@ const FoundingStory = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
       >
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl  mx-auto">
           <motion.div
-            className="relative  rounded-lg overflow-hidden  aspect-video"
+            className="relative  rounded-lg overflow-hidden aspect-video "
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
           >
