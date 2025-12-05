@@ -12,6 +12,8 @@ import {
   TrendingUp,
   Handshake,
 } from "lucide-react";
+import Image from "next/image";
+import agents from "../../../public/aboutus/01.png";
 
 const FoundingStory = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
@@ -184,27 +186,25 @@ const FoundingStory = () => {
 
       {/* Video/Image Section */}
       <motion.section
-        className="py-16 px-6 md:px-12 lg:px-24 "
+        className="mb-10 px-6 md:px-12 lg:px-24 "
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
       >
         <div className="max-w-4xl mx-auto">
           <motion.div
-            className="relative bg-black rounded-lg overflow-hidden shadow-2xl aspect-video"
+            className="relative  rounded-lg overflow-hidden  aspect-video"
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
           >
             {/* Placeholder for video/image */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <Users className="w-24 h-24 text-green-400 mx-auto mb-4" />
-                <p className="text-gray-400 text-lg">
-                  Founder with Community
-                  <br />
-                  <span className="text-sm">[Video/Photo Placeholder]</span>
-                </p>
-              </div>
+              <Image
+                src={agents}
+                alt="Founder with Community"
+                className="object-cover mask-b-from-90% w-full h-full"
+                priority
+              />
             </div>
           </motion.div>
         </div>
@@ -274,7 +274,7 @@ const FoundingStory = () => {
 
       {/* Key Principle Section */}
       <motion.section
-        className="py-20 px-6 md:px-12 lg:px-24 "
+        className="mb-20 px-6 md:px-12 lg:px-24 "
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
