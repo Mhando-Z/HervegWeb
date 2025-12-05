@@ -40,15 +40,8 @@ function NavBar() {
 
   return (
     <>
-      {/* Backdrop */}
-      {/* <div
-        className={`fixed top-0 left-0 w-full ${
-          open ? "h-64" : "h-16 md:h-0"
-        }  bg-white/80 dark:bg-gray-900/80 backdrop-blur-md z-40 border-b border-gray-200 dark:border-gray-800`}
-      /> */}
-
       <motion.nav
-        initial={{ y: -100, opacity: 0 }}
+        initial={{ y: -10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ type: "spring", stiffness: 100, damping: 20 }}
         className="fixed top-0 left-0 w-full z-40 px-4 md:px-8 py-3"
@@ -80,7 +73,6 @@ function NavBar() {
               className="hidden md:flex items-center gap-2 px-4 py-1 bg-white/90 dark:bg-gray-800/90 backdrop-blur-xl rounded-full shadow border border-gray-200 dark:border-gray-700"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2 }}
             >
               {navLinks.map((link, index) => {
                 const Icon = link.icon;
@@ -93,9 +85,9 @@ function NavBar() {
                   <Link key={link.label} href={link.path}>
                     <motion.button
                       className="relative px-5 py-2 rounded-full cursor-pointer text-sm font-medium transition-colors duration-200"
-                      initial={{ opacity: 0, y: -20 }}
+                      initial={{ opacity: 1, y: -20 }}
                       animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: index * 0.1 }}
+                      // transition={{ delay: index * 0.1 }}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
