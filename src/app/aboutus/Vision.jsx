@@ -409,7 +409,7 @@ const VisionValues = () => {
                     {point.description}
                   </p>
 
-                  <div className="mt-6 flex items-center text-emerald-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                  <div className="mt-6 hidden flex items-center text-emerald-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
                     <span className="text-sm">Learn more</span>
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </div>
