@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSect from "./HeroSect";
 import OurStory from "./OurStory";
+import VisionValues from "./Vision";
 
 function AboutUs() {
   return (
@@ -9,6 +10,8 @@ function AboutUs() {
       <HeroSect />
       {/* ourstory section */}
       <OurStory />
+      {/* vision section */}
+      <VisionValues />
     </div>
   );
 }
