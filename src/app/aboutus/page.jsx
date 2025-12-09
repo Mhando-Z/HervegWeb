@@ -2,7 +2,7 @@ import React from "react";
 import HeroSect from "./HeroSect";
 import OurStory from "./OurStory";
 import VisionValues from "./Vision";
-// import SuccessStories from "./Success";
+import SuccessStories from "./Success";
 
 function AboutUs() {
   return (
@@ -14,7 +14,7 @@ function AboutUs() {
       {/* vision section */}
       <VisionValues />
       {/* success stories section */}
-      {/* <SuccessStories /> */}
+      <SuccessStories />
     </div>
   );
 }
