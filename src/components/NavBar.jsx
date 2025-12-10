@@ -78,8 +78,8 @@ function NavBar() {
       hasDropdown: true,
     },
     { point: "/career", path: "/career/", label: "Career", icon: Briefcase },
-    { point: "/gallery", path: "/gallery/", label: "Gallery", icon: ImageIcon },
     { point: "/donate", path: "/donate/", label: "Donate", icon: Heart },
+    { point: "/gallery", path: "/gallery/", label: "Gallery", icon: ImageIcon },
   ];
 
   return (

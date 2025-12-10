@@ -489,7 +489,7 @@ const VisionValues = () => {
         <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 1, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="max-w-5xl mx-auto text-center relative z-10"
