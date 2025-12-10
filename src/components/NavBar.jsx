@@ -140,7 +140,7 @@ function NavBar() {
                         {isActive && (
                           <motion.div
                             layoutId="activeNav"
-                            className="absolute inset-0 bg-gradient-to-r from-green-500 to-green-600 rounded-full shadow-lg"
+                            className="absolute inset-0 bg-linear-to-r from-green-500 to-green-600 rounded-full shadow-lg"
                             transition={{
                               type: "spring",
                               stiffness: 380,
@@ -151,7 +151,7 @@ function NavBar() {
 
                         {!isActive && (
                           <motion.div
-                            className="absolute inset-0 bg-gradient-to-r from-green-400/20 to-green-600/20 rounded-full opacity-0"
+                            className="absolute inset-0 bg-linear-to-r from-green-400/20 to-green-600/20 rounded-full opacity-0"
                             whileHover={{ opacity: 1 }}
                           />
                         )}
@@ -231,7 +231,7 @@ function NavBar() {
                       {isActive && (
                         <motion.div
                           layoutId="activeNav"
-                          className="absolute inset-0 bg-gradient-to-r from-green-500 to-green-600 rounded-full shadow-lg"
+                          className="absolute inset-0 bg-linear-to-r from-green-500 to-green-600 rounded-full shadow-lg"
                           transition={{
                             type: "spring",
                             stiffness: 380,
@@ -242,7 +242,7 @@ function NavBar() {
 
                       {!isActive && (
                         <motion.div
-                          className="absolute inset-0 bg-gradient-to-r from-green-400/20 to-green-600/20 rounded-full opacity-0"
+                          className="absolute inset-0 bg-linear-to-r from-green-400/20 to-green-600/20 rounded-full opacity-0"
                           whileHover={{ opacity: 1 }}
                         />
                       )}
@@ -260,7 +260,7 @@ function NavBar() {
 
                       {!isActive && (
                         <motion.div
-                          className="absolute -bottom-1 left-1/2 h-0.5 bg-gradient-to-r from-green-500 to-green-600"
+                          className="absolute -bottom-1 left-1/2 h-0.5 bg-linear-to-r from-green-500 to-green-600"
                           initial={{ width: 0, x: "-50%" }}
                           whileHover={{ width: "80%" }}
                         />
