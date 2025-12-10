@@ -5,14 +5,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import landscape from "../../public/landscapes.png";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import Image from "next/image";
+// import profiles
+import man from "../../public/profiles/man1.png";
+import woman from "../../public/profiles/woman.png";
 
 const testimonials = [
   {
     id: 1,
     name: "Neema Mlowola",
     role: "VSLA Member – Njombe",
-    image:
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=150&h=150&fit=crop",
+    image: woman,
     content:
       "Before joining HERVEg.05, my family often struggled with food shortages. The high-quality seeds and practical training helped me triple my harvest this season. I finally feel empowered as a woman farmer.",
     rating: 5,
@@ -21,8 +23,7 @@ const testimonials = [
     id: 2,
     name: "Bernard Mwakalinga",
     role: "Smallholder Farmer – Ruvuma",
-    image:
-      "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=150&h=150&fit=crop",
+    image: man,
     content:
       "HERVEg.05’s VSLA approach makes everything simple and affordable. We learn together, grow together, and now our whole community sees real change in both income and nutrition.",
     rating: 5,
@@ -31,8 +32,7 @@ const testimonials = [
     id: 3,
     name: "Asha Mshana",
     role: "Sunflower Grower – Iringa",
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop",
+    image: woman,
     content:
       "What impressed me most about HERVEg.05 is their commitment to quality. The seeds they provided were strong and the constant support from field coordinators made everything easy to follow.",
     rating: 5,
@@ -41,8 +41,7 @@ const testimonials = [
     id: 4,
     name: "Victor Mnyenyelwa",
     role: "Youth Farmer – Songea",
-    image:
-      "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=150&h=150&fit=crop",
+    image: man,
     content:
       "Their training changed everything for me. I didn’t just receive inputs—I received knowledge. Now I understand soil health, spacing, and how to increase ROI with simple techniques.",
     rating: 5,
@@ -51,8 +50,7 @@ const testimonials = [
     id: 5,
     name: "Janeth Haule",
     role: "Women Group Leader – Njombe",
-    image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop",
+    image: woman,
     content:
       "HERVEg.05 builds trust. They listen to our challenges and walk with us step by step. I’ve seen many organizations come and go, but this one truly cares about farmers.",
     rating: 5,
@@ -61,8 +59,7 @@ const testimonials = [
     id: 6,
     name: "Kasim Mwakaleli",
     role: "Farmer – Kigoma",
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop",
+    image: man,
     content:
       "The model is BIG, SIMPLE, and CHEAP—just like they say. With mobile payment options and easy-to-understand training, even older farmers in our group participate confidently.",
     rating: 5,
@@ -71,8 +68,7 @@ const testimonials = [
     id: 7,
     name: "Zainabu Rashid",
     role: "Vegetable Farmer – Mbeya",
-    image:
-      "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop",
+    image: woman,
     content:
       "My children’s nutrition has improved because I now grow more diverse and healthy crops. HERVEg.05 is helping us fight malnutrition from the ground up.",
     rating: 5,
@@ -81,8 +77,7 @@ const testimonials = [
     id: 8,
     name: "Thomas Mchome",
     role: "Community VSLA Chairperson – Songwe",
-    image:
-      "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=150&h=150&fit=crop",
+    image: man,
     content:
       "What makes HERVEg.05 different is that they focus on sustainability. Even if the project ended today, our group now has the skills to continue growing and expanding on our own.",
     rating: 5,
@@ -91,8 +86,7 @@ const testimonials = [
     id: 9,
     name: "Rehema Joseph",
     role: "Maize Farmer – Rukwa",
-    image:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop",
+    image: woman,
     content:
       "I joined the program hoping for better seeds. I ended up gaining knowledge, confidence, and a community of farmers who support each other.",
     rating: 5,
@@ -101,8 +95,7 @@ const testimonials = [
     id: 10,
     name: "Moses Charles",
     role: "Field Group Member – Njombe",
-    image:
-      "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=150&h=150&fit=crop",
+    image: man,
     content:
       "HERVEg.05 changed our village. Every farming season now starts with training sessions, new ideas, and a sense of hope for better harvests and better lives.",
     rating: 5,
@@ -256,7 +249,7 @@ export function Carousel() {
               </motion.div>
               <div className="flex flex-col items-center justify-center text-center">
                 {/* profile picture */}
-                <motion.img
+                <motion.div
                   initial={{ scale: 0, rotate: -180 }}
                   animate={{ scale: 1, rotate: 0 }}
                   transition={{
@@ -264,10 +257,13 @@ export function Carousel() {
                     type: "spring",
                     stiffness: 200,
                   }}
-                  src={testimonials[current].image}
-                  alt={testimonials[current].name}
-                  className="w-24 h-24 rounded-full object-cover mb-6 ring-4 ring-green-100"
-                />
+                >
+                  <Image
+                    src={testimonials[current].image}
+                    alt={testimonials[current].name}
+                    className="w-24 h-24 rounded-full object-cover mb-6 ring-4 ring-green-100"
+                  />
+                </motion.div>
 
                 {/* rating  */}
                 <motion.div
