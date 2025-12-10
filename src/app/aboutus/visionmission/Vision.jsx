@@ -19,6 +19,8 @@ import {
   Sparkles,
 } from "lucide-react";
 import { useState, useRef } from "react";
+import Image from "next/image";
+import heroImage from "../../../../public/images/09.jpeg";
 
 const VisionValues = () => {
   const [activeStage, setActiveStage] = useState(0);
@@ -166,38 +168,46 @@ const VisionValues = () => {
   return (
     <div ref={containerRef} className="min-h-screen bg-white">
       {/* Hero Section with Parallax */}
-      <section className="relative overflow-hidden bg-linear-to-br from-emerald-50 via-green-50 to-lime-50 py-24 px-4 sm:px-6 lg:px-8">
-        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+      <section className="relative  overflow-hidden bg-linear-to-br from-emerald-50 via-green-50 to-lime-50 py-24 px-4 sm:px-6 lg:px-8">
+        <div className="absolute inset-0 bg-grid-pattern opacity-20">
+          <Image
+            src={heroImage}
+            alt="heroimage"
+            className="w-full h-full object-cover "
+          />
+        </div>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="max-w-5xl mx-auto relative z-10"
+          className="justify-center flex flex-col min-h-screen mx-auto relative z-10"
         >
-          <motion.div
-            initial={{ scale: 0.9 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm mb-8"
-          >
-            <Sparkles className="w-4 h-4 text-emerald-600" />
-            <span className="text-sm font-semibold text-emerald-700">
-              Our Vision & Values
-            </span>
-          </motion.div>
+          <div className="flex flex-col px-4 container mx-auto">
+            <motion.div
+              initial={{ scale: 0.9 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.5 }}
+              className="inline-flex md:w-56 items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm mb-8"
+            >
+              <Sparkles className="w-4 h-4 text-emerald-600" />
+              <span className="text-sm font-semibold text-emerald-700">
+                Our Vision & Values
+              </span>
+            </motion.div>
 
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-            Building a Better{" "}
-            <span className="text-transparent bg-clip-text bg-linear-to-r from-green-600 to-emerald-600">
-              Future
-            </span>
-          </h1>
+            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+              Building a Better{" "}
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-green-600 to-emerald-600">
+                Future
+              </span>
+            </h1>
 
-          <p className="text-xl md:text-2xl text-gray-700 leading-relaxed max-w-4xl">
-            Across Tanzania, smallholder farmers form the backbone of our food
-            systems. Yet poverty and malnutrition leave too many families
-            struggling, and farmers remain underserved and overlooked.
-          </p>
+            <p className="text-xl md:text-2xl text-gray-700 leading-relaxed max-w-4xl">
+              Across Tanzania, smallholder farmers form the backbone of our food
+              systems. Yet poverty and malnutrition leave too many families
+              struggling, and farmers remain underserved and overlooked.
+            </p>
+          </div>
         </motion.div>
       </section>
 

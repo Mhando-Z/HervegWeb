@@ -1,22 +1,9 @@
-import React from "react";
-import HeroSect from "./HeroSect";
-import OurStory from "./OurStory";
-import VisionValues from "./Vision";
-import SuccessStories from "./Success";
+import React, { Component } from "react";
 
-function AboutUs() {
-  return (
-    <div>
-      {/* hero section */}
-      <HeroSect />
-      {/* ourstory section */}
-      <OurStory />
-      {/* vision section */}
-      <VisionValues />
-      {/* success stories section */}
-      <SuccessStories />
-    </div>
-  );
+export class page extends Component {
+  render() {
+    return <div>page</div>;
+  }
 }
 
-export default AboutUs;
+export default page;

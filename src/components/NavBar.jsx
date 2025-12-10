@@ -57,13 +57,14 @@ function NavBar() {
   }, []);
 
   const aboutSubLinks = [
+    { path: "/aboutus/whoweare", label: "About Us", icon: Info },
     {
-      path: "/aboutus/vision-mission",
+      path: "/aboutus/visionmission",
       label: "Vision & Mission",
       icon: Target,
     },
-    { path: "/aboutus/success-stories", label: "Success Stories", icon: Star },
-    { path: "/aboutus/our-impact", label: "Our Impact", icon: TrendingUp },
+    { path: "/aboutus/successstories", label: "Success Stories", icon: Star },
+    { path: "/aboutus/ourimpact", label: "Our Impact", icon: TrendingUp },
     { path: "/aboutus/awards", label: "Awards", icon: Award },
   ];
 

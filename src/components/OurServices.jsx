@@ -151,7 +151,7 @@ function OurServices() {
                     <p className="text-slate-600 dark:text-gray-400 leading-relaxed mb-4">
                       {service.description}
                     </p>
-                    <Link href={service.path}>
+                    {/* <Link href={service.path}>
                       <motion.button
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
@@ -172,7 +172,7 @@ function OurServices() {
                           />
                         </svg>
                       </motion.button>
-                    </Link>
+                    </Link> */}
                   </div>
                 </motion.div>
               ))}
