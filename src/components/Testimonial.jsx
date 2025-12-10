@@ -7,7 +7,9 @@ import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import Image from "next/image";
 // import profiles
 import man from "../../public/profiles/man1.png";
-import woman from "../../public/profiles/woman.png";
+import woman from "../../public/profiles/woman2.png";
+import man2 from "../../public/profiles/man.png";
+import woman2 from "../../public/profiles/woman.png";
 
 const testimonials = [
   {
@@ -32,7 +34,7 @@ const testimonials = [
     id: 3,
     name: "Asha Mshana",
     role: "Sunflower Grower – Iringa",
-    image: woman,
+    image: woman2,
     content:
       "What impressed me most about HERVEg.05 is their commitment to quality. The seeds they provided were strong and the constant support from field coordinators made everything easy to follow.",
     rating: 5,
@@ -41,7 +43,7 @@ const testimonials = [
     id: 4,
     name: "Victor Mnyenyelwa",
     role: "Youth Farmer – Songea",
-    image: man,
+    image: man2,
     content:
       "Their training changed everything for me. I didn’t just receive inputs—I received knowledge. Now I understand soil health, spacing, and how to increase ROI with simple techniques.",
     rating: 5,
@@ -59,7 +61,7 @@ const testimonials = [
     id: 6,
     name: "Kasim Mwakaleli",
     role: "Farmer – Kigoma",
-    image: man,
+    image: man2,
     content:
       "The model is BIG, SIMPLE, and CHEAP—just like they say. With mobile payment options and easy-to-understand training, even older farmers in our group participate confidently.",
     rating: 5,
@@ -68,7 +70,7 @@ const testimonials = [
     id: 7,
     name: "Zainabu Rashid",
     role: "Vegetable Farmer – Mbeya",
-    image: woman,
+    image: woman2,
     content:
       "My children’s nutrition has improved because I now grow more diverse and healthy crops. HERVEg.05 is helping us fight malnutrition from the ground up.",
     rating: 5,
@@ -86,7 +88,7 @@ const testimonials = [
     id: 9,
     name: "Rehema Joseph",
     role: "Maize Farmer – Rukwa",
-    image: woman,
+    image: woman2,
     content:
       "I joined the program hoping for better seeds. I ended up gaining knowledge, confidence, and a community of farmers who support each other.",
     rating: 5,
@@ -95,7 +97,7 @@ const testimonials = [
     id: 10,
     name: "Moses Charles",
     role: "Field Group Member – Njombe",
-    image: man,
+    image: man2,
     content:
       "HERVEg.05 changed our village. Every farming season now starts with training sessions, new ideas, and a sense of hope for better harvests and better lives.",
     rating: 5,
