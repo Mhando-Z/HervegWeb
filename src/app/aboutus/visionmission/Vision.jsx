@@ -219,7 +219,7 @@ const VisionValues = () => {
           viewport={{ once: true, margin: "-100px" }}
           className="max-w-5xl mx-auto"
         >
-          <div className="  rounded-3xl p-10 md:p-16  flex-col items-center justify-center text-center border border-gray-100">
+          <div className="  rounded-3xl p-10 md:p-16  text-center border border-gray-100">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Our Vision
             </h2>
@@ -485,7 +485,7 @@ const VisionValues = () => {
 
       {/* Why Values Matter - Enhanced CTA */}
       <section className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="absolute inset-0 bg-linear-to-br from-emerald-600 via-green-600 to-lime-600"></div>
+        <div className="absolute inset-0 bg-linear-to-t from-[#1a4d3a]  via-[#1a4d3a] to-green-800 mask-t-from-95%"></div>
         <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
 
         <motion.div
@@ -527,17 +527,6 @@ const VisionValues = () => {
           </motion.div>
         </motion.div>
       </section>
-
-      <style jsx>{`
-        .bg-grid-pattern {
-          background-image: linear-gradient(
-              rgba(0, 0, 0, 0.05) 1px,
-              transparent 1px
-            ),
-            linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
-          background-size: 50px 50px;
-        }
-      `}</style>
     </div>
   );
 };
