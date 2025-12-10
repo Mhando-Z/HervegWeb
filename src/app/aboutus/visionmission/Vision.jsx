@@ -212,14 +212,14 @@ const VisionValues = () => {
       </section>
 
       {/* Vision Statement */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 ">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           className="max-w-5xl mx-auto"
         >
-          <div className="bg-linear-to-br from-gray-50 to-emerald-50 rounded-3xl p-10 md:p-16 shadow-xl border border-gray-100">
+          <div className="  rounded-3xl p-10 md:p-16  flex-col items-center justify-center text-center border border-gray-100">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Our Vision
             </h2>
