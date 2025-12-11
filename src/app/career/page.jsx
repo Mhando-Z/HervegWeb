@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import agents from "../../../public/images/05.jpg";
+import city from "../../../public/city.png";
 
 const CareersPage = () => {
   const [activeSection, setActiveSection] = useState("landing");
@@ -624,7 +625,12 @@ const CareersPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6  bg-gray-900  text-white">
+      <section className="py-20 px-6 md:px-0 bg-gray-900  text-white">
+        <Image
+          src={city}
+          alt="City"
+          className="w-full mb-8 mask-b-from-70% opacity-40 h-96 object-cover "
+        />
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
