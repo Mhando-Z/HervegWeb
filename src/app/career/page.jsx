@@ -19,6 +19,8 @@ import {
   GraduationCap,
   Mail,
 } from "lucide-react";
+import Image from "next/image";
+import agents from "../../../public/images/05.jpg";
 
 const CareersPage = () => {
   const [activeSection, setActiveSection] = useState("landing");
@@ -161,50 +163,57 @@ const CareersPage = () => {
   return (
     <div className="min-h-screen bg-linear-to-b from-green-50 to-white">
       {/* Hero Section */}
-      <motion.section
-        className="relative bg-linear-to-br from-green-600 to-green-800 text-white py-24 px-6"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-      >
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-center"
-          >
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Grow Your Impact With
-              <br />A Team Rooted in Purpose
-            </h1>
-            <p className="text-xl md:text-2xl text-green-100 max-w-3xl mx-auto mb-12">
-              Join HERVeg.05 where your work creates lasting change for farmers,
-              communities, and families across Tanzania
-            </p>
-            <div className="flex flex-wrap gap-4 justify-center">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-white text-green-700 px-8 py-4 rounded-lg font-semibold flex items-center gap-2 shadow-lg hover:shadow-xl transition-shadow"
-              >
-                View Open Positions <ArrowRight className="w-5 h-5" />
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-green-700 transition-colors"
-              >
-                Learn About Our Culture
-              </motion.button>
-            </div>
-          </motion.div>
-        </div>
-      </motion.section>
+      <div className="relative min-h-screen mask-b-from-80%">
+        <Image
+          src={agents}
+          alt="Career Hero"
+          className="absolute inset-0 w-full h-full object-cover mask-b-from-70% "
+        />
+        <motion.section
+          className="absolute top-0 left-0 right-0 bottom-0 mask-b-from-95% bg-linear-to-br min-h-screen from-green-700/20 to-green-800 text-white py-24 px-6"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+        >
+          <div className="max-w-6xl mx-auto  min-h-screen flex items-center justify-center">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.8 }}
+              className="text-center"
+            >
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">
+                Grow Your Impact With
+                <br />A Team Rooted in Purpose
+              </h1>
+              <p className="text-xl md:text-2xl text-green-100 max-w-3xl mx-auto mb-12">
+                Join HERVeg.05 where your work creates lasting change for
+                farmers, communities, and families across Tanzania
+              </p>
+              <div className="flex flex-wrap gap-4 justify-center">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="bg-white text-green-700 px-8 py-4 rounded-lg font-semibold flex items-center gap-2 shadow-lg hover:shadow-xl transition-shadow"
+                >
+                  View Open Positions <ArrowRight className="w-5 h-5" />
+                </motion.button>
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-green-700 transition-colors"
+                >
+                  Learn About Our Culture
+                </motion.button>
+              </div>
+            </motion.div>
+          </div>
+        </motion.section>
+      </div>
 
       {/* Quick Links Navigation */}
       <motion.section
-        className="bg-white shadow-md sticky top-0 z-40 border-b"
+        className="bg-white shadow-md hidden sticky top-0 z-40 border-b"
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
@@ -230,7 +239,7 @@ const CareersPage = () => {
       </motion.section>
 
       {/* Culture & Values Section */}
-      <section className="py-20 px-6">
+      <section className="py-20 px-6 mask-t-from-95%">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial="initial"
