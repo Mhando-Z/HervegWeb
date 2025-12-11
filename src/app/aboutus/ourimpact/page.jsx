@@ -21,6 +21,8 @@ import {
   Beaker,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
+import farmerImage from "../../../../public/hero/05.jpg";
 
 const ImpactPage = () => {
   const [activeSection, setActiveSection] = useState(null);
@@ -76,8 +78,16 @@ const ImpactPage = () => {
   return (
     <div className="min-h-screen bg-linear-to-br from-green-50 via-white to-emerald-50">
       {/* Hero Section */}
+      <div className="min-h-screen relative">
+        <Image
+          src={farmerImage}
+          alt="Farmer working in field"
+          className="w-full h-full object-cover mask-b-from-70% brightness-75"
+          priority
+        />
+      </div>
       <motion.section
-        className="relative overflow-hidden min-h-screen bg-linear-to-r mask-b-from-90% from-emerald-600 to-green-700 text-white py-20 px-6"
+        className="absolute top-0 left-0 right-0 bottom-0 overflow-hidden min-h-screen mask-b-from-90% bg-linear-to-r from-emerald-600/20 to-green-700 text-white py-20 px-6"
         initial="hidden"
         animate="visible"
       >
