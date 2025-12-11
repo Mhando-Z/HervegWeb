@@ -78,15 +78,15 @@ const ImpactPage = () => {
   return (
     <div className="min-h-screen bg-linear-to-br from-green-50 via-white to-emerald-50">
       {/* Hero Section */}
-      <div className="min-h-screen relative">
+      <div className="min-h-screen md:relative">
         <Image
           src={farmerImage}
           alt="Farmer working in field"
-          className="w-full h-full object-cover mask-b-from-70% brightness-75"
+          className="w-full h-full hidden md:block object-cover mask-b-from-70% brightness-75"
           priority
         />
         <motion.section
-          className="absolute top-0 left-0 right-0 bottom-0 overflow-hidden h-full mask-b-from-90% bg-linear-to-r from-emerald-600/20 to-green-700 text-white py-20 px-6"
+          className="md:absolute top-0 left-0 right-0 bottom-0 overflow-hidden h-full mask-b-from-90% bg-linear-to-r from-emerald-600 md:from-emerald-600/20 to-green-700 text-white py-20 px-6"
           initial="hidden"
           animate="visible"
         >
@@ -128,7 +128,7 @@ const ImpactPage = () => {
 
         {/* Quick Stats */}
         <motion.section
-          className="py-16 px-6 absolute bottom-0 right-0 left-0 "
+          className="py-16 px-6 md:absolute bottom-0 right-0 left-0 "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
