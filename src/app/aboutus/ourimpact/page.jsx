@@ -85,102 +85,104 @@ const ImpactPage = () => {
           className="w-full h-full object-cover mask-b-from-70% brightness-75"
           priority
         />
-      </div>
-      <motion.section
-        className="absolute top-0 left-0 right-0 bottom-0 overflow-hidden min-h-screen mask-b-from-90% bg-linear-to-r from-emerald-600/20 to-green-700 text-white py-20 px-6"
-        initial="hidden"
-        animate="visible"
-      >
-        <div className="max-w-6xl mx-auto min-h-screen items-center justify-center flex flex-col">
-          <motion.div variants={fadeInUp} className="text-center">
-            <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ duration: 0.5, type: "spring" }}
-              className="inline-block mb-6"
-            >
-              <Leaf className="w-16 h-16 mx-auto" />
-            </motion.div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">Our Impact</h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
-              We're helping farmers grow more than food — we're growing income,
-              resilience, and hope.
-            </p>
-          </motion.div>
-        </div>
-
-        {/* Decorative wave */}
-        <div className="absolute top-0 left-0 right-0">
-          <svg
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-            className="w-full h-full"
-          >
-            <path
-              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-              fill="#f0fdf4"
-              opacity="0.5"
-            ></path>
-          </svg>
-        </div>
-      </motion.section>
-
-      {/* Quick Stats */}
-      <motion.section
-        className="py-16 px-6 bg-white"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={staggerChildren}
-      >
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                icon: TrendingUp,
-                value: "34%",
-                label: "Increase in Vegetable Yields",
-                color: "emerald",
-              },
-              {
-                icon: DollarSign,
-                value: "$35",
-                label: "Average Monthly Income",
-                color: "amber",
-              },
-              {
-                icon: Sprout,
-                value: "97%",
-                label: "Poultry Survival Rate",
-                color: "green",
-              },
-              {
-                icon: Users,
-                value: "70%",
-                label: "Improved Diet Diversity",
-                color: "rose",
-              },
-            ].map((stat, idx) => (
+        <motion.section
+          className="absolute top-0 left-0 right-0 bottom-0 overflow-hidden h-full mask-b-from-90% bg-linear-to-r from-emerald-600/20 to-green-700 text-white py-20 px-6"
+          initial="hidden"
+          animate="visible"
+        >
+          <div className="max-w-6xl mx-auto min-h-screen items-center justify-center flex flex-col">
+            <motion.div variants={fadeInUp} className="text-center">
               <motion.div
-                key={idx}
-                variants={scaleIn}
-                whileHover={{ y: -8, transition: { duration: 0.3 } }}
-                className={`bg-linear-to-br from-${stat.color}-50 to-white p-6 rounded-2xl shadow-lg border border-${stat.color}-100`}
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ duration: 0.5, type: "spring" }}
+                className="inline-block mb-6"
               >
-                <stat.icon
-                  className={`w-12 h-12 text-${stat.color}-600 mb-4`}
-                />
-                <div
-                  className={`text-4xl font-bold text-${stat.color}-700 mb-2`}
-                >
-                  {stat.value}
-                </div>
-                <div className="text-gray-600 text-sm">{stat.label}</div>
+                <Leaf className="w-16 h-16 mx-auto" />
               </motion.div>
-            ))}
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">
+                Our Impact
+              </h1>
+              <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
+                We're helping farmers grow more than food — we're growing
+                income, resilience, and hope.
+              </p>
+            </motion.div>
           </div>
-        </div>
-      </motion.section>
+
+          {/* Decorative wave */}
+          <div className="absolute top-0 left-0 right-0">
+            <svg
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+              className="w-full h-full"
+            >
+              <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                fill="#f0fdf4"
+                opacity="0.5"
+              ></path>
+            </svg>
+          </div>
+        </motion.section>
+
+        {/* Quick Stats */}
+        <motion.section
+          className="py-16 px-6 absolute bottom-0 right-0 left-0 "
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={staggerChildren}
+        >
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                {
+                  icon: TrendingUp,
+                  value: "34%",
+                  label: "Increase in Vegetable Yields",
+                  color: "emerald",
+                },
+                {
+                  icon: DollarSign,
+                  value: "$35",
+                  label: "Average Monthly Income",
+                  color: "amber",
+                },
+                {
+                  icon: Sprout,
+                  value: "97%",
+                  label: "Poultry Survival Rate",
+                  color: "green",
+                },
+                {
+                  icon: Users,
+                  value: "70%",
+                  label: "Improved Diet Diversity",
+                  color: "rose",
+                },
+              ].map((stat, idx) => (
+                <motion.div
+                  key={idx}
+                  variants={scaleIn}
+                  whileHover={{ y: -8, transition: { duration: 0.3 } }}
+                  className={`bg-linear-to-br from-${stat.color}-50 to-white p-6 rounded-2xl shadow-lg border border-${stat.color}-100`}
+                >
+                  <stat.icon
+                    className={`w-12 h-12 text-${stat.color}-600 mb-4`}
+                  />
+                  <div
+                    className={`text-4xl font-bold text-${stat.color}-700 mb-2`}
+                  >
+                    {stat.value}
+                  </div>
+                  <div className="text-gray-600 text-sm">{stat.label}</div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </motion.section>
+      </div>
 
       {/* Navigation Cards */}
       <motion.section
