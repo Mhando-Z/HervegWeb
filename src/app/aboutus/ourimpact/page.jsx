@@ -80,7 +80,6 @@ const ImpactPage = () => {
         className="relative overflow-hidden min-h-screen bg-linear-to-r mask-b-from-90% from-emerald-600 to-green-700 text-white py-20 px-6"
         initial="hidden"
         animate="visible"
-        variants={fadeInUp}
       >
         <div className="max-w-6xl mx-auto min-h-screen items-center justify-center flex flex-col">
           <motion.div variants={fadeInUp} className="text-center">
