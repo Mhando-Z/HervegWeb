@@ -469,7 +469,7 @@ const CareersPage = () => {
       </section>
 
       {/* Internship Program Section */}
-      <section className="py-20 px-6 bg-gray-900 text-white">
+      <section className="py-20 px-6 bg-gray-900  text-white">
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial="initial"
@@ -583,6 +583,13 @@ const CareersPage = () => {
                   Able to commit at least 3 months (full- or part-time)
                 </span>
               </li>
+              <li className="flex items-start gap-3">
+                <ArrowRight className="w-5 h-5 text-green-400 shrink-0 mt-1" />
+                <span>
+                  Based in Tanzania (for onsite) or with strong internet (for
+                  remote)
+                </span>
+              </li>
             </ul>
           </motion.div>
 
@@ -602,7 +609,7 @@ const CareersPage = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-green-600 hover:bg-green-500 text-white px-10 py-4 rounded-lg font-semibold inline-flex items-center gap-2 shadow-lg transition-colors"
+              className="bg-green-600 hidden hover:bg-green-500 text-white px-10 py-4 rounded-lg font-semibold  items-center gap-2 shadow-lg transition-colors"
             >
               <Mail className="w-5 h-5" />
               Apply for Internship
@@ -615,7 +622,7 @@ const CareersPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-linear-to-r from-green-600 to-green-700 text-white">
+      <section className="py-20 px-6  bg-gray-900  text-white">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -625,19 +632,41 @@ const CareersPage = () => {
           >
             <Briefcase className="w-16 h-16 mx-auto mb-6" />
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Ready to Make an Impact?
+              Want to start your journey with us
             </h2>
             <p className="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
-              Explore our open positions and find where your skills can create
-              lasting change
+              Apply for an internship today and be part of a mission that puts
+              women, youth, and communities at the center of change. We review
+              applications on a rolling basis, and early applications are
+              encouraged. Please note, it may take us 2-3 weeks to get back to
+              you regarding the status of your application. In the meantime, we
+              encourage you to explore our open positions and apply for other
+              opportunities.
             </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-white text-green-700 px-10 py-4 rounded-lg font-bold text-lg inline-flex items-center gap-3 shadow-xl hover:shadow-2xl transition-shadow"
-            >
-              View All Job Openings <ArrowRight className="w-6 h-6" />
-            </motion.button>
+            <p>
+              To apply, please send your application to hr@herveg.org. In your
+              application, clearly state:
+            </p>
+            <div className="flex mt-2 flex-col items-center justify-center">
+              <ul className="space-y-3 text-gray-300">
+                <li className="flex items-start gap-3">
+                  <ArrowRight className="w-5 h-5 text-green-400 shrink-0 mt-1" />
+                  <span>What you want to do with us</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <ArrowRight className="w-5 h-5 text-green-400 shrink-0 mt-1" />
+                  <span>The duration of your time with us</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <ArrowRight className="w-5 h-5 text-green-400 shrink-0 mt-1" />
+                  <span>Why you want to work with us</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <ArrowRight className="w-5 h-5 text-green-400 shrink-0 mt-1" />
+                  <span>What you aim to achieve while working with us</span>
+                </li>
+              </ul>
+            </div>
           </motion.div>
         </div>
       </section>
