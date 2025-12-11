@@ -385,13 +385,6 @@ const ImpactPage = () => {
                 ))}
               </div>
             </motion.div>
-
-            <motion.div variants={fadeInUp} className="text-center">
-              <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 mx-auto">
-                Support a Farmer - $60
-                <ArrowRight className="w-6 h-6" />
-              </button>
-            </motion.div>
           </div>
         </motion.section>
       )}
@@ -553,13 +546,6 @@ const ImpactPage = () => {
                 ))}
               </div>
             </motion.div>
-
-            <motion.div variants={fadeInUp} className="text-center">
-              <button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 mx-auto">
-                Donate or Partner - $50
-                <ArrowRight className="w-6 h-6" />
-              </button>
-            </motion.div>
           </div>
         </motion.section>
       )}
@@ -697,13 +683,6 @@ const ImpactPage = () => {
                 ))}
               </div>
             </motion.div>
-
-            <motion.div variants={fadeInUp} className="text-center">
-              <button className="bg-rose-600 hover:bg-rose-700 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 mx-auto">
-                Support Nutrition Security
-                <ArrowRight className="w-6 h-6" />
-              </button>
-            </motion.div>
           </div>
         </motion.section>
       )}
@@ -817,13 +796,6 @@ const ImpactPage = () => {
                 </strong>
                 , ensuring we track progress and adjust practices based on data.
               </p>
-            </motion.div>
-
-            <motion.div variants={fadeInUp} className="text-center">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 mx-auto">
-                Support Climate Resilience
-                <ArrowRight className="w-6 h-6" />
-              </button>
             </motion.div>
           </div>
         </motion.section>
