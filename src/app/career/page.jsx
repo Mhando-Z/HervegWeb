@@ -160,12 +160,12 @@ const CareersPage = () => {
   ];
 
   const qualities = [
-    "You care about rural communities and see them as people with stories and dreams",
-    "You believe in women and youth as leaders and changemakers",
-    "You're driven by purpose, not position—ready to roll up your sleeves",
-    "You adapt and keep going when plans change and challenges arise",
-    "You work well with others, sharing credit and supporting the team",
-    "You think and act, asking smart questions and solving problems",
+    "You care about rural communities: You don’t see them as statistics. You see them as people—with stories, challenges, and dreams. You want to listen, learn, and help them grow stronger.",
+    "You believe in women and youth: We work where young people and women often get left behind. You’re someone who wants to change that—by supporting, training, and leading with them.",
+    "You’re driven by purpose, not position: We’re not here for titles. We’re here for impact. If you’re someone who rolls up your sleeves, takes initiative, and stays humble, you’ll thrive here.",
+    "You adapt and keep going: Plans change. Roads flood. Meetings move under trees. You don’t freeze—you adjust. You stay calm, find solutions, and keep the work moving",
+    "You work well with others: We’re a team. That means sharing credit, asking for help, and giving support. We grow faster when we grow together.",
+    "You think and act: You ask smart questions and you don’t wait for permission to solve a problem. You balance doing the work with thinking deeply about how to do it better.",
   ];
 
   return (
