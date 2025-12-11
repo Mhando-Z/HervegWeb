@@ -1,7 +1,7 @@
 import React from "react";
 import HeroSect from "../HeroSect";
 import OurStory from "../OurStory";
-import SuccessStories from "../Success";
+import SuccessStories from "../successstories/Success";
 
 function AboutUs() {
   return (
