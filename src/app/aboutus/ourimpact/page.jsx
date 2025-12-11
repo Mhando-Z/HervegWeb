@@ -26,12 +26,12 @@ const ImpactPage = () => {
   const [activeSection, setActiveSection] = useState(null);
 
   const fadeInUp = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 1, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
 
   const staggerChildren = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 1 },
     visible: {
       opacity: 1,
       transition: {
@@ -41,7 +41,7 @@ const ImpactPage = () => {
   };
 
   const scaleIn = {
-    hidden: { scale: 0.8, opacity: 0 },
+    hidden: { scale: 0.8, opacity: 1 },
     visible: { scale: 1, opacity: 1, transition: { duration: 0.5 } },
   };
 
@@ -226,9 +226,9 @@ const ImpactPage = () => {
       {/* Income & Yield Growth Section */}
       {activeSection === "income" && (
         <motion.section
-          initial={{ opacity: 0, height: 0 }}
+          initial={{ opacity: 1, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
-          exit={{ opacity: 0, height: 0 }}
+          exit={{ opacity: 1, height: 0 }}
           className="py-16 px-6 bg-linear-to-br from-emerald-50 to-white"
         >
           <div className="max-w-6xl mx-auto">
@@ -388,9 +388,9 @@ const ImpactPage = () => {
       {/* Poultry Sustainability Section */}
       {activeSection === "poultry" && (
         <motion.section
-          initial={{ opacity: 0, height: 0 }}
+          initial={{ opacity: 1, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
-          exit={{ opacity: 0, height: 0 }}
+          exit={{ opacity: 1, height: 0 }}
           className="py-16 px-6 bg-linear-to-br from-amber-50 to-white"
         >
           <div className="max-w-6xl mx-auto">
@@ -556,9 +556,9 @@ const ImpactPage = () => {
       {/* Nutrition Section */}
       {activeSection === "nutrition" && (
         <motion.section
-          initial={{ opacity: 0, height: 0 }}
+          initial={{ opacity: 1, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
-          exit={{ opacity: 0, height: 0 }}
+          exit={{ opacity: 1, height: 0 }}
           className="py-16 px-6 bg-linear-to-br from-rose-50 to-white"
         >
           <div className="max-w-6xl mx-auto">
@@ -700,9 +700,9 @@ const ImpactPage = () => {
       {/* Resilience Section */}
       {activeSection === "resilience" && (
         <motion.section
-          initial={{ opacity: 0, height: 0 }}
+          initial={{ opacity: 1, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
-          exit={{ opacity: 0, height: 0 }}
+          exit={{ opacity: 1, height: 0 }}
           className="py-16 px-6 bg-linear-to-br from-blue-50 to-white"
         >
           <div className="max-w-6xl mx-auto">
@@ -821,9 +821,9 @@ const ImpactPage = () => {
       {/* Methodology Section */}
       {activeSection === "methodology" && (
         <motion.section
-          initial={{ opacity: 0, height: 0 }}
+          initial={{ opacity: 1, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
-          exit={{ opacity: 0, height: 0 }}
+          exit={{ opacity: 1, height: 0 }}
           className="py-16 px-6 bg-linear-to-br from-purple-50 to-white"
         >
           <div className="max-w-6xl mx-auto">
