@@ -523,6 +523,39 @@ const CareersPage = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            className="bg-gray-800 p-8 rounded-xl mb-8"
+          >
+            <h3 className="text-2xl font-bold mb-4 text-green-400">
+              What We Offer
+            </h3>
+            <ul className="space-y-3 text-gray-300">
+              <li className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-green-400 shrink-0 mt-1" />
+                <span>Real projects that make a difference</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-green-400 shrink-0 mt-1" />
+                <span>Mentorship and support from our team</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-green-400 shrink-0 mt-1" />
+                <span>A certificate of completion</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-green-400 shrink-0 mt-1" />
+                <span>Flexible working hours</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-green-400 shrink-0 mt-1" />
+                <span>A chance to grow with us if opportunities open</span>
+              </li>
+            </ul>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ delay: 0.1 }}
             className="bg-gray-800 p-8 rounded-xl mb-8"
           >
