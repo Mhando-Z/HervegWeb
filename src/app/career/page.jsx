@@ -83,33 +83,41 @@ const CareersPage = () => {
       name: "Oscar Mugulusi",
       role: "Sales Lead",
       quote:
-        "I'm not just selling inputs—I'm helping a mother feed her family and a youth start their first agribusiness. Every sale is personal.",
+        "I came from a retail background, but working at HERVeg.05 opened my eyes. I’m not just selling inputs—I’m helping a mother feed her family and a youth start their first agribusiness. Every sale is personal.",
       description:
-        "Leads sales team across multiple districts, trains field agents, and ensures products reach remote customers.",
+        "Zawadi leads our sales team across multiple districts. She trains field agents, manages inventory, and ensures our products reach even the most remote customers—on time and affordably",
     },
     {
       name: "Patricia Pangani",
       role: "Finance Manager",
       quote:
-        "Numbers tell stories. I track every shilling because I know our budgets feed real people, fund local jobs, and support future growth.",
+        "Numbers tell stories. I track every shilling because I know our budgets feed real people, fund local jobs, and support future growth. That responsibility matters to me.",
       description:
-        "Keeps books clean and spending focused, managing VSLA transactions to budgeting field logistics.",
+        "Bakari keeps our books clean and our spending focused. From managing VSLA transactions to budgeting field logistics, he ensures every coin is used for impact.",
     },
     {
       name: "Mhando Zuberi",
       role: "IT Support",
       quote:
-        "I grew up in a rural area, so building simple digital tools for farmers is more than a job—it's personal.",
+        "I grew up in a rural area, so building simple digital tools for farmers is more than a job—it’s personal. I make sure our systems work, even when networks don’t.",
       description:
-        "Designs and troubleshoots tech solutions powering mobile layaway systems and farmer records.",
+        "Mhando helps design and troubleshoot tech solutions that power our mobile layaway system and farmer records. He also supports our team with on-the-ground tech training",
     },
     {
       name: "Hilda Sanga",
+      role: "Call Center Officer",
+      quote:
+        "My job is to ask: Is it working? I visit farms, gather feedback, and track the results that matter—more harvests, better nutrition, and lasting change.",
+      description:
+        "Hilda monitors everything from yield improvements to household diet diversity. Her data helps us learn fast, improve faster, and scale smarter.",
+    },
+    {
+      name: "Yohana Msemo",
       role: "Impact Officer",
       quote:
-        "My job is to ask: Is it working? I visit farms, gather feedback, and track the results that matter.",
+        "I’m the first voice many farmers hear. When they call, I listen. Sometimes they just need help. Other times, they just need someone to believe in their potential.",
       description:
-        "Monitors yield improvements to household diet diversity, helping the team learn and scale smarter.",
+        "Yohana answers farmer questions, follows up on deliveries, and makes sure no concern goes unheard. Her work helps build the trust that powers our entire model.",
     },
   ];
 
@@ -117,37 +125,37 @@ const CareersPage = () => {
     {
       number: "01",
       icon: <FileText className="w-6 h-6" />,
-      title: "Online Application",
+      title: "Online Application and Plum Test",
       description:
-        "Share your story and why HERVeg.05 matters to you. We look for people genuinely connected to our mission.",
+        "This is where it starts. We ask a few thoughtful questions about who you are, what drives you, and why HERVeg.05 matters to you. We look for people who are not just qualified, but genuinely connected to our mission.",
     },
     {
       number: "02",
       icon: <MessageCircle className="w-6 h-6" />,
       title: "Intro Interview",
       description:
-        "A friendly call to hear your story, understand your motivation, and answer your questions.",
+        "If your application catches our eye, we’ll schedule a short call. This is a chance to hear your story, understand your motivation, and answer your early questions. It’s friendly and relaxed—we’re just getting to know each other.",
     },
     {
       number: "03",
       icon: <CheckCircle className="w-6 h-6" />,
       title: "Role Task",
       description:
-        "A practical task showing how you think, solve problems, and communicate. It's a window into your approach.",
+        "We’ll send you a task or case based on the job you applied for. It’s not a test—it’s a window into how you think, solve problems, and communicate. We want to see how you approach real challenges, with clarity and creativity.",
     },
     {
       number: "04",
       icon: <MapPin className="w-6 h-6" />,
       title: "Field Visit",
       description:
-        "Spend a day in the field with our team. See the impact up close and feel what it's like to work with us.",
+        "Here’s where it gets real. We’ll invite you to spend a day in the field—either shadowing our team or engaging with the people we serve.Why? Because you can’t fully understand HERVeg.05 from behind a desk. This is your chance to see the impact up close and feel what it’s like to work in our setting",
     },
     {
       number: "05",
       icon: <Video className="w-6 h-6" />,
       title: "Final Interview",
       description:
-        "A deeper conversation with leadership about your experience and what success in this role looks like.",
+        "This is the last step—a longer conversation with our leadership or program team. We’ll dive deeper into your experience, talk through your field visit, and explore what success in this role would look like. By this point, you’ll have a real feel for HERVeg.05. And we’ll have a clear sense of how you’d grow with us.",
     },
   ];
 
