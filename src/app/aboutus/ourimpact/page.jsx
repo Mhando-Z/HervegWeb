@@ -86,7 +86,7 @@ const ImpactPage = () => {
           priority
         />
         <motion.section
-          className="md:absolute top-0 left-0 right-0 bottom-0 overflow-hidden h-full mask-b-from-90% bg-linear-to-r from-emerald-600 md:from-emerald-600/20 to-green-700 text-white py-20 px-6"
+          className="md:absolute top-0 left-0 right-0 bottom-0 overflow-hidden h-full mask-b-from-90% bg-linear-to-r from-emerald-600 md:from-emerald-600/20 md:to-green-700/80 to-green-700 text-white py-20 px-6"
           initial="hidden"
           animate="visible"
         >
