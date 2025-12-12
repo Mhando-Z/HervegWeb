@@ -15,6 +15,7 @@ import {
 import Donorbox from "./Donorbox";
 import Image from "next/image";
 import donateHero from "../../../public/hero/03.jpg";
+import woman from "../../../public/aboutus/01.jpg";
 
 const DonatePage = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
