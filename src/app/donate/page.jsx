@@ -102,20 +102,20 @@ const DonatePage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+    <div className="min-h-screen bg-linear-to-b from-green-50 to-white">
       {/* Hero Section */}
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-600 to-emerald-700 text-white overflow-hidden"
+        className="relative py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-r from-green-600 to-emerald-700 text-white overflow-hidden"
       >
         <div className="absolute inset-0 opacity-10">
           <div
             className="absolute inset-0"
             style={{
               backgroundImage:
-                "radial-gradient(circle at 2px 2px, white 1px, transparent 0)",
+                "radial-linear(circle at 2px 2px, white 1px, transparent 0)",
               backgroundSize: "40px 40px",
             }}
           />
@@ -197,7 +197,7 @@ const DonatePage = () => {
                 className="relative bg-white rounded-2xl shadow-lg overflow-hidden cursor-pointer"
               >
                 <div
-                  className={`absolute top-0 left-0 right-0 h-2 bg-gradient-to-r ${impact.color}`}
+                  className={`absolute top-0 left-0 right-0 h-2 bg-linear-to-r ${impact.color}`}
                 />
 
                 <div className="p-6">
@@ -207,7 +207,7 @@ const DonatePage = () => {
                         rotate: hoveredCard === index ? 360 : 0,
                       }}
                       transition={{ duration: 0.6 }}
-                      className={`p-3 rounded-xl bg-gradient-to-br ${impact.color} text-white`}
+                      className={`p-3 rounded-xl bg-linear-to-br ${impact.color} text-white`}
                     >
                       {impact.icon}
                     </motion.div>
@@ -328,7 +328,7 @@ const DonatePage = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-green-600 to-emerald-600 text-white text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-shadow"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-linear-to-r from-green-600 to-emerald-600 text-white text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-shadow"
           >
             <Heart className="w-6 h-6" />
             Give Now
@@ -337,7 +337,7 @@ const DonatePage = () => {
       </section>
 
       {/* Other Ways Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-gray-50 to-white">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -365,7 +365,7 @@ const DonatePage = () => {
                 whileHover={{ y: -8, scale: 1.02 }}
                 className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow cursor-pointer"
               >
-                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center text-white mb-4">
+                <div className="w-12 h-12 bg-linear-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center text-white mb-4">
                   {way.icon}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
