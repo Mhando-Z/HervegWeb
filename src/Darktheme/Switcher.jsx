@@ -1,12 +1,10 @@
 "use client";
 
-// Switcher.jsx
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Moon, Sun } from "lucide-react";
 import useDarkSide from "./useDarkSide";
 import { usePathname } from "next/navigation";
-import { useContext } from "react";
 
 const Switcher = () => {
   const [colorTheme, setTheme] = useDarkSide();
@@ -24,9 +22,7 @@ const Switcher = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", toggleVisibility);
-    return () => {
-      window.removeEventListener("scroll", toggleVisibility);
-    };
+    return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
   useEffect(() => {
@@ -47,28 +43,20 @@ const Switcher = () => {
   };
 
   const iconVariants = {
-    initial: {
-      scale: 0,
-      opacity: 0,
-      rotate: -90,
-    },
-    animate: {
-      scale: 1,
-      opacity: 1,
-      rotate: 0,
-    },
-    exit: {
-      scale: 0,
-      opacity: 0,
-      rotate: 90,
-    },
+    initial: { scale: 0, opacity: 0, rotate: -90 },
+    animate: { scale: 1, opacity: 1, rotate: 0 },
+    exit: { scale: 0, opacity: 0, rotate: 90 },
   };
+
+  // 👇 NEW: Allowed light-background routes
+  const lightRoutes = ["/", "/donate", "/career"];
+  const isLightRoute = lightRoutes.includes(location);
 
   return (
     <div className="flex items-center justify-center">
       <button
         onClick={toggleDarkMode}
-        className={`relative  rounded-lg transition-all duration-500 hover:scale-110`}
+        className="relative rounded-lg transition-all duration-500 hover:scale-110"
         aria-label="Toggle theme"
       >
         <div className="relative w-6 h-6">
@@ -100,17 +88,15 @@ const Switcher = () => {
                 className="absolute inset-0"
               >
                 <Sun
-                  className={`w-6 h-6  ${
-                    location !== "/"
-                      ? "text-black"
-                      : Visible
-                      ? "text-black"
-                      : "text-white"
+                  className={`w-6 h-6 ${
+                    isLightRoute
+                      ? Visible
+                        ? "text-black"
+                        : "text-white"
+                      : "text-black"
                   }`}
                   strokeWidth={2}
-                  fill={`${
-                    location !== "/" ? "black" : Visible ? "black" : "white"
-                  }`}
+                  fill={isLightRoute ? (Visible ? "black" : "white") : "black"}
                 />
               </motion.div>
             )}

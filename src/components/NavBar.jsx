@@ -103,7 +103,11 @@ function NavBar() {
                   }`}
                 />
                 <Image
-                  src={pathname === "/" ? logo1 : logo}
+                  src={
+                    ["/", "/career", "/donate"].includes(pathname)
+                      ? logo1
+                      : logo
+                  }
                   alt="Historical association of Tanzania Logo"
                   className={`lg:w-40 w-[120px] ${
                     visible ? "hidden" : "block"
