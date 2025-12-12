@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import {
   Sprout,
@@ -18,6 +18,22 @@ import donateHero from "../../../public/hero/03.jpg";
 
 const DonatePage = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
+  const [Visible, setIsVisible] = useState(false);
+
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 5) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
+  }, []);
 
   const donationImpacts = [
     {
@@ -107,11 +123,15 @@ const DonatePage = () => {
   return (
     <div className="min-h-screen bg-linear-to-b from-green-50 to-white">
       {/* Hero Section */}
-      <div className="min-h-screen relative mask-b-from-90%">
+      <div
+        className={`min-h-screen relative ${Visible ? "mask-b-from-90%" : ""}`}
+      >
         <Image
           src={donateHero}
           alt="Donate Hero"
-          className="absolute hidden md:block inset-0 w-full h-full object-cover brightness-75 mask-b-from-90%"
+          className={`absolute hidden md:block inset-0 w-full h-full object-cover brightness-75 ${
+            Visible ? "mask-b-from-90%" : ""
+          }`}
           priority
         />
         <motion.section

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import {
   Sprout,
@@ -25,6 +25,22 @@ import city from "../../../public/city.png";
 
 const CareersPage = () => {
   const [activeSection, setActiveSection] = useState("landing");
+  const [Visible, setIsVisible] = useState(false);
+
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 5) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
+  }, []);
 
   const fadeInUp = {
     initial: { opacity: 0, y: 30 },
@@ -172,14 +188,20 @@ const CareersPage = () => {
   return (
     <div className="min-h-screen bg-linear-to-b from-green-50 to-white">
       {/* Hero Section */}
-      <div className="relative min-h-screen mask-b-from-80%">
+      <div
+        className={`relative min-h-screen ${Visible ? "mask-b-from-80%" : ""}`}
+      >
         <Image
           src={agents}
           alt="Career Hero"
-          className="absolute inset-0 w-full h-full object-cover mask-b-from-70% "
+          className={`absolute inset-0 w-full h-full object-cover ${
+            Visible ? "mask-b-from-70%" : ""
+          }`}
         />
         <motion.section
-          className="absolute top-0 left-0 right-0 bottom-0 mask-b-from-95% bg-linear-to-br min-h-screen from-green-700/20 to-green-800 text-white py-24 px-6"
+          className={`absolute top-0 left-0 right-0 bottom-0 ${
+            Visible ? "mask-b-from-95%" : ""
+          } bg-linear-to-br min-h-screen from-green-700/20 to-green-800 text-white py-24 px-6`}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
