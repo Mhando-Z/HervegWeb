@@ -224,7 +224,7 @@ const DonatePage = () => {
                 className="relative bg-white rounded-2xl shadow-lg overflow-hidden cursor-pointer"
               >
                 <div
-                  className={`absolute top-0 left-0 right-0 h-2 bg-linear-to-r ${impact.color}`}
+                  className={`absolute hidden top-0 left-0 right-0 h-2 bg-linear-to-r ${impact.color}`}
                 />
 
                 <div className="p-6">
