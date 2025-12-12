@@ -12,6 +12,9 @@ import {
   HandHeart,
   BadgeDollarSign,
 } from "lucide-react";
+import Donorbox from "./Donorbox";
+import Image from "next/image";
+import donateHero from "../../../public/hero/03.jpg";
 
 const DonatePage = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -104,62 +107,66 @@ const DonatePage = () => {
   return (
     <div className="min-h-screen bg-linear-to-b from-green-50 to-white">
       {/* Hero Section */}
-      <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-        className="relative py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-r from-green-600 to-emerald-700 text-white overflow-hidden"
-      >
-        <div className="absolute inset-0 opacity-10">
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage:
-                "radial-linear(circle at 2px 2px, white 1px, transparent 0)",
-              backgroundSize: "40px 40px",
-            }}
-          />
-        </div>
+      <div className="min-h-screen relative mask-b-from-90%">
+        <Image
+          src={donateHero}
+          alt="Donate Hero"
+          className="absolute hidden md:block inset-0 w-full h-full object-cover brightness-75 mask-b-from-90%"
+          priority
+        />
+        <motion.section
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          className="md:absolute top-0  bottom-0 left-0 right-0  py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-r md:from-green-600/40 from-green-600 md:to-emerald-700/80 to-emerald-700 text-white overflow-hidden"
+        >
+          <div className="container gap-5 min-h-screen justify-between flex flex-col md:flex-row  mx-auto">
+            <div className="w-full flex flex-col  items-start justify-center">
+              <motion.div
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="inline-block mb-6"
+              >
+                <Sprout className="w-16 h-16 mx-auto" />
+              </motion.div>
 
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="inline-block mb-6"
-          >
-            <Sprout className="w-16 h-16 mx-auto" />
-          </motion.div>
+              <motion.h1
+                initial={{ y: -20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="text-4xl sm:text-5xl font-bold mb-4"
+              >
+                Donate
+              </motion.h1>
 
-          <motion.h1
-            initial={{ y: -20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-4xl sm:text-5xl font-bold mb-4"
-          >
-            Donate
-          </motion.h1>
+              <motion.p
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className="text-xl sm:text-2xl mb-3"
+              >
+                Empower young farmers. Cultivate resilience.
+              </motion.p>
 
-          <motion.p
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-xl sm:text-2xl mb-3"
-          >
-            Empower young farmers. Cultivate resilience.
-          </motion.p>
+              <motion.p
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+                className="text-lg opacity-90 max-w-2xl "
+              >
+                Your donation makes this possible. Every gift helps build a
+                stronger, more resilient food system—starting at the village
+                level.
+              </motion.p>
+            </div>
 
-          <motion.p
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="text-lg opacity-90 max-w-2xl mx-auto"
-          >
-            Your donation makes this possible. Every gift helps build a
-            stronger, more resilient food system—starting at the village level.
-          </motion.p>
-        </div>
-      </motion.section>
+            <div className="flex flex-col items-center justify-center w-full">
+              <Donorbox />
+            </div>
+          </div>
+        </motion.section>
+      </div>
 
       {/* Impact Cards Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
