@@ -37,7 +37,7 @@ const awards = [
     description:
       "Honored for unlocking economic opportunity in last-mile communities through VSLAs.",
     icon: Trophy,
-    color: "from-amber-500 to-green-500",
+    color: "from-green-500 to-emerald-500",
   },
   {
     id: 4,
@@ -55,7 +55,7 @@ const awards = [
     description:
       "Excellence in innovative agricultural solutions and community impact.",
     icon: Award,
-    color: "from-rose-500 to-green-500",
+    color: "from-cyan-500 to-green-500",
   },
 ];
 
