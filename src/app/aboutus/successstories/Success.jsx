@@ -311,7 +311,7 @@ export default function SuccessStories() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className=" mb-16"
+          className=" mb-5"
         >
           <motion.div
             initial={{ scale: 0 }}
@@ -440,10 +440,10 @@ export default function SuccessStories() {
                             transition={{ delay: 0.1 * index }}
                             className="relative my-8"
                           >
-                            <div className="absolute -left-2 -top-2">
+                            <div className="absolute -left-2 -top-2 z-10">
                               <Quote className="w-10 h-10 text-emerald-200" />
                             </div>
-                            <blockquote className="relative bg-linear-to-br from-emerald-50 to-teal-50 border-l-4 border-emerald-500 pl-8 pr-6 py-6 rounded-r-2xl shadow-sm">
+                            <blockquote className="relative bg-linear-to-br from-emerald-50 to-teal-50  border-emerald-500 pl-8 pr-6 py-6 rounded-r-2xl shadow-sm">
                               <p className="text-gray-800 italic text-lg leading-relaxed mb-3">
                                 "{section.content}"
                               </p>
@@ -451,6 +451,9 @@ export default function SuccessStories() {
                                 — {section.author}
                               </footer>
                             </blockquote>
+                            <div className="absolute -right-2 -bottom-2 z-10">
+                              <Quote className="w-10 h-10 text-emerald-200" />
+                            </div>
                           </motion.div>
                         );
                       } else if (section.type === "profile") {
