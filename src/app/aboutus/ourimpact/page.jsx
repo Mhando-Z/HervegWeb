@@ -147,7 +147,7 @@ const ImpactPage = () => {
                   icon: DollarSign,
                   value: "$35",
                   label: "Average Monthly Income",
-                  color: "amber",
+                  color: "emerald",
                 },
                 {
                   icon: Sprout,
@@ -159,7 +159,7 @@ const ImpactPage = () => {
                   icon: Users,
                   value: "70%",
                   label: "Improved Diet Diversity",
-                  color: "rose",
+                  color: "green",
                 },
               ].map((stat, idx) => (
                 <motion.div
