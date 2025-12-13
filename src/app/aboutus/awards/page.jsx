@@ -19,7 +19,7 @@ const awards = [
     description:
       "Acknowledged for creating impactful change through grassroots leadership in women farming",
     icon: Users,
-    color: "from-purple-500 to-pink-500",
+    color: "from-green-500 to-emerald-500",
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ const awards = [
     description:
       "Honored for unlocking economic opportunity in last-mile communities through VSLAs.",
     icon: Trophy,
-    color: "from-amber-500 to-orange-500",
+    color: "from-amber-500 to-green-500",
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const awards = [
     description:
       "Recognized for our circular, community-driven farming systems prioritizing youth and women.",
     icon: Target,
-    color: "from-blue-500 to-cyan-500",
+    color: "from-green-500 to-cyan-500",
   },
   {
     id: 5,
@@ -55,7 +55,7 @@ const awards = [
     description:
       "Excellence in innovative agricultural solutions and community impact.",
     icon: Award,
-    color: "from-rose-500 to-red-500",
+    color: "from-rose-500 to-green-500",
   },
 ];
 
