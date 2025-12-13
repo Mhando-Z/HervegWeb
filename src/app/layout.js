@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 
 export const metadata = {
-  title: "Herveg",
+  title: "Herveg.05",
   description:
     "We combat malnutrition by providing nutrient-dense vegetable and poultry bundles to women rural farmers. The protein-rich chickens and home planted nutrient vegetables are crucial for improving dietary diversity and health outcomes in women communities with limited access to nutritious food.",
 };
