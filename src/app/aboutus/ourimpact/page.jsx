@@ -58,7 +58,7 @@ const ImpactPage = () => {
       id: "poultry",
       title: "Poultry Sustainability",
       icon: Sprout,
-      color: "green",
+      color: "emerald",
     },
     {
       id: "nutrition",
@@ -66,7 +66,7 @@ const ImpactPage = () => {
       icon: Heart,
       color: "emerald",
     },
-    { id: "resilience", title: "Resilience", icon: Shield, color: "green" },
+    { id: "resilience", title: "Resilience", icon: Shield, color: "emerald" },
     {
       id: "methodology",
       title: "How We Measure Impact",
@@ -556,11 +556,11 @@ const ImpactPage = () => {
           initial={{ opacity: 1, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
           exit={{ opacity: 1, height: 0 }}
-          className="py-16 px-6 bg-linear-to-br from-rose-50 to-white"
+          className="py-16 px-6 bg-linear-to-br from-green-50 to-white"
         >
           <div className="max-w-6xl mx-auto">
             <motion.div variants={fadeInUp} className="mb-12">
-              <h2 className="text-4xl font-bold mb-4 text-rose-800">
+              <h2 className="text-4xl font-bold mb-4 text-green-800">
                 Nutrition & Food Security
               </h2>
               <p className="text-xl text-gray-700">
@@ -581,7 +581,7 @@ const ImpactPage = () => {
                   whileHover={{ scale: 1.05 }}
                   className="bg-white p-6 rounded-2xl shadow-lg text-center"
                 >
-                  <div className="text-4xl font-bold text-rose-600 mb-2">
+                  <div className="text-4xl font-bold text-green-600 mb-2">
                     {stat.value}
                   </div>
                   <div className="text-gray-600 text-sm">{stat.label}</div>
@@ -592,7 +592,7 @@ const ImpactPage = () => {
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <motion.div
                 variants={fadeInUp}
-                className="bg-linear-to-br from-rose-600 to-rose-700 text-white p-8 rounded-2xl shadow-lg"
+                className="bg-linear-to-br from-green-600 to-green-700 text-white p-8 rounded-2xl shadow-lg"
               >
                 <Heart className="w-12 h-12 mb-4" />
                 <h3 className="text-2xl font-bold mb-4">Farmer Story</h3>
@@ -610,7 +610,7 @@ const ImpactPage = () => {
                 variants={fadeInUp}
                 className="bg-white p-8 rounded-2xl shadow-lg"
               >
-                <h3 className="text-2xl font-bold mb-6 text-rose-700">
+                <h3 className="text-2xl font-bold mb-6 text-green-700">
                   Program Impact
                 </h3>
                 <div className="space-y-4">
@@ -633,11 +633,11 @@ const ImpactPage = () => {
                   ].map((item, idx) => (
                     <div
                       key={idx}
-                      className="flex gap-4 p-4 bg-rose-50 rounded-xl"
+                      className="flex gap-4 p-4 bg-green-50 rounded-xl"
                     >
-                      <item.icon className="w-8 h-8 text-rose-600 shrink-0" />
+                      <item.icon className="w-8 h-8 text-green-600 shrink-0" />
                       <div>
-                        <h4 className="font-bold text-rose-800 mb-1">
+                        <h4 className="font-bold text-green-800 mb-1">
                           {item.title}
                         </h4>
                         <p className="text-gray-700 text-sm">{item.desc}</p>
@@ -652,7 +652,7 @@ const ImpactPage = () => {
               variants={fadeInUp}
               className="bg-white p-8 rounded-2xl shadow-lg mb-8"
             >
-              <h3 className="text-2xl font-bold mb-6 text-rose-700 flex items-center gap-3">
+              <h3 className="text-2xl font-bold mb-6 text-green-700 flex items-center gap-3">
                 <BarChart3 className="w-8 h-8" />
                 Data-Driven Monitoring
               </h3>
@@ -673,9 +673,9 @@ const ImpactPage = () => {
                 ].map((metric, idx) => (
                   <div
                     key={idx}
-                    className="p-6 bg-rose-50 rounded-xl text-center"
+                    className="p-6 bg-green-50 rounded-xl text-center"
                   >
-                    <div className="text-2xl font-bold text-rose-600 mb-2">
+                    <div className="text-2xl font-bold text-green-600 mb-2">
                       {metric.title}
                     </div>
                     <p className="text-gray-700 text-sm">{metric.desc}</p>
@@ -693,11 +693,11 @@ const ImpactPage = () => {
           initial={{ opacity: 1, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
           exit={{ opacity: 1, height: 0 }}
-          className="py-16 px-6 bg-linear-to-br from-blue-50 to-white"
+          className="py-16 px-6 bg-linear-to-br from-green-50 to-white"
         >
           <div className="max-w-6xl mx-auto">
             <motion.div variants={fadeInUp} className="mb-12">
-              <h2 className="text-4xl font-bold mb-4 text-blue-800">
+              <h2 className="text-4xl font-bold mb-4 text-green-800">
                 Building Climate Resilience
               </h2>
               <p className="text-xl text-gray-700">
@@ -720,8 +720,8 @@ const ImpactPage = () => {
                   whileHover={{ scale: 1.05 }}
                   className="bg-white p-8 rounded-2xl shadow-lg text-center"
                 >
-                  <stat.icon className="w-16 h-16 text-blue-600 mx-auto mb-4" />
-                  <div className="text-5xl font-bold text-blue-700 mb-2">
+                  <stat.icon className="w-16 h-16 text-green-600 mx-auto mb-4" />
+                  <div className="text-5xl font-bold text-green-700 mb-2">
                     {stat.value}
                   </div>
                   <div className="text-gray-600 text-lg">{stat.label}</div>
@@ -732,7 +732,7 @@ const ImpactPage = () => {
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <motion.div
                 variants={fadeInUp}
-                className="bg-linear-to-br from-blue-600 to-blue-700 text-white p-8 rounded-2xl shadow-lg"
+                className="bg-linear-to-br from-green-600 to-green-700 text-white p-8 rounded-2xl shadow-lg"
               >
                 <Shield className="w-12 h-12 mb-4" />
                 <h3 className="text-2xl font-bold mb-4">Farmer Story</h3>
@@ -767,9 +767,9 @@ const ImpactPage = () => {
                 ].map((item, idx) => (
                   <div key={idx} className="bg-white p-6 rounded-xl shadow-lg">
                     <div className="flex items-start gap-4">
-                      <item.icon className="w-10 h-10 text-blue-600 shrink-0" />
+                      <item.icon className="w-10 h-10 text-green-600 shrink-0" />
                       <div>
-                        <h4 className="font-bold text-lg text-blue-800 mb-2">
+                        <h4 className="font-bold text-lg text-green-800 mb-2">
                           {item.title}
                         </h4>
                         <p className="text-gray-700">{item.desc}</p>
@@ -784,7 +784,7 @@ const ImpactPage = () => {
               variants={fadeInUp}
               className="bg-white p-8 rounded-2xl shadow-lg mb-8"
             >
-              <h3 className="text-2xl font-bold mb-4 text-blue-700 flex items-center gap-3">
+              <h3 className="text-2xl font-bold mb-4 text-green-700 flex items-center gap-3">
                 <BarChart3 className="w-8 h-8" />
                 Data-Driven Monitoring
               </h3>
@@ -807,11 +807,11 @@ const ImpactPage = () => {
           initial={{ opacity: 1, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
           exit={{ opacity: 1, height: 0 }}
-          className="py-16 px-6 bg-linear-to-br from-purple-50 to-white"
+          className="py-16 px-6 bg-linear-to-br from-green-50 to-white"
         >
           <div className="max-w-6xl mx-auto">
             <motion.div variants={fadeInUp} className="mb-12">
-              <h2 className="text-4xl font-bold mb-4 text-purple-800">
+              <h2 className="text-4xl font-bold mb-4 text-green-800">
                 How We Measure Impact
               </h2>
               <p className="text-xl text-gray-700">
@@ -824,7 +824,7 @@ const ImpactPage = () => {
               variants={fadeInUp}
               className="bg-white p-8 rounded-2xl shadow-lg mb-8"
             >
-              <h3 className="text-2xl font-bold mb-4 text-purple-700 flex items-center gap-3">
+              <h3 className="text-2xl font-bold mb-4 text-green-700 flex items-center gap-3">
                 <Target className="w-8 h-8" />
                 What is Impact?
               </h3>
@@ -858,10 +858,10 @@ const ImpactPage = () => {
                 ].map((domain, idx) => (
                   <div
                     key={idx}
-                    className="p-4 bg-purple-50 rounded-xl text-center"
+                    className="p-4 bg-green-50 rounded-xl text-center"
                   >
-                    <domain.icon className="w-10 h-10 text-purple-600 mx-auto mb-3" />
-                    <h4 className="font-bold text-purple-800 mb-1">
+                    <domain.icon className="w-10 h-10 text-green-600 mx-auto mb-3" />
+                    <h4 className="font-bold text-green-800 mb-1">
                       {domain.title}
                     </h4>
                     <p className="text-gray-600 text-sm">{domain.desc}</p>
@@ -873,7 +873,7 @@ const ImpactPage = () => {
             {/* Why We Measure */}
             <motion.div
               variants={fadeInUp}
-              className="bg-linear-to-br from-purple-600 to-purple-700 text-white p-8 rounded-2xl shadow-lg mb-8"
+              className="bg-linear-to-br from-green-600 to-green-700 text-white p-8 rounded-2xl shadow-lg mb-8"
             >
               <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
                 <BarChart3 className="w-8 h-8" />
@@ -899,14 +899,14 @@ const ImpactPage = () => {
                   },
                   {
                     title: "Drive Learning & Scale",
-                    desc: "Impact data provides the blueprint for replication and growth",
+                    desc: "Impact data provides the greenprint for replication and growth",
                   },
                 ].map((reason, idx) => (
                   <div key={idx} className="flex gap-4">
                     <CheckCircle2 className="w-6 h-6 shrink-0 mt-1" />
                     <div>
                       <h4 className="font-bold mb-1">{reason.title}</h4>
-                      <p className="text-purple-100 text-sm">{reason.desc}</p>
+                      <p className="text-green-100 text-sm">{reason.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -918,7 +918,7 @@ const ImpactPage = () => {
               variants={fadeInUp}
               className="bg-white p-8 rounded-2xl shadow-lg mb-8"
             >
-              <h3 className="text-2xl font-bold mb-4 text-purple-700 flex items-center gap-3">
+              <h3 className="text-2xl font-bold mb-4 text-green-700 flex items-center gap-3">
                 <PieChart className="w-8 h-8" />
                 Social Return on Investment (SROI)
               </h3>
@@ -929,12 +929,12 @@ const ImpactPage = () => {
               </p>
 
               <div className="grid md:grid-cols-2 gap-8 mb-8">
-                <div className="bg-purple-50 p-6 rounded-xl">
-                  <h4 className="font-bold text-lg text-purple-800 mb-4">
+                <div className="bg-green-50 p-6 rounded-xl">
+                  <h4 className="font-bold text-lg text-green-800 mb-4">
                     Current SROI
                   </h4>
                   <div className="text-center">
-                    <div className="text-6xl font-bold text-purple-600 mb-2">
+                    <div className="text-6xl font-bold text-green-600 mb-2">
                       $2:$1
                     </div>
                     <p className="text-gray-700">
@@ -943,12 +943,12 @@ const ImpactPage = () => {
                   </div>
                 </div>
 
-                <div className="bg-purple-50 p-6 rounded-xl">
-                  <h4 className="font-bold text-lg text-purple-800 mb-4">
+                <div className="bg-green-50 p-6 rounded-xl">
+                  <h4 className="font-bold text-lg text-green-800 mb-4">
                     Target SROI by 2034
                   </h4>
                   <div className="text-center">
-                    <div className="text-6xl font-bold text-purple-600 mb-2">
+                    <div className="text-6xl font-bold text-green-600 mb-2">
                       $6:$1
                     </div>
                     <p className="text-gray-700">
@@ -960,7 +960,7 @@ const ImpactPage = () => {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="font-bold text-purple-800 mb-3">
+                  <h4 className="font-bold text-green-800 mb-3">
                     What SROI Measures
                   </h4>
                   <ul className="space-y-2">
@@ -973,7 +973,7 @@ const ImpactPage = () => {
                       "Strengthened community networks",
                     ].map((item, idx) => (
                       <li key={idx} className="flex items-start gap-2">
-                        <CheckCircle2 className="w-5 h-5 text-purple-600 shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
                         <span className="text-gray-700">{item}</span>
                       </li>
                     ))}
@@ -981,7 +981,7 @@ const ImpactPage = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-bold text-purple-800 mb-3">
+                  <h4 className="font-bold text-green-800 mb-3">
                     How We Use It
                   </h4>
                   <ul className="space-y-2">
@@ -992,7 +992,7 @@ const ImpactPage = () => {
                       "Advocate for high-impact areas",
                     ].map((item, idx) => (
                       <li key={idx} className="flex items-start gap-2">
-                        <CheckCircle2 className="w-5 h-5 text-purple-600 shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
                         <span className="text-gray-700">{item}</span>
                       </li>
                     ))}
@@ -1006,7 +1006,7 @@ const ImpactPage = () => {
               variants={fadeInUp}
               className="bg-white p-8 rounded-2xl shadow-lg mb-8"
             >
-              <h3 className="text-2xl font-bold mb-4 text-purple-700 flex items-center gap-3">
+              <h3 className="text-2xl font-bold mb-4 text-green-700 flex items-center gap-3">
                 <Beaker className="w-8 h-8" />
                 Using RCTs to Prove Impact
               </h3>
@@ -1016,8 +1016,8 @@ const ImpactPage = () => {
                 interventions with scientific rigor.
               </p>
 
-              <div className="bg-purple-50 p-6 rounded-xl mb-8">
-                <h4 className="font-bold text-lg text-purple-800 mb-4">
+              <div className="bg-green-50 p-6 rounded-xl mb-8">
+                <h4 className="font-bold text-lg text-green-800 mb-4">
                   What is an RCT?
                 </h4>
                 <p className="text-gray-700 mb-4">
@@ -1028,7 +1028,7 @@ const ImpactPage = () => {
                 </p>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="bg-white p-4 rounded-lg">
-                    <h5 className="font-bold text-purple-700 mb-2">
+                    <h5 className="font-bold text-green-700 mb-2">
                       Treatment Group
                     </h5>
                     <p className="text-sm text-gray-600">
@@ -1036,7 +1036,7 @@ const ImpactPage = () => {
                     </p>
                   </div>
                   <div className="bg-white p-4 rounded-lg">
-                    <h5 className="font-bold text-purple-700 mb-2">
+                    <h5 className="font-bold text-green-700 mb-2">
                       Control Group
                     </h5>
                     <p className="text-sm text-gray-600">
@@ -1047,7 +1047,7 @@ const ImpactPage = () => {
               </div>
 
               <div className="mb-8">
-                <h4 className="font-bold text-lg text-purple-800 mb-4">
+                <h4 className="font-bold text-lg text-green-800 mb-4">
                   Why HERVeg.05 Uses RCTs
                 </h4>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -1061,9 +1061,9 @@ const ImpactPage = () => {
                   ].map((reason, idx) => (
                     <div
                       key={idx}
-                      className="flex items-start gap-2 p-3 bg-purple-50 rounded-lg"
+                      className="flex items-start gap-2 p-3 bg-green-50 rounded-lg"
                     >
-                      <CheckCircle2 className="w-5 h-5 text-purple-600 shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
                       <span className="text-gray-700 text-sm">{reason}</span>
                     </div>
                   ))}
@@ -1071,7 +1071,7 @@ const ImpactPage = () => {
               </div>
 
               <div>
-                <h4 className="font-bold text-lg text-purple-800 mb-4">
+                <h4 className="font-bold text-lg text-green-800 mb-4">
                   Our RCT Implementation Process
                 </h4>
                 <div className="space-y-4">
@@ -1110,13 +1110,13 @@ const ImpactPage = () => {
                     <motion.div
                       key={idx}
                       whileHover={{ x: 8 }}
-                      className="flex gap-4 p-4 bg-purple-50 rounded-xl"
+                      className="flex gap-4 p-4 bg-green-50 rounded-xl"
                     >
-                      <div className="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold shrink-0">
+                      <div className="w-10 h-10 bg-green-600 text-white rounded-full flex items-center justify-center font-bold shrink-0">
                         {item.step}
                       </div>
                       <div>
-                        <h5 className="font-bold text-purple-800 mb-1">
+                        <h5 className="font-bold text-green-800 mb-1">
                           {item.title}
                         </h5>
                         <p className="text-gray-700 text-sm">{item.desc}</p>
@@ -1129,7 +1129,7 @@ const ImpactPage = () => {
 
             <motion.div
               variants={fadeInUp}
-              className="bg-linear-to-br from-purple-600 to-purple-700 text-white p-8 rounded-2xl shadow-lg text-center"
+              className="bg-linear-to-br from-green-600 to-green-700 text-white p-8 rounded-2xl shadow-lg text-center"
             >
               <LineChart className="w-16 h-16 mx-auto mb-4" />
               <h3 className="text-2xl font-bold mb-4">
@@ -1139,7 +1139,7 @@ const ImpactPage = () => {
                 RCTs enable us to go beyond assumptions and anecdotes, providing
                 the confidence to say our programs work—and prove it with data.
               </p>
-              <p className="text-purple-100">
+              <p className="text-green-100">
                 We are actively developing partnerships with research
                 institutions to embed RCTs into future program rollouts across
                 new regions.
