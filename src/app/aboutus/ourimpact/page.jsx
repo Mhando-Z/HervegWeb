@@ -58,20 +58,20 @@ const ImpactPage = () => {
       id: "poultry",
       title: "Poultry Sustainability",
       icon: Sprout,
-      color: "amber",
+      color: "green",
     },
     {
       id: "nutrition",
       title: "Nutrition & Food Security",
       icon: Heart,
-      color: "rose",
+      color: "emerald",
     },
-    { id: "resilience", title: "Resilience", icon: Shield, color: "blue" },
+    { id: "resilience", title: "Resilience", icon: Shield, color: "green" },
     {
       id: "methodology",
       title: "How We Measure Impact",
       icon: BarChart3,
-      color: "purple",
+      color: "emerald",
     },
   ];
 
@@ -200,7 +200,7 @@ const ImpactPage = () => {
             Explore Our Impact Areas
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {sections.map((section, idx) => (
+            {sections?.map((section, idx) => (
               <motion.button
                 key={section.id}
                 variants={scaleIn}
@@ -395,11 +395,11 @@ const ImpactPage = () => {
           initial={{ opacity: 1, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
           exit={{ opacity: 1, height: 0 }}
-          className="py-16 px-6 bg-linear-to-br from-amber-50 to-white"
+          className="py-16 px-6 bg-linear-to-br from-emerald-50 to-white"
         >
           <div className="max-w-6xl mx-auto">
             <motion.div variants={fadeInUp} className="mb-12">
-              <h2 className="text-4xl font-bold mb-4 text-amber-800">
+              <h2 className="text-4xl font-bold mb-4 text-emerald-800">
                 Poultry Sustainability
               </h2>
               <p className="text-xl text-gray-700">
@@ -427,8 +427,8 @@ const ImpactPage = () => {
                   whileHover={{ y: -5 }}
                   className="bg-white p-6 rounded-2xl shadow-lg text-center"
                 >
-                  <stat.icon className="w-12 h-12 text-amber-600 mx-auto mb-4" />
-                  <div className="text-4xl font-bold text-amber-700 mb-2">
+                  <stat.icon className="w-12 h-12 text-emerald-600 mx-auto mb-4" />
+                  <div className="text-4xl font-bold text-emerald-700 mb-2">
                     {stat.value}
                   </div>
                   <div className="text-gray-600">{stat.label}</div>
@@ -439,7 +439,7 @@ const ImpactPage = () => {
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <motion.div
                 variants={fadeInUp}
-                className="bg-linear-to-br from-amber-600 to-amber-700 text-white p-8 rounded-2xl shadow-lg"
+                className="bg-linear-to-br from-emerald-600 to-emerald-700 text-white p-8 rounded-2xl shadow-lg"
               >
                 <Sprout className="w-12 h-12 mb-4" />
                 <h3 className="text-2xl font-bold mb-4">Farmer Story</h3>
@@ -471,9 +471,9 @@ const ImpactPage = () => {
                 ].map((metric, idx) => (
                   <div key={idx} className="bg-white p-6 rounded-2xl shadow-lg">
                     <div className="flex items-center gap-4">
-                      <metric.icon className="w-10 h-10 text-amber-600" />
+                      <metric.icon className="w-10 h-10 text-emerald-600" />
                       <div>
-                        <div className="text-3xl font-bold text-amber-700">
+                        <div className="text-3xl font-bold text-emerald-700">
                           {metric.value}
                         </div>
                         <div className="text-gray-600">{metric.label}</div>
@@ -488,7 +488,7 @@ const ImpactPage = () => {
               variants={fadeInUp}
               className="bg-white p-8 rounded-2xl shadow-lg mb-8"
             >
-              <h3 className="text-2xl font-bold mb-6 text-amber-700">
+              <h3 className="text-2xl font-bold mb-6 text-emerald-700">
                 Our Poultry Model
               </h3>
               <div className="grid md:grid-cols-2 gap-6">
@@ -530,14 +530,14 @@ const ImpactPage = () => {
                     ],
                   },
                 ].map((section, idx) => (
-                  <div key={idx} className="p-6 bg-amber-50 rounded-xl">
-                    <h4 className="font-bold text-lg mb-3 text-amber-800">
+                  <div key={idx} className="p-6 bg-emerald-50 rounded-xl">
+                    <h4 className="font-bold text-lg mb-3 text-emerald-800">
                       {section.title}
                     </h4>
                     <ul className="space-y-2">
                       {section.items.map((item, i) => (
                         <li key={i} className="flex items-start gap-2">
-                          <CheckCircle2 className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+                          <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                           <span className="text-gray-700">{item}</span>
                         </li>
                       ))}
