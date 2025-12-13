@@ -628,7 +628,7 @@ const CareersPage = () => {
             <p className="text-gray-300 mb-6">
               Send your application to{" "}
               <span className="text-green-400 font-semibold">
-                hr@herveg.org
+                jobs@herveg.org
               </span>
             </p>
             <motion.button
