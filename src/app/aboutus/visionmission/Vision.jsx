@@ -88,8 +88,8 @@ const VisionValues = () => {
       description:
         "Farmers earn steady incomes, take pride in their work, and build better lives. Women and youth run successful farm businesses, blending traditional wisdom with modern tools. Communities celebrate their role, reducing poverty and hunger.",
       icon: <Heart className="w-7 h-7" />,
-      color: "from-rose-500 to-pink-600",
-      accentColor: "bg-rose-100",
+      color: "from-green-500 to-emerald-600",
+      accentColor: "bg-green-100",
     },
     {
       number: "02",
@@ -106,8 +106,8 @@ const VisionValues = () => {
       description:
         "Women and youth lead savings groups and co-ops. Training is simple, local, and peer-to-peer. Even the most remote farmers access the knowledge, tools, and finance they need—free from bias or barriers.",
       icon: <Users className="w-7 h-7" />,
-      color: "from-blue-500 to-indigo-600",
-      accentColor: "bg-blue-100",
+      color: "from-green-500 to-emerald-600",
+      accentColor: "bg-green-100",
     },
     {
       number: "04",
@@ -115,8 +115,8 @@ const VisionValues = () => {
       description:
         "Savings groups evolve into businesses. Farmers teach farmers. Local supply chains create jobs and reduce dependency. Profits are reinvested in the land, youth, and the future—reducing poverty one community at a time.",
       icon: <TrendingUp className="w-7 h-7" />,
-      color: "from-purple-500 to-violet-600",
-      accentColor: "bg-purple-100",
+      color: "from-green-500 to-emerald-600",
+      accentColor: "bg-green-100",
     },
   ];
 
@@ -126,21 +126,21 @@ const VisionValues = () => {
       description:
         "We treat our staff, partners, and farmers with respect and care. Everyone's voice matters and contributes to the mission.",
       icon: <Heart className="w-6 h-6" />,
-      color: "from-rose-500 to-pink-500",
+      color: "from-green-500 to-emerald-500",
     },
     {
       title: "Integrity Always",
       description:
         "We are honest, transparent, and accountable in everything we do. We do what's right, even when no one is watching.",
       icon: <Shield className="w-6 h-6" />,
-      color: "from-blue-500 to-cyan-500",
+      color: "from-green-500 to-emerald-500",
     },
     {
       title: "Farmers at the Center",
       description:
         "Our programs start with the needs and strengths of women and youth farmers. Their leadership drives lasting change.",
       icon: <Target className="w-6 h-6" />,
-      color: "from-amber-500 to-orange-500",
+      color: "from-green-500 to-emerald-500",
     },
     {
       title: "Locally Led, Community Grown",
@@ -154,14 +154,14 @@ const VisionValues = () => {
       description:
         "We dream big, but act in ways that are realistic and rooted in local reality. We stay lean, focused, and mission-driven.",
       icon: <Lightbulb className="w-6 h-6" />,
-      color: "from-purple-500 to-violet-500",
+      color: "from-green-500 to-emerald-500",
     },
     {
       title: "Listen and Learn",
       description:
         "We make decisions based on what farmers tell us and what the data shows. We adapt quickly and improve constantly.",
       icon: <MessageCircle className="w-6 h-6" />,
-      color: "from-indigo-500 to-blue-500",
+      color: "from-green-500 to-emerald-500",
     },
   ];
 
@@ -419,7 +419,7 @@ const VisionValues = () => {
                     {point.description}
                   </p>
 
-                  <div className="mt-6 hidden flex items-center text-emerald-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                  <div className="mt-6 hidden items-center text-emerald-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
                     <span className="text-sm">Learn more</span>
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </div>
