@@ -57,7 +57,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="/about"
+                  href="/aboutus/whoweare/"
                   className="hover:text-green-300 transition-colors"
                 >
                   About Us
@@ -65,31 +65,31 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/model"
+                  href="/career/"
                   className="hover:text-green-300 transition-colors"
                 >
-                  Our Model
+                  Career
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/faqs"
+                  href="/donate/"
                   className="hover:text-green-300 transition-colors"
                 >
-                  FAQs
+                  Donate
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  href="/aboutus/successstories/"
                   className="hover:text-green-300 transition-colors"
                 >
-                  Contact Us
+                  Success Stories
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/impact"
+                  href="/aboutus/ourimpact/"
                   className="hover:text-green-300 transition-colors"
                 >
                   HERVeg.05 Impact
