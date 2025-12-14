@@ -48,7 +48,7 @@ const DonatePage = () => {
       icon: <Users className="w-8 h-8" />,
       description:
         "Trains 10–20 youth farmers in climate-smart agriculture, helping them farm sustainably and grow nutritious crops.",
-      color: "from-blue-500 to-cyan-600",
+      color: "from-cyan-500 to-green-600",
     },
     {
       amount: 45,
@@ -62,7 +62,7 @@ const DonatePage = () => {
       icon: <Heart className="w-8 h-8" />,
       description:
         "Equips a youth farmer with a 1-acre starter kit, including biofortified maize, vegetable seeds, and 5 vaccinated SASSO chickens for food security and income.",
-      color: "from-rose-500 to-pink-600",
+      color: "from-green-500 to-yellow-600",
     },
   ];
 
