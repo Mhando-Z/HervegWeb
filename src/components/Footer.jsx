@@ -132,16 +132,16 @@ export default function Footer() {
               Copyright © {currentYear} _HERVeg.05. All Right Reserved
             </p>
             <div className="flex mt-4 text-xl sm:mt-0">
-              <button className="mx-2 text-gray-200 hover:text-blue-600">
+              <button className="mx-2 text-gray-200 cursor-pointer hover:text-blue-600">
                 <FaFacebook />
               </button>
-              <button className="mx-2 text-gray-200 hover:text-orange-600">
+              <button className="mx-2 text-gray-200 cursor-pointer hover:text-orange-600">
                 <RiInstagramFill />
               </button>
-              <button className="mx-2 text-gray-200 hover:text-red-600">
+              <button className="mx-2 text-gray-200 cursor-pointer hover:text-red-600">
                 <FaYoutube />
               </button>
-              <button className="mx-2 text-gray-200 hover:text-black">
+              <button className="mx-2 text-gray-200 cursor-pointer hover:text-black">
                 <FaSquareXTwitter />
               </button>
             </div>
