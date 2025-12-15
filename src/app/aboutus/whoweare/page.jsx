@@ -199,7 +199,7 @@ const HeroAndStory = () => {
                   key={index}
                   variants={scaleIn}
                   whileHover={{ scale: 1.05, y: -5 }}
-                  className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow"
+                  className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-xl transition-shadow"
                 >
                   <div className="text-4xl mb-3">{challenge.icon}</div>
                   <p className="text-gray-700 font-medium">{challenge.text}</p>
