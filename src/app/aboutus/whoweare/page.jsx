@@ -591,11 +591,11 @@ const HeroAndStory = () => {
             whileInView="animate"
             viewport={{ once: true, margin: "-100px" }}
             variants={staggerContainer}
-            className="text-center"
+            className=""
           >
             {/* Headline */}
             <motion.div variants={fadeInUp} className="mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl  font-bold text-gray-900 mb-4">
                 Growing Together:{" "}
                 <span className="text-emerald-600">2025 Impact Report</span>
               </h2>
@@ -612,7 +612,7 @@ const HeroAndStory = () => {
               </p>
 
               {/* Three Pillars */}
-              <div className="max-w-3xl mx-auto space-y-6 text-left">
+              <div className=" space-y-6 text-left">
                 <div className="flex items-start">
                   <span className="shrink-0 w-8 h-8 bg-emerald-600 text-white rounded-full flex items-center justify-center font-semibold mr-4 mt-1">
                     1
