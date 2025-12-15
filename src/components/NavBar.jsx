@@ -104,7 +104,9 @@ function NavBar() {
                 />
                 <Image
                   src={
-                    ["/", "/career", "/donate"].includes(pathname)
+                    ["/", "/career", "/donate", "/aboutus/whoweare"].includes(
+                      pathname
+                    )
                       ? logo1
                       : logo
                   }
