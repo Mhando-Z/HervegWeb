@@ -221,13 +221,24 @@ const ImpactPage = () => {
                   }`}
                 />
                 <h3 className="text-xl font-bold mb-2">{section.title}</h3>
-                <ArrowRight
-                  className={`w-6 h-6 ${
-                    activeSection === section.id
-                      ? "text-white"
-                      : `text-${section.color}-600`
-                  }`}
-                />
+                <div className="flex cursor-pointer flex-row items-center gap-2">
+                  <p
+                    className={`text-sm ${
+                      activeSection === section.id
+                        ? "text-white"
+                        : `text-${section.color}-600`
+                    } text-green-800`}
+                  >
+                    Read more
+                  </p>
+                  <ArrowRight
+                    className={`w-4 h-4 ${
+                      activeSection === section.id
+                        ? "text-white"
+                        : `text-${section.color}-600`
+                    }`}
+                  />
+                </div>
               </motion.button>
             ))}
           </div>
