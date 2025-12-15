@@ -333,7 +333,7 @@ export default function SuccessStories() {
           </p>
         </motion.div>
 
-        <div className="flex flex-col md:flex-row gap-5">
+        <div className="flex flex-col  gap-5">
           {/* Main Content Card */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -519,7 +519,7 @@ export default function SuccessStories() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9 }}
-            className="mt-8 space-y-6 h-[700px] overflow-y-scroll"
+            className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 h-[700px] overflow-y-scroll"
           >
             <AnimatePresence>
               {remainingStories.map(({ story, index }) => {
@@ -591,18 +591,6 @@ export default function SuccessStories() {
             </AnimatePresence>
           </motion.div>
         </div>
-
-        {/* Bottom Stats */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.8 }}
-          className="mt-12 text-center"
-        >
-          <p className="text-gray-600 text-sm">
-            Story {currentStory + 1} of {successStories.length}
-          </p>
-        </motion.div>
       </div>
     </section>
   );
