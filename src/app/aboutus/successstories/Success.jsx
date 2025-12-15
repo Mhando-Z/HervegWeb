@@ -310,29 +310,6 @@ export default function SuccessStories() {
       </div>
 
       <div className="container mx-auto relative z-10">
-        {/* Header Section */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className=" mb-5"
-        >
-          <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-            className="inline-block mb-4"
-          >
-            <div className="w-16 h-1 bg-linear-to-r from-emerald-500 to-teal-500 mx-auto rounded-full"></div>
-          </motion.div>
-          <h2 className="text-5xl md:text-5xl font-roboto font-bold bg-linear-to-r from-emerald-700 to-teal-600 bg-clip-text text-transparent mb-4">
-            Success Stories
-          </h2>
-          <p className="text-gray-600  text-lg max-w-2xl ">
-            Real transformations from our community members
-          </p>
-        </motion.div>
-
         <div className="flex flex-col  gap-5">
           {/* Main Content Card */}
           <motion.div
