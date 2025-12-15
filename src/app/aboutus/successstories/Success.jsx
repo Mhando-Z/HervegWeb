@@ -297,6 +297,10 @@ export default function SuccessStories() {
     );
   };
 
+  const remainingStories = successStories
+    .map((story, index) => ({ story, index }))
+    .filter(({ index }) => index !== currentStory);
+
   return (
     <section className="relative min-h-screen bg-linear-to-br font-roboto from-emerald-50 via-white to-teal-50 py-20 px-4 overflow-hidden">
       {/* Background decorative elements */}
@@ -329,187 +333,266 @@ export default function SuccessStories() {
           </p>
         </motion.div>
 
-        {/* Main Content Card */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="relative bg-white rounded-3xl shadow-sm overflow-hidden"
-        >
-          <div className="grid lg:grid-cols-5 gap-0">
-            {/* Image Section - Left Side */}
-            <div className="lg:col-span-2 relative">
-              <div className="sticky top-0 h-full min-h-[400px] lg:min-h-[700px]">
+        <div className="flex flex-col md:flex-row gap-5">
+          {/* Main Content Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="relative bg-white rounded-3xl shadow-sm overflow-hidden"
+          >
+            <div className="grid lg:grid-cols-5 gap-0">
+              {/* Image Section - Left Side */}
+              <div className="lg:col-span-2 relative">
+                <div className="sticky top-0 h-full min-h-[400px] lg:min-h-[700px]">
+                  <AnimatePresence mode="wait">
+                    <motion.div
+                      key={story.id + "-image"}
+                      initial={{ opacity: 0, scale: 1.1 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0, scale: 0.95 }}
+                      transition={{ duration: 0.6 }}
+                      className="relative w-full h-full"
+                    >
+                      <Image
+                        src={story.image_url}
+                        alt={story.title}
+                        className="w-full h-full object-cover"
+                      />
+                      {/* linear Overlay */}
+                      <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"></div>
+
+                      {/* Profile Card Overlay */}
+                      {profileSection && (
+                        <motion.div
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.5 }}
+                          className="absolute bottom-0 left-0 right-0 p-6 bg-linear-to-t from-black/90 to-transparent"
+                        >
+                          <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-5 shadow-xl border border-emerald-100">
+                            <div className="flex items-center gap-2 mb-3">
+                              <div className="w-10 h-10 bg-linear-to-br from-emerald-500 to-teal-500 rounded-full flex items-center justify-center">
+                                <Users className="w-5 h-5 text-white" />
+                              </div>
+                              <h4 className="font-bold text-gray-800 text-lg">
+                                {profileSection.name}
+                              </h4>
+                            </div>
+                            <div className="space-y-2 text-sm">
+                              <div className="flex items-center gap-2 text-gray-600">
+                                <Calendar className="w-4 h-4 text-emerald-600" />
+                                <span>
+                                  {profileSection.age} years old •{" "}
+                                  {profileSection.family}
+                                </span>
+                              </div>
+                              <div className="flex items-center gap-2 text-gray-600">
+                                <MapPin className="w-4 h-4 text-emerald-600" />
+                                <span>{profileSection.location}</span>
+                              </div>
+                            </div>
+                          </div>
+                        </motion.div>
+                      )}
+                    </motion.div>
+                  </AnimatePresence>
+                </div>
+              </div>
+
+              {/* Content Section - Right Side */}
+              <div className="lg:col-span-3 relative">
                 <AnimatePresence mode="wait">
                   <motion.div
-                    key={story.id + "-image"}
-                    initial={{ opacity: 0, scale: 1.1 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.95 }}
-                    transition={{ duration: 0.6 }}
-                    className="relative w-full h-full"
+                    key={story.id}
+                    initial={{ opacity: 0, x: 50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -50 }}
+                    transition={{ duration: 0.5 }}
+                    className="p-8 md:p-12 space-y-6 max-h-[700px] overflow-y-auto custom-scrollbar"
                   >
-                    <Image
-                      src={story.image_url}
-                      alt={story.title}
-                      className="w-full h-full object-cover"
-                    />
-                    {/* linear Overlay */}
-                    <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"></div>
+                    {/* Story Title */}
+                    <motion.h3
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.2 }}
+                      className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight"
+                    >
+                      {story.title}
+                    </motion.h3>
 
-                    {/* Profile Card Overlay */}
-                    {profileSection && (
-                      <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.5 }}
-                        className="absolute bottom-0 left-0 right-0 p-6 bg-linear-to-t from-black/90 to-transparent"
-                      >
-                        <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-5 shadow-xl border border-emerald-100">
-                          <div className="flex items-center gap-2 mb-3">
-                            <div className="w-10 h-10 bg-linear-to-br from-emerald-500 to-teal-500 rounded-full flex items-center justify-center">
-                              <Users className="w-5 h-5 text-white" />
-                            </div>
-                            <h4 className="font-bold text-gray-800 text-lg">
-                              {profileSection.name}
-                            </h4>
-                          </div>
-                          <div className="space-y-2 text-sm">
-                            <div className="flex items-center gap-2 text-gray-600">
-                              <Calendar className="w-4 h-4 text-emerald-600" />
-                              <span>
-                                {profileSection.age} years old •{" "}
-                                {profileSection.family}
-                              </span>
-                            </div>
-                            <div className="flex items-center gap-2 text-gray-600">
-                              <MapPin className="w-4 h-4 text-emerald-600" />
-                              <span>{profileSection.location}</span>
-                            </div>
-                          </div>
-                        </div>
-                      </motion.div>
-                    )}
+                    {/* Story Content */}
+                    <div className="space-y-6">
+                      {story.sections.map((section, index) => {
+                        if (section.type === "paragraph") {
+                          return (
+                            <motion.p
+                              key={index}
+                              initial={{ opacity: 0, y: 20 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              transition={{ delay: 0.1 * index }}
+                              className="text-gray-700 leading-relaxed text-justify text-base md:text-lg"
+                            >
+                              {section.content}
+                            </motion.p>
+                          );
+                        } else if (section.type === "quote") {
+                          return (
+                            <motion.div
+                              key={index}
+                              initial={{ opacity: 0, x: -20 }}
+                              animate={{ opacity: 1, x: 0 }}
+                              transition={{ delay: 0.1 * index }}
+                              className="relative my-8"
+                            >
+                              <div className="absolute -left-2 -top-2 z-10">
+                                <Quote className="w-10 h-10 text-emerald-200" />
+                              </div>
+                              <blockquote className="relative bg-linear-to-br from-emerald-50 to-teal-50  border-emerald-500 pl-8 pr-6 py-6 rounded-r-2xl shadow-sm">
+                                <p className="text-gray-800 italic text-lg leading-relaxed mb-3">
+                                  "{section.content}"
+                                </p>
+                                <footer className="text-emerald-700 font-semibold text-sm">
+                                  — {section.author}
+                                </footer>
+                              </blockquote>
+                              <div className="absolute -right-2 -bottom-2 z-10">
+                                <Quote className="w-10 h-10 text-emerald-200" />
+                              </div>
+                            </motion.div>
+                          );
+                        } else if (section.type === "profile") {
+                          // Profile is shown in image overlay, skip here
+                          return null;
+                        }
+                        return null;
+                      })}
+                    </div>
                   </motion.div>
                 </AnimatePresence>
+
+                {/* Navigation Buttons */}
+                <div className="absolute bottom-8 hidden right-8  items-center gap-3">
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    onClick={prevStory}
+                    className="p-3 rounded-full bg-linear-to-br from-emerald-500 to-teal-500 text-white shadow-lg hover:shadow-xl transition-all duration-300"
+                    aria-label="Previous story"
+                  >
+                    <ChevronLeft className="w-6 h-6" />
+                  </motion.button>
+
+                  {/* Story Indicators */}
+                  <div className="flex gap-2">
+                    {successStories.map((_, index) => (
+                      <motion.button
+                        key={index}
+                        whileHover={{ scale: 1.2 }}
+                        onClick={() => setCurrentStory(index)}
+                        className={`h-2 rounded-full transition-all duration-300 ${
+                          index === currentStory
+                            ? "w-8 bg-linear-to-r from-emerald-500 to-teal-500"
+                            : "w-2 bg-gray-300 hover:bg-gray-400"
+                        }`}
+                        aria-label={`Go to story ${index + 1}`}
+                      />
+                    ))}
+                  </div>
+
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    onClick={nextStory}
+                    className="p-3 rounded-full bg-linear-to-br from-emerald-500 to-teal-500 text-white shadow-lg hover:shadow-xl transition-all duration-300"
+                    aria-label="Next story"
+                  >
+                    <ChevronRight className="w-6 h-6" />
+                  </motion.button>
+                </div>
               </div>
             </div>
+          </motion.div>
 
-            {/* Content Section - Right Side */}
-            <div className="lg:col-span-3 relative">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={story.id}
-                  initial={{ opacity: 0, x: 50 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -50 }}
-                  transition={{ duration: 0.5 }}
-                  className="p-8 md:p-12 space-y-6 max-h-[700px] overflow-y-auto custom-scrollbar"
-                >
-                  {/* Story Title */}
-                  <motion.h3
+          {/* Next Stories Preview Component */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.9 }}
+            className="mt-8 space-y-6 h-[700px] overflow-y-scroll"
+          >
+            <AnimatePresence>
+              {remainingStories.map(({ story, index }) => {
+                const profile = story.sections.find(
+                  (s) => s.type === "profile"
+                );
+                const paragraph = story.sections.find(
+                  (s) => s.type === "paragraph"
+                );
+
+                return (
+                  <motion.div
+                    key={story.id}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.2 }}
-                    className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight"
+                    exit={{ opacity: 0, y: -20 }}
+                    transition={{ duration: 0.4 }}
+                    onClick={() => setCurrentStory(index)}
+                    className="cursor-pointer group"
                   >
-                    {story.title}
-                  </motion.h3>
+                    <div className="bg-white rounded-2xl w-full  hover:shadow-xl transition-all duration-300 overflow-hidden mx-auto border border-gray-100">
+                      <div className=" gap-0">
+                        {/* Image */}
+                        <div className="relative h-48 md:h-full overflow-hidden">
+                          <Image
+                            src={story.image_url}
+                            alt={story.title}
+                            className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500"
+                          />
+                          <div className="absolute inset-0 bg-linear-to-r from-emerald-500/20 to-teal-500/20 group-hover:from-emerald-500/30 group-hover:to-teal-500/30 transition-all duration-300"></div>
+                          <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-emerald-700">
+                            Next Story
+                          </div>
+                        </div>
 
-                  {/* Story Content */}
-                  <div className="space-y-6">
-                    {story.sections.map((section, index) => {
-                      if (section.type === "paragraph") {
-                        return (
-                          <motion.p
-                            key={index}
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.1 * index }}
-                            className="text-gray-700 leading-relaxed text-justify text-base md:text-lg"
-                          >
-                            {section.content}
-                          </motion.p>
-                        );
-                      } else if (section.type === "quote") {
-                        return (
-                          <motion.div
-                            key={index}
-                            initial={{ opacity: 0, x: -20 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ delay: 0.1 * index }}
-                            className="relative my-8"
-                          >
-                            <div className="absolute -left-2 -top-2 z-10">
-                              <Quote className="w-10 h-10 text-emerald-200" />
+                        {/* Content */}
+                        <div className="md:col-span-2 p-2 flex flex-col justify-center">
+                          <h4 className="text-sm md:text-lg font-bold text-gray-900 mb-3 group-hover:text-emerald-700 transition-colors duration-300">
+                            {story.title}
+                          </h4>
+
+                          <p className="text-gray-600 text-xs md:text-base line-clamp-2 mb-4">
+                            {paragraph?.content.substring(0, 150)}...
+                          </p>
+
+                          {profile && (
+                            <div className="flex flex-col xl:flex-row xl:items-center gap-4 text-sm text-gray-500">
+                              <div className="flex text-xs items-center gap-1">
+                                <Users className="w-4 h-4 text-emerald-600" />
+                                <span>{profile.name}</span>
+                              </div>
+                              <div className="xl:flex  hidden  items-center gap-1">
+                                <MapPin className="w-4 h-4 text-emerald-600" />
+                                <span>{profile.location.split(",")[0]}</span>
+                              </div>
                             </div>
-                            <blockquote className="relative bg-linear-to-br from-emerald-50 to-teal-50  border-emerald-500 pl-8 pr-6 py-6 rounded-r-2xl shadow-sm">
-                              <p className="text-gray-800 italic text-lg leading-relaxed mb-3">
-                                "{section.content}"
-                              </p>
-                              <footer className="text-emerald-700 font-semibold text-sm">
-                                — {section.author}
-                              </footer>
-                            </blockquote>
-                            <div className="absolute -right-2 -bottom-2 z-10">
-                              <Quote className="w-10 h-10 text-emerald-200" />
-                            </div>
-                          </motion.div>
-                        );
-                      } else if (section.type === "profile") {
-                        // Profile is shown in image overlay, skip here
-                        return null;
-                      }
-                      return null;
-                    })}
-                  </div>
-                </motion.div>
-              </AnimatePresence>
+                          )}
 
-              {/* Navigation Buttons */}
-              <div className="absolute bottom-8 right-8 flex items-center gap-3">
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  onClick={prevStory}
-                  className="p-3 rounded-full bg-linear-to-br from-emerald-500 to-teal-500 text-white shadow-lg hover:shadow-xl transition-all duration-300"
-                  aria-label="Previous story"
-                >
-                  <ChevronLeft className="w-6 h-6" />
-                </motion.button>
+                          <div className="mt-4 flex items-center text-xs gap-2 text-emerald-600 font-semibold group-hover:gap-4 transition-all duration-300">
+                            <span>Read story</span>
+                            <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </motion.div>
+                );
+              })}
+            </AnimatePresence>
+          </motion.div>
+        </div>
 
-                {/* Story Indicators */}
-                <div className="flex gap-2">
-                  {successStories.map((_, index) => (
-                    <motion.button
-                      key={index}
-                      whileHover={{ scale: 1.2 }}
-                      onClick={() => setCurrentStory(index)}
-                      className={`h-2 rounded-full transition-all duration-300 ${
-                        index === currentStory
-                          ? "w-8 bg-linear-to-r from-emerald-500 to-teal-500"
-                          : "w-2 bg-gray-300 hover:bg-gray-400"
-                      }`}
-                      aria-label={`Go to story ${index + 1}`}
-                    />
-                  ))}
-                </div>
-
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  onClick={nextStory}
-                  className="p-3 rounded-full bg-linear-to-br from-emerald-500 to-teal-500 text-white shadow-lg hover:shadow-xl transition-all duration-300"
-                  aria-label="Next story"
-                >
-                  <ChevronRight className="w-6 h-6" />
-                </motion.button>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-
-        {/* Bottom Stats or CTA (Optional) */}
+        {/* Bottom Stats */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
