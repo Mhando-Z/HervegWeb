@@ -295,7 +295,7 @@ export default function SuccessStories() {
   };
 
   return (
-    <section className="relative min-h-screen bg-linear-to-br  from-emerald-50 via-white to-teal-50 py-20 px-4 overflow-hidden">
+    <section className="relative min-h-screen bg-linear-to-br md:mt-20   from-emerald-50 via-white to-teal-50 py-20 px-4 overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
