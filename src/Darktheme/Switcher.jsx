@@ -49,7 +49,7 @@ const Switcher = () => {
   };
 
   // 👇 NEW: Allowed light-background routes
-  const lightRoutes = ["/", "/donate", "/career"];
+  const lightRoutes = ["/", "/donate", "/career", "/aboutus/whoweare"];
   const isLightRoute = lightRoutes.includes(location);
 
   return (
