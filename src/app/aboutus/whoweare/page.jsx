@@ -405,7 +405,7 @@ const HeroAndStory = () => {
 
             <motion.p
               variants={fadeInUp}
-              className="text-xl md:text-2xl text-emerald-50 mb-12 max-w-4xl mx-auto leading-relaxed"
+              className="text-xl md:text-2xl text-emerald-50 mb-12 max-w-4xl mx-auto"
             >
               At HERVeg.05, we help smallholder farmers take control of their
               future with a practical, people-first approach that fits how they
@@ -455,7 +455,7 @@ const HeroAndStory = () => {
                 It All Began with a{" "}
                 <span className="text-emerald-600">Simple Observation</span>
               </h2>
-              <p className="text-xl text-gray-700 leading-relaxed">
+              <p className="text-xl text-gray-700 ">
                 In rural areas, farming is more than work, it's life itself. But
                 for smallholder farmers, especially women and youth, every day
                 brings challenges:
@@ -464,7 +464,7 @@ const HeroAndStory = () => {
 
             {/* Challenges List */}
             <motion.div variants={fadeInUp} className="mb-16">
-              <ul className="space-y-4 text-lg text-gray-700">
+              <ul className="space-y-2 text-lg text-gray-700">
                 <li className="flex items-start">
                   <span className="text-emerald-600 mr-3 mt-1">•</span>
                   <span>Rains come late or too little.</span>
@@ -516,7 +516,7 @@ const HeroAndStory = () => {
                 communities, HERVeg.05 provides:
               </p>
 
-              <ul className="space-y-4 text-lg text-gray-700 mb-8">
+              <ul className="space-y-2 text-lg text-gray-700 mb-8">
                 <li className="flex items-start">
                   <span className="text-emerald-600 mr-3 mt-1">•</span>
                   <span>Healthy, one-month-old SASSO chickens</span>
