@@ -351,7 +351,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 import agents from "../../../../public/aboutus/011.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -373,7 +373,7 @@ const HeroAndStory = () => {
   };
 
   return (
-    <div className="bg-white">
+    <div className="bg-white font-roboto">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image with Overlay */}
@@ -409,7 +409,7 @@ const HeroAndStory = () => {
             >
               At HERVeg.05, we help smallholder farmers take control of their
               future with a practical, people-first approach that fits how they
-              actually live, grow, and earn.
+              actually live, grow, and earn
             </motion.p>
 
             <motion.div variants={fadeInUp}>
@@ -456,7 +456,7 @@ const HeroAndStory = () => {
                 <span className="text-emerald-600">Simple Observation</span>
               </h2>
               <p className="text-xl text-gray-700 leading-relaxed">
-                In rural areas, farming is more than work—it's life itself. But
+                In rural areas, farming is more than work, it's life itself. But
                 for smallholder farmers, especially women and youth, every day
                 brings challenges:
               </p>
@@ -583,6 +583,91 @@ const HeroAndStory = () => {
           </motion.div>
         </div>
       </section>
+
+      <section className="">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={staggerContainer}
+            className="text-center"
+          >
+            {/* Headline */}
+            <motion.div variants={fadeInUp} className="mb-12">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                Growing Together:{" "}
+                <span className="text-emerald-600">2025 Impact Report</span>
+              </h2>
+              <p className="text-2xl text-emerald-600 font-semibold">
+                Coming Soon
+              </p>
+            </motion.div>
+
+            {/* Description */}
+            <motion.div variants={fadeInUp} className="mb-12">
+              <p className="text-xl text-gray-700 leading-relaxed mb-8">
+                Our 2025 Annual Report will showcase how HERVeg.05 is helping
+                farmers save, grow, and earn through:
+              </p>
+
+              {/* Three Pillars */}
+              <div className="max-w-3xl mx-auto space-y-6 text-left">
+                <div className="flex items-start">
+                  <span className="shrink-0 w-8 h-8 bg-emerald-600 text-white rounded-full flex items-center justify-center font-semibold mr-4 mt-1">
+                    1
+                  </span>
+                  <p className="text-lg text-gray-700 pt-1">
+                    Mobile layaway programs for flexible payments
+                  </p>
+                </div>
+                <div className="flex items-start">
+                  <span className="shrink-0 w-8 h-8 bg-emerald-600 text-white rounded-full flex items-center justify-center font-semibold mr-4 mt-1">
+                    2
+                  </span>
+                  <p className="text-lg text-gray-700 pt-1">
+                    VSLA partnerships for financial empowerment
+                  </p>
+                </div>
+                <div className="flex items-start">
+                  <span className="shrink-0 w-8 h-8 bg-emerald-600 text-white rounded-full flex items-center justify-center font-semibold mr-4 mt-1">
+                    3
+                  </span>
+                  <p className="text-lg text-gray-700 pt-1">
+                    Practical farm support for better yields and nutrition
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+      {/* CTA */}
+      <div className="bg-linear-to-t py-10  from-[#1a4d3a]  via-[#1a4d3a] to-green-800 mask-t-from-95%">
+        <div className=" rounded-2xl shadow-xl p-8 max-w-2xl mx-auto border border-emerald-100">
+          <h3 className="text-2xl font-bold text-gray-100 mb-4">
+            Subscribe to See Our 2025 Impact Report
+          </h3>
+          <p className="text-gray-200 mb-6">
+            Be the first to know when our 2025 report is released and get access
+            to our 2024 impact data.
+          </p>
+          <form className="flex flex-col sm:flex-row gap-3">
+            <div className="flex-1 relative">
+              <Mail className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-200 w-5 h-5" />
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="w-full pl-12 pr-4 py-3 border text-white border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+              />
+            </div>
+            <button className="group inline-flex items-center justify-center gap-2 bg-emerald-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-emerald-700 transition-all duration-300 hover:scale-105 shadow-sm">
+              Subscribe
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 };

@@ -31,7 +31,7 @@ const successStories = [
      STORY 1: AMINA
   ======================== */
   {
-    id: "amina-journey",
+    id: 1,
     title: "From Struggling Farmer to Nutrition Champion — Amina’s Journey",
     image_url: amina,
     sections: [
@@ -95,7 +95,7 @@ const successStories = [
      STORY 2: JUMA BAKARI
   ======================== */
   {
-    id: "juma-bakari",
+    id: 2,
     title: "Juma’s Breakthrough — From Debt and Despair to Stability and Pride",
     image_url: juma,
     sections: [
@@ -165,7 +165,7 @@ const successStories = [
      STORY 3: NEEMA
   ======================== */
   {
-    id: "neema-transformation",
+    id: 3,
     title: "Empowering Women and Changing Lives — Neema’s Transformation",
     image_url: neema,
     sections: [
@@ -240,7 +240,7 @@ const successStories = [
      STORY 4: JUMA RESILIENT FARM
   ======================== */
   {
-    id: "juma-resilient-farm",
+    id: 4,
     title:
       "Overcoming Climate Challenges with Innovation — Juma Msemo's Resilient Farm",
     image_url: mgeta,
