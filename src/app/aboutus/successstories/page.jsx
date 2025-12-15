@@ -323,7 +323,7 @@ function SuccessStoriesPage() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="max-w-7xl mx-auto mb-12"
+        className="container  mx-auto mb-12"
       >
         <div className="text-center space-y-4">
           <motion.div
@@ -353,7 +353,7 @@ function SuccessStoriesPage() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
-        className="max-w-7xl mx-auto"
+        className="container mx-auto"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           <AnimatePresence>
