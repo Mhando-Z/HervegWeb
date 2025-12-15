@@ -561,7 +561,7 @@ const HeroAndStory = () => {
 
             {/* Video Section Placeholder */}
             <motion.div variants={fadeInUp} className="mt-16">
-              <div className="bg-gray-900 rounded-2xl overflow-hidden shadow-2xl aspect-video">
+              <div className="bg-gray-900 hidden rounded-2xl overflow-hidden shadow-2xl aspect-video">
                 <div className="w-full h-full flex items-center justify-center">
                   <div className="text-center">
                     <div className="w-20 h-20 bg-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
