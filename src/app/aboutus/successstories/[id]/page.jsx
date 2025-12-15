@@ -5,10 +5,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Users, ChevronRight, Quote, MapPin, Calendar, X } from "lucide-react";
 
 import Image from "next/image";
-import amina from "../../../../public/profiles/Amina.jpg";
-import juma from "../../../../public/profiles/juma-msemo.jpg";
-import neema from "../../../../public/profiles/Neema.jpg";
-import mgeta from "../../../../public/profiles/Mgeta.jpg";
+import amina from "../../../../../public/profiles/Amina.jpg";
+import juma from "../../../../../public/profiles/juma-msemo.jpg";
+import neema from "../../../../../public/profiles/Neema.jpg";
+import mgeta from "../../../../../public/profiles/Mgeta.jpg";
 import { useParams } from "next/navigation";
 
 const successStories = [
