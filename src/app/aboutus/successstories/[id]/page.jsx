@@ -2,28 +2,14 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  Sprout,
-  TrendingUp,
-  Users,
-  Droplet,
-  ChevronLeft,
-  ChevronRight,
-  Award,
-  Heart,
-  DollarSign,
-  BookOpen,
-  Quote,
-  MapPin,
-  Calendar,
-  X,
-} from "lucide-react";
+import { Users, ChevronRight, Quote, MapPin, Calendar, X } from "lucide-react";
 
 import Image from "next/image";
 import amina from "../../../../public/profiles/Amina.jpg";
 import juma from "../../../../public/profiles/juma-msemo.jpg";
 import neema from "../../../../public/profiles/Neema.jpg";
 import mgeta from "../../../../public/profiles/Mgeta.jpg";
+import { useParams } from "next/navigation";
 
 const successStories = [
   /* =======================
@@ -285,8 +271,12 @@ export default function SuccessStories() {
   const [currentStory, setCurrentStory] = useState(0);
   const story = successStories[currentStory];
   const profileSection = story.sections.find((s) => s.type === "profile");
+  const resorceId = useParams();
+  const resoId = decodeURIComponent(resorceId.details);
 
-  const remainingStories = successStories
+  const data = successStories?.filter((dt) => dt?.id === resoId);
+
+  const remainingStories = data
     .map((story, index) => ({ story, index }))
     .filter(({ index }) => index !== currentStory);
 
