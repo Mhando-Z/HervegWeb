@@ -287,19 +287,23 @@ export default function SuccessStories() {
   const story = successStories[currentStory];
   const profileSection = story.sections.find((s) => s.type === "profile");
 
-  const nextStory = () => {
-    setCurrentStory((prev) => (prev + 1) % successStories.length);
-  };
-
-  const prevStory = () => {
-    setCurrentStory(
-      (prev) => (prev - 1 + successStories.length) % successStories.length
-    );
-  };
-
   const remainingStories = successStories
     .map((story, index) => ({ story, index }))
     .filter(({ index }) => index !== currentStory);
+
+  const handleCurrentStory = (index) => {
+    setCurrentStory(index);
+    scrollToTop();
+  };
+
+  const scrollToTop = () => {
+    if (typeof window !== "undefined") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  };
 
   return (
     <section className="relative min-h-screen bg-linear-to-br font-roboto from-emerald-50 via-white to-teal-50 py-20 px-4 overflow-hidden">
@@ -474,7 +478,8 @@ export default function SuccessStories() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
                     transition={{ duration: 0.4 }}
-                    onClick={() => setCurrentStory(index)}
+                    // onClick={() => setCurrentStory(index)}
+                    onClick={() => handleCurrentStory(index)}
                     className="cursor-pointer group"
                   >
                     <div className="bg-white rounded-2xl w-full  hover:shadow-xl transition-all duration-300 overflow-hidden mx-auto border border-gray-100">
