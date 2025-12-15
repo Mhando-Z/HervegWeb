@@ -456,7 +456,7 @@ export default function SuccessStories() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9 }}
-            className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 h-[700px] overflow-y-scroll"
+            className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 h-[700px] overflow-y-scroll"
           >
             <AnimatePresence>
               {remainingStories.map(({ story, index }) => {
