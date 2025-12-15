@@ -454,13 +454,17 @@ export default function SuccessStories() {
               </div>
             </div>
           </motion.div>
+          {/* other stories header section  */}
+          <div className="mt-5 bg-green-600 w-48 text-white">
+            <h1 className="font-bold px-3 py-2 text-xl">Other Stories</h1>
+          </div>
 
           {/* Next Stories Preview Component */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9 }}
-            className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 h-[700px] overflow-y-scroll"
+            className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 h-[700px] overflow-y-scroll"
           >
             <AnimatePresence>
               {remainingStories.map(({ story, index }) => {
