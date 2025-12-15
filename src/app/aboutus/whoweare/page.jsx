@@ -643,8 +643,8 @@ const HeroAndStory = () => {
         </div>
       </section>
       {/* CTA */}
-      <div className="bg-linear-to-t py-10  from-[#1a4d3a]  via-[#1a4d3a] to-green-800 mask-t-from-95%">
-        <div className=" rounded-2xl shadow-xl p-8 max-w-2xl mx-auto border border-emerald-100">
+      <div className="bg-linear-to-t py-10  from-[#1a4d3a] via-[#1a4d3a] to-green-800 mask-t-from-95%">
+        <div className=" rounded-2xl  p-8 max-w-2xl mx-auto border">
           <h3 className="text-2xl font-bold text-gray-100 mb-4">
             Subscribe to See Our 2025 Impact Report
           </h3>
