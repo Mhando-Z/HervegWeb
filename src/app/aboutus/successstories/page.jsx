@@ -380,7 +380,9 @@ function SuccessStoriesPage() {
                   className="cursor-pointer group"
                 >
                   <Link
-                    href={`/successstories/${encodeURIComponent(story?.id)}`}
+                    href={`/aboutus/successstories/${encodeURIComponent(
+                      story?.id
+                    )}`}
                     className="block h-full"
                   >
                     <motion.div
@@ -428,7 +430,7 @@ function SuccessStoriesPage() {
                           animate={{
                             opacity: hoveredCard === story.id ? 0.1 : 0,
                           }}
-                          className="absolute inset-0 bg-gradient-to-br from-white via-transparent to-white"
+                          className="absolute inset-0 bg-linear-to-br from-white via-transparent to-white"
                         />
                       </div>
 
