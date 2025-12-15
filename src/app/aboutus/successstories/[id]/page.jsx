@@ -268,20 +268,20 @@ const successStories = [
 ];
 
 export default function SuccessStories() {
-  const [currentStory, setCurrentStory] = useState(0);
-  const story = successStories[currentStory];
-  const profileSection = story.sections.find((s) => s.type === "profile");
-  const resorceId = useParams();
-  const resoId = decodeURIComponent(resorceId.details);
+  const { id } = useParams();
+  const currentd = Number(id);
+  const [currentId, setCurrentId] = useState(currentd);
 
-  const data = successStories?.filter((dt) => dt?.id === resoId);
+  const story = successStories.find((s) => s.id === currentId);
 
-  const remainingStories = data
-    .map((story, index) => ({ story, index }))
-    .filter(({ index }) => index !== currentStory);
+  const profileSection = story?.sections.find((s) => s.type === "profile");
+
+  const remainingStories = successStories
+    .filter((s) => s.id !== currentId)
+    .map((story, index) => ({ story, index }));
 
   const handleCurrentStory = (index) => {
-    setCurrentStory(index);
+    setCurrentId(index);
     scrollToTop();
   };
 
@@ -472,7 +472,7 @@ export default function SuccessStories() {
                     exit={{ opacity: 0, y: -20 }}
                     transition={{ duration: 0.4 }}
                     // onClick={() => setCurrentStory(index)}
-                    onClick={() => handleCurrentStory(index)}
+                    onClick={() => handleCurrentStory(story?.id)}
                     className="cursor-pointer group"
                   >
                     <div className="bg-white rounded-2xl w-full  hover:shadow-xl transition-all duration-300 overflow-hidden mx-auto border border-gray-100">
@@ -484,7 +484,7 @@ export default function SuccessStories() {
                             alt={story.title}
                             className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500"
                           />
-                          <div className="absolute inset-0 bg-linear-to-r from-emerald-500/20 to-teal-500/20 group-hover:from-emerald-500/30 group-hover:to-teal-500/30 transition-all duration-300"></div>
+                          <div className="absolute inset-0 bg-linear-to-r  from-transparent to-black/10 group-hover:from-black/30 group-hover:to-black/30 transition-all duration-300"></div>
                           <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-emerald-700">
                             Next Story
                           </div>
