@@ -317,7 +317,7 @@ function SuccessStoriesPage() {
   const [hoveredCard, setHoveredCard] = useState(null);
 
   return (
-    <div className="min-h-screen bg-linear-to-br md:mt-20 font-roboto from-slate-50 via-white to-slate-50 py-8 px-4">
+    <div className="min-h-screen bg-linear-to-br md:mt-20  from-slate-50 via-white to-slate-50 py-8 px-4">
       {/* Header Section */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
@@ -338,8 +338,8 @@ function SuccessStoriesPage() {
             </span>
           </motion.div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight">
-            Success<span className="text-green-700">Stories</span>
+          <h1 className="text-4xl gap-2 md:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight">
+            Success<span className="text-green-700 ml-2">Stories</span>
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Discover how HERVeg.05 is transforming lives across Tanzania through

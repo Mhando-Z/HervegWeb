@@ -147,7 +147,7 @@ export default function Testimonial() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-5xl font-roboto font-bold text-gray-900 mb-3">
+          <h2 className="text-5xl  font-bold text-gray-900 mb-3">
             What Farmers Say
           </h2>
           <p className="text-gray-600 text-lg">

@@ -373,7 +373,7 @@ const HeroAndStory = () => {
   };
 
   return (
-    <div className="bg-white font-roboto">
+    <div className="bg-white ">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image with Overlay */}

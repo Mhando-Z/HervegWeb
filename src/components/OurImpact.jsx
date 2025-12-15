@@ -79,7 +79,7 @@ export default function OurImpact() {
           transition={{ duration: 0.8 }}
           className=" mb-16"
         >
-          <h1 className="text-5xl font-roboto font-bold text-green-800 mb-6">
+          <h1 className="text-5xl  font-bold text-green-800 mb-6">
             Rooted in Resilience
           </h1>
           <p className="text-lg text-gray-700 max-w-3xl  mb-8 leading-relaxed">

@@ -175,7 +175,7 @@ export default function ContactUs() {
               <p className="text-green-600 font-handwriting text-xl mb-2 text-center">
                 Have Questions?
               </p>
-              <h2 className="text-4xl font-bold font-roboto text-gray-900 mb-8 text-center">
+              <h2 className="text-4xl font-bold  text-gray-900 mb-8 text-center">
                 Send us a message
               </h2>
             </motion.div>

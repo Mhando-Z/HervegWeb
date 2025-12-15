@@ -34,7 +34,7 @@ function OurTeam() {
         {/* Optional Overlay Content */}
         <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 lg:p-10">
           <div className="text-white">
-            <h3 className="text-2xl md:text-3xl font-roboto font-bold ">
+            <h3 className="text-2xl md:text-3xl  font-bold ">
               Committed to Excellence
             </h3>
             <p className="text-sm md:text-base text-gray-200 max-w-2xl">

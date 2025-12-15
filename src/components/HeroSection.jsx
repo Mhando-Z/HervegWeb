@@ -98,7 +98,7 @@ function HeroSection() {
           initial={{ y: 30 }}
           animate={{ y: 0 }}
           transition={{ duration: 0.5 }}
-          className="mb-4 text-4xl xl:max-w-5xl text-center xl:text-5xl font-roboto font-bold text-white md:text-5xl"
+          className="mb-4 text-4xl xl:max-w-5xl text-center xl:text-5xl  font-bold text-white md:text-5xl"
         >
           Empowering Tanzanian Farmers Through Sustainable Solutions
         </motion.h1>
