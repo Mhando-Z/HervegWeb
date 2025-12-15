@@ -386,7 +386,7 @@ export default function SuccessStories() {
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: -50 }}
                     transition={{ duration: 0.5 }}
-                    className="p-8 md:p-12 space-y-6 max-h-[700px] overflow-y-auto custom-scrollbar"
+                    className="p-2 md:p-12 space-y-6 max-h-[700px] overflow-y-auto custom-scrollbar"
                   >
                     {/* Story Title */}
                     <motion.h3
@@ -447,46 +447,6 @@ export default function SuccessStories() {
                     </div>
                   </motion.div>
                 </AnimatePresence>
-
-                {/* Navigation Buttons */}
-                <div className="absolute bottom-8 hidden right-8  items-center gap-3">
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    onClick={prevStory}
-                    className="p-3 rounded-full bg-linear-to-br from-emerald-500 to-teal-500 text-white shadow-lg hover:shadow-xl transition-all duration-300"
-                    aria-label="Previous story"
-                  >
-                    <ChevronLeft className="w-6 h-6" />
-                  </motion.button>
-
-                  {/* Story Indicators */}
-                  <div className="flex gap-2">
-                    {successStories.map((_, index) => (
-                      <motion.button
-                        key={index}
-                        whileHover={{ scale: 1.2 }}
-                        onClick={() => setCurrentStory(index)}
-                        className={`h-2 rounded-full transition-all duration-300 ${
-                          index === currentStory
-                            ? "w-8 bg-linear-to-r from-emerald-500 to-teal-500"
-                            : "w-2 bg-gray-300 hover:bg-gray-400"
-                        }`}
-                        aria-label={`Go to story ${index + 1}`}
-                      />
-                    ))}
-                  </div>
-
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    onClick={nextStory}
-                    className="p-3 rounded-full bg-linear-to-br from-emerald-500 to-teal-500 text-white shadow-lg hover:shadow-xl transition-all duration-300"
-                    aria-label="Next story"
-                  >
-                    <ChevronRight className="w-6 h-6" />
-                  </motion.button>
-                </div>
               </div>
             </div>
           </motion.div>
