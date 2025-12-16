@@ -1,12 +1,12 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import image3 from "../../public/hero/03.jpg";
 import image4 from "../../public/hero/04.jpg";
 import image5 from "../../public/hero/05.jpg";
 
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import image3 from "../../public/hero/03.jpg";
 import Image from "next/image";
 
 const data = [

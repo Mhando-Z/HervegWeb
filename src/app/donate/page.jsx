@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import Donorbox from "./Donorbox";
 import Image from "next/image";
-import donateHero from "../../../public/hero/03.jpg";
+import donateHero from "../../../public/hero/donates2.jpg";
 
 const DonatePage = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -135,7 +135,7 @@ const DonatePage = () => {
           priority
         />
         <motion.section
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 1 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
           className="md:absolute top-0  bottom-0 left-0 right-0  py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-r md:from-green-600/40 from-green-600 md:to-emerald-700/80 to-emerald-700 text-white overflow-hidden"

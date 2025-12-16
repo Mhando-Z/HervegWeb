@@ -1,0 +1,452 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import {
+  ChevronRight,
+  ChevronLeft,
+  Mail,
+  Users,
+  DollarSign,
+  Sprout,
+  Truck,
+  BookOpen,
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+  ArrowRight,
+} from "lucide-react";
+import farmers from "../../public/hero/03.jpg";
+import Image from "next/image";
+import Link from "next/link";
+import Testimonial from "./Testimonial";
+import youth from "../../public/hero/youth.jpg";
+import donate from "../../public/hero/donate1.jpg";
+import Donorbox from "@/app/donate/Donorbox";
+
+const HomePage = () => {
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const [Visible, setIsVisible] = useState(false);
+  const [showDonor, setShowDonor] = useState(false);
+
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 5) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
+  }, []);
+
+  const features = [
+    {
+      icon: <Users className="w-8 h-8" />,
+      title: "Who We Serve",
+      description:
+        "Women and youth farmers facing hunger, exclusion, and climate stress.",
+    },
+    {
+      icon: <DollarSign className="w-8 h-8" />,
+      title: "How Farmers Save",
+      description:
+        "Farmers save small amounts on their phones via USSD — a debt-free system that builds confidence and control.",
+    },
+    {
+      icon: <Sprout className="w-8 h-8" />,
+      title: "What Farmers Receive",
+      description:
+        "Biofortified maize, nutrient-rich vegetable seeds, and vaccinated chickens that immediately improve diets and support income growth.",
+    },
+    {
+      icon: <Truck className="w-8 h-8" />,
+      title: "How We Reach Farmers",
+      description:
+        "We deliver inputs and training directly to villages at the start of each season, reducing cost and travel time.",
+    },
+    {
+      icon: <BookOpen className="w-8 h-8" />,
+      title: "How Farmers Learn",
+      description:
+        "Hands-on learning builds real skills — from composting to poultry care and climate-smart farming.",
+    },
+  ];
+
+  const stories = [
+    {
+      image: "/images/story1.jpg",
+      title: "How Women Farmers Are Saving Their Way to Food Security",
+      summary:
+        "Discover how Village Savings and Loan Associations empower young farmers to build financial independence.",
+      link: "/stories/vsla",
+    },
+    {
+      image: "/images/story2.jpg",
+      title:
+        "Before the Rain: How Tanzania’s Farmers Could Win or Lose the Season After the Elections",
+      summary:
+        "See how farmers adapt to climate change using sustainable techniques that restore soil health.",
+      link: "/stories/climate",
+    },
+    {
+      image: "/images/story3.jpg",
+      title:
+        "Feathers of Resilience: How SASSO Poultry Is Feeding Hope in Tanzania’s Highlands",
+      summary:
+        "Follow the journey of farmers who transformed their lives through biofortified crops.",
+      link: "/stories/harvest",
+    },
+    {
+      image: "/images/story4.jpg",
+      title:
+        "Six Steps to Change Farming Forever: How USSD Puts Power in Farmers’ Hands",
+      summary:
+        "Meet the women farmers breaking barriers and creating prosperity in their communities.",
+      link: "/stories/women",
+    },
+  ];
+
+  const openDonatePopup = () => {
+    setShowDonor(!showDonor);
+  };
+
+  return (
+    <div className="min-h-screen bg-white w-full">
+      {/* Hero Section */}
+      <section
+        className={`relative h-screen flex items-center justify-center overflow-hidden ${
+          Visible ? "mask-b-from-95%" : ""
+        }`}
+      >
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-linear-to-r from-black/60 to-black/40 z-10" />
+          <Image
+            src={farmers}
+            alt="Woman farmer in field"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Content */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="relative z-20 max-w-5xl mx-auto px-6 text-center text-white"
+        >
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className="mb-6"
+          >
+            <span className="text-lg md:text-xl font-light tracking-widest uppercase text-emerald-400">
+              HERVeg.05
+            </span>
+          </motion.div>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.6 }}
+            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
+          >
+            Ending Malnutrition and Poverty for Tanzania's Farmers
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.6 }}
+            className="text-lg md:text-xl mb-10 max-w-3xl mx-auto font-light leading-relaxed"
+          >
+            We help women and youth farmers grow more nutritious food, earn
+            steady income, and restore their soil — using simple tools that work
+            in real villages.
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8, duration: 0.6 }}
+          >
+            <Link href="/aboutus/whoweare/">
+              <button className="bg-emerald-600 cursor-pointer hover:bg-emerald-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                Learn About Us
+              </button>
+            </Link>
+          </motion.div>
+        </motion.div>
+
+        {/* Scroll Indicator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.2, duration: 0.6 }}
+          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20"
+        >
+          <motion.div
+            animate={{ y: [0, 10, 0] }}
+            transition={{ duration: 1.5, repeat: Infinity }}
+            className="w-6 h-10 border-2 border-white rounded-full flex items-start justify-center p-2"
+          >
+            <div className="w-1.5 h-3 bg-white rounded-full" />
+          </motion.div>
+        </motion.div>
+      </section>
+
+      {/* How We Drive Change */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+              How We Drive Change
+            </h2>
+            <p className="text-xl text-gray-600 mb-4">
+              Simple tools, powerful results
+            </p>
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+              Our solutions tackle malnutrition, poverty, and climate stress.
+              Over 70% of our farmers are women, and each household grows up to
+              4× more vegetables within one season.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {features.map((feature, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                whileHover={{ y: -8, transition: { duration: 0.3 } }}
+                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-6 text-emerald-600">
+                  {feature.icon}
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {feature.description}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+          {/* hidden button */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="text-center hidden"
+          >
+            <a href="/model">
+              <button className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2">
+                See How It Works
+                <ArrowRight className="w-5 h-5" />
+              </button>
+            </a>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Youth Empowered Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="relative"
+            >
+              <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+                <Image
+                  src={youth}
+                  alt="Rehema on her farm"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent" />
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+                Youth Empowered Through Farming
+              </h2>
+
+              <div className="bg-emerald-50 p-8 rounded-2xl mb-6">
+                <div className="text-emerald-600 mb-4">
+                  <svg
+                    className="w-10 h-10"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                  </svg>
+                </div>
+                <p className="text-xl text-gray-700 leading-relaxed italic mb-4">
+                  I never thought I could farm without borrowing money. With
+                  HERVeg.05, I saved little by little on my phone, got my
+                  chickens and seeds delivered to my village, and learned by
+                  doing. Now I feed my siblings and sell the extra vegetables.
+                </p>
+              </div>
+
+              <p className="text-lg text-gray-600 mb-8">
+                Rehema now feeds her siblings and sells 50% of her extra harvest
+                locally.
+              </p>
+
+              <a href="/impact">
+                <button className="bg-gray-900 hidden hover:bg-gray-800 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105  items-center gap-2">
+                  Meet Our Farmers
+                  <ArrowRight className="w-5 h-5" />
+                </button>
+              </a>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Give Today Section */}
+      <section className="py-20 bg-linear-to-br from-yellow-500 to-green-600 mask-t-from-95% mask-b-from-95% text-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Give Today, Grow Tomorrow
+              </h2>
+              <p className="text-xl mb-8 leading-relaxed">
+                HERVeg.05 farmers grow 3× more vegetables, raise healthy
+                poultry, and increase incomes by 60% — all without debt.
+              </p>
+
+              <div className="flex flex-wrap gap-4">
+                <button
+                  onClick={openDonatePopup}
+                  className="bg-white cursor-pointer text-orange-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                >
+                  {showDonor ? "close donorbox" : " Donate Today"}
+                </button>
+                <Link href="/donate/">
+                  <button className="bg-transparent cursor-pointer border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-orange-600 transition-all duration-300 transform hover:scale-105">
+                    Learn More
+                  </button>
+                </Link>
+              </div>
+            </motion.div>
+
+            {showDonor ? (
+              <motion.div className="flex flex-col items-end justify-end ">
+                <Donorbox />
+              </motion.div>
+            ) : (
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className="relative h-[400px] rounded-3xl overflow-hidden shadow-2xl"
+              >
+                <Image
+                  src={donate}
+                  alt="Woman harvesting vegetables"
+                  className="w-full h-full object-cover"
+                />
+              </motion.div>
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* testimonial section */}
+      <Testimonial />
+
+      {/* Features & Stories */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+              Features & Stories
+            </h2>
+            <p className="text-xl text-gray-600">
+              Discover the impact we're making together
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {stories.map((story, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                whileHover={{ y: -8, transition: { duration: 0.3 } }}
+                className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={story.image}
+                    alt={story.title}
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">
+                    {story.title}
+                  </h3>
+                  <p className="text-gray-600 mb-4 leading-relaxed">
+                    {story.summary}
+                  </p>
+                  <a href={story.link}>
+                    <button className="text-emerald-600 font-semibold hover:text-emerald-700 inline-flex items-center gap-2 group">
+                      Read More
+                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </button>
+                  </a>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default HomePage;

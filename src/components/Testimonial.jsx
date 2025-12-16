@@ -148,7 +148,7 @@ export default function Testimonial() {
           className="text-center mb-12"
         >
           <h2 className="text-5xl  font-bold text-gray-900 mb-3">
-            What Farmers Say
+            {/* What Farmers Say */}Real Change, Real Voices
           </h2>
           <p className="text-gray-600 text-lg">
             Don't just take our word for it
