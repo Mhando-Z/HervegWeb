@@ -27,7 +27,7 @@ export default function Home() {
       {/* testimonial section */}
       {/* <Testimonial /> */}
       {/* FAQ section */}
-      <FAQ />
+      {/* <FAQ /> */}
       {/* contact Us section */}
       <ContactUs />
       {/* News letter section */}
