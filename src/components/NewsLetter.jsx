@@ -14,11 +14,10 @@ function NewsLetter() {
     setEmail("");
   };
 
-  
   return (
-    <div className="w-full">
+    <div className="w-full ">
       {/* Newsletter Section */}
-      <section className="py-20 bg-linear-to-t from-[#1a4d3a] to-emerald-800 text-white">
+      <section className="py-20 bg-linear-to-t  from-[#1a4d3a] to-emerald-800 text-white">
         <div className="max-w-4xl mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

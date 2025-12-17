@@ -376,7 +376,7 @@ const HomePage = () => {
       </section>
 
       {/* Promo section */}
-      <PromoStats />
+      {/* <PromoStats /> */}
 
       {/* Features & Stories */}
       <section className="py-20 bg-gray-50">

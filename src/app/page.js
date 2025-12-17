@@ -7,6 +7,7 @@ import NewsLetter from "@/components/NewsLetter";
 import OurImpact from "@/components/OurImpact";
 import OurServices from "@/components/OurServices";
 import OurTeam from "@/components/OurTeam";
+import PromoStats from "@/components/PromoStats";
 import Testimonial from "@/components/Testimonial";
 
 export default function Home() {
@@ -29,7 +30,8 @@ export default function Home() {
       {/* FAQ section */}
       {/* <FAQ /> */}
       {/* contact Us section */}
-      <ContactUs />
+      {/* <ContactUs /> */}
+      <PromoStats />
       {/* News letter section */}
       <NewsLetter />
     </div>

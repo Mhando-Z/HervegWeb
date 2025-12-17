@@ -121,6 +121,14 @@ export default function Footer() {
                   <p className="text-sm">info@herveg.org</p>
                 </div>
               </div>
+              <div className="flex items-start gap-4">
+                <Link
+                  href={"/contactus"}
+                  className="py-2 px-10 bg-green-600 text-white font-bold text-sm rounded-3xl"
+                >
+                  Contact Us
+                </Link>
+              </div>
             </div>
           </div>
         </div>
