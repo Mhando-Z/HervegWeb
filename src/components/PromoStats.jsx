@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import farmers from "../../public/images/21.jpg";
 
 const PromoStats = () => {
   const stats = [
@@ -80,11 +81,9 @@ const PromoStats = () => {
           <motion.div variants={imageVariants} className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/happy-woman-farmer.jpg"
+                src={farmers}
                 alt="Happy woman farmer"
-                width={600}
-                height={700}
-                className="w-full h-auto object-cover"
+                className="w-full h-full object-cover"
                 priority
               />
               <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent"></div>
