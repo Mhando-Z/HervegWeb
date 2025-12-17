@@ -388,7 +388,7 @@ const HomePage = () => {
       </section>
 
       {/* testimonial section */}
-      <Testimonial />
+      {/* <Testimonial /> */}
 
       {/* Features & Stories */}
       <section className="py-20 bg-gray-50">
