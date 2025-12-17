@@ -3,7 +3,7 @@ import ContactUs from "@/components/ContactUs";
 
 function page() {
   return (
-    <div>
+    <div className="flex flex-col container mx-auto md:mt-20">
       <ContactUs />
     </div>
   );
