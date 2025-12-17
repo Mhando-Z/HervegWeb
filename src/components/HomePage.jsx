@@ -24,6 +24,7 @@ import Testimonial from "./Testimonial";
 import youth from "../../public/hero/youth.jpg";
 import donate from "../../public/hero/donate1.jpg";
 import Donorbox from "@/app/donate/Donorbox";
+import PromoStats from "./PromoStats";
 
 const HomePage = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -389,6 +390,7 @@ const HomePage = () => {
 
       {/* testimonial section */}
       {/* <Testimonial /> */}
+      <PromoStats />
 
       {/* Features & Stories */}
       <section className="py-20 bg-gray-50">
