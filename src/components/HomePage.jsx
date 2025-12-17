@@ -140,17 +140,6 @@ const HomePage = () => {
           transition={{ duration: 0.8 }}
           className="relative z-20 max-w-5xl mx-auto px-6 text-center text-white"
         >
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-            className="mb-6"
-          >
-            <span className="text-lg md:text-xl font-light tracking-widest uppercase text-emerald-400">
-              HERVeg.05
-            </span>
-          </motion.div>
-
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
