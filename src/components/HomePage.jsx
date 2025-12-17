@@ -20,14 +20,12 @@ import {
 import farmers from "../../public/hero/03.jpg";
 import Image from "next/image";
 import Link from "next/link";
-import Testimonial from "./Testimonial";
 import youth from "../../public/hero/youth.jpg";
 import donate from "../../public/hero/donate1.jpg";
 import Donorbox from "@/app/donate/Donorbox";
 import PromoStats from "./PromoStats";
 
 const HomePage = () => {
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [Visible, setIsVisible] = useState(false);
   const [showDonor, setShowDonor] = useState(false);
 
@@ -388,8 +386,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* testimonial section */}
-      {/* <Testimonial /> */}
+      {/* Promo section */}
       <PromoStats />
 
       {/* Features & Stories */}
