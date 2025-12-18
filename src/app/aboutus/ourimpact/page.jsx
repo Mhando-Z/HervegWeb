@@ -139,7 +139,7 @@ const ImpactPage = () => {
               {[
                 {
                   icon: TrendingUp,
-                  value: "34%",
+                  value: "84%",
                   label: "Increase in Vegetable Yields",
                   color: "emerald",
                 },
