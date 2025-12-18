@@ -145,7 +145,7 @@ const PromoStats = () => {
             >
               <h3 className="text-3xl lg:text-4xl font-bold text-white mb-8">
                 Expanding to Reach
-                <span className="text-green-400">10,000 Farmers By:</span>
+                <span className="text-green-400"> 10,000 Farmers By:</span>
               </h3>
 
               <div className="grid md:grid-cols-2 gap-6">
@@ -178,34 +178,6 @@ const PromoStats = () => {
                   </motion.div>
                 ))}
               </div>
-
-              {/* CTA Button */}
-              <motion.div
-                className="mt-10 flex justify-center lg:justify-start"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.8, duration: 0.5 }}
-                viewport={{ once: true }}
-              >
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="bg-linear-to-r hidden from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold px-10 py-4 rounded-full shadow-2xl transition-all duration-300 text-lg flex items-center space-x-3 group"
-                >
-                  <span>Join Our Mission</span>
-                  <svg
-                    className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                  </svg>
-                </motion.button>
-              </motion.div>
             </motion.div>
           </motion.div>
         </div>
