@@ -98,8 +98,8 @@ const HomePage = () => {
       title:
         "Feathers of Resilience: How SASSO Poultry Is Feeding Hope in Tanzania’s Highlands",
       summary:
-        "Follow the journey of farmers who transformed their lives through biofortified crops.",
-      link: "/stories/harvest",
+        "The morning air in Njombe carries a strange mix these days, the damp scent of soil before rain, and the soft chorus of chickens. Not the scrawny local kind scratching for scraps, but sturdy SASSO birds — brown, full-bodied, confident. For women like Anna Mkalawa, a 42-year-old farmer in Ihalula village, those birds are more than livestock. They’re insurance against hunger, and a small rebellion against poverty.",
+      link: "/articles/article3/",
     },
     {
       image: "/images/story4.jpg",
