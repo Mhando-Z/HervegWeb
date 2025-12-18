@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Article1 = () => {
   const fadeInUp = {
@@ -696,30 +697,30 @@ const Article1 = () => {
           {/* CTA Buttons */}
           <motion.section variants={fadeInUp} className="space-y-6">
             <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
-              👉 Here's how to help:
+              Here's how to help:
             </h3>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <a
-                href="#donate"
+              <Link
+                href="/donate/"
                 className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-4 px-6 rounded-lg text-center transition-all transform hover:scale-105 shadow-lg"
               >
                 Donate $35 to empower one farmer → [Donate Now]
-              </a>
+              </Link>
 
-              <a
-                href="mailto:info@herveg.org"
-                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-6 rounded-lg text-center transition-all transform hover:scale-105 shadow-lg"
+              <Link
+                href="/contactus"
+                className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-4 px-6 rounded-lg text-center transition-all transform hover:scale-105 shadow-lg"
               >
                 Partner with us as a corporate sponsor → info@herveg.org
-              </a>
+              </Link>
 
-              <a
-                href="#share"
-                className="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-4 px-6 rounded-lg text-center transition-all transform hover:scale-105 shadow-lg"
+              <Link
+                href="/aboutus/whoweare/"
+                className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-4 px-6 rounded-lg text-center transition-all transform hover:scale-105 shadow-lg"
               >
                 Share our story → #GrowWithoutDebt
-              </a>
+              </Link>
             </div>
 
             <p className="text-xl text-center text-slate-800 font-semibold mt-8">
