@@ -67,7 +67,7 @@ const Article1 = () => {
               real farmer now."
             </p>
             <p className="text-sm text-slate-600 mt-3 font-medium">
-              — Ritha Juma, 43, mother of 3, Wanging'ombe District
+              Ritha Juma, 43, mother of 3, Wanging'ombe District
             </p>
           </motion.blockquote>
         </motion.div>
@@ -285,7 +285,7 @@ const Article1 = () => {
           {/* Section 4 */}
           <motion.section variants={fadeInUp} className="space-y-6">
             <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
-              How It Works — Simple, Familiar, Farmer-First
+              How It Works Simple, Familiar, Farmer-First
             </h3>
 
             <p className="text-lg text-slate-700 leading-relaxed">
@@ -382,7 +382,7 @@ const Article1 = () => {
               <blockquote className=" border-amber-600 pl-4 my-6">
                 <p className="text-xl italic text-slate-800 leading-relaxed">
                   "I used to plant with fear, knowing I'd owe someone at
-                  harvest. Now I grow with pride—this garden is fully mine,"
+                  harvest. Now I grow with pride this garden is fully mine,"
                 </p>
                 <p className="text-sm text-slate-600 mt-2">
                   she says with a smile.
@@ -396,7 +396,7 @@ const Article1 = () => {
 
               <p className="text-lg text-slate-700 leading-relaxed font-medium">
                 Stories like Ritha's show what's possible when women are given
-                the right tools—and trusted to lead.
+                the right tools and trusted to lead.
               </p>
             </div>
           </motion.section>
@@ -606,19 +606,18 @@ const Article1 = () => {
                     ✓ 92% of farmers stick with the system once they start.
                   </p>
                   <p className="text-white/90">
-                    ✓ $35 per farmer unlocks a 30% income boost — with zero
-                    debt.
+                    ✓ $35 per farmer unlocks a 30% income boost with zero debt.
                   </p>
                 </div>
               </div>
 
               <blockquote className=" border-white/50 pl-4 my-6">
                 <p className="text-lg italic">
-                  "Before HERVeg.05, I borrowed. Now I save — and my daughters
-                  go to school."
+                  "Before HERVeg.05, I borrowed. Now I save and my daughters go
+                  to school."
                 </p>
                 <p className="text-sm text-white/80 mt-2">
-                  — Fatima, Njombe Rural
+                  Fatima, Njombe Rural
                 </p>
               </blockquote>
             </div>
@@ -724,8 +723,8 @@ const Article1 = () => {
             </div>
 
             <p className="text-xl text-center text-slate-800 font-semibold mt-8">
-              Let's build a future where women grow without borrowing — and
-              thrive without compromise.
+              Let's build a future where women grow without borrowing and thrive
+              without compromise.
             </p>
           </motion.section>
 

@@ -13,10 +13,10 @@ const PromoStats = () => {
   ];
 
   const expansionGoals = [
-    "Helping families save in small steps",
-    "Training youth sales agents to reach more villages",
-    "Bringing inputs closer to home",
-    "Teaching practical, hands-on skills",
+    "Enabling women farmers to save in small installments through trusted mobile layaway",
+    "Training youth village sales agents, creating local jobs and reaching more villages",
+    "Bringing inputs closer to women’s homes through reliable last-mile delivery",
+    "Delivering practical, hands-on training in climate-smart farming, nutrition, and poultry",
   ];
 
   // Animation variants
@@ -99,7 +99,7 @@ const PromoStats = () => {
                 </span>
               </motion.div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                What We've Built —<br />
+                What We've Built
                 <span className="text-green-400">and Where We're Going</span>
               </h2>
               <p className="text-xl text-gray-200 max-w-3xl leading-relaxed">
@@ -144,8 +144,8 @@ const PromoStats = () => {
               className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 lg:p-10 border border-white/20 shadow-2xl"
             >
               <h3 className="text-3xl lg:text-4xl font-bold text-white mb-8">
-                Expanding to Reach{" "}
-                <span className="text-green-400">10,000 Farmers</span>
+                Expanding to Reach
+                <span className="text-green-400">10,000 Farmers By:</span>
               </h3>
 
               <div className="grid md:grid-cols-2 gap-6">
@@ -157,7 +157,7 @@ const PromoStats = () => {
                     transition={{ delay: index * 0.1 + 0.5, duration: 0.5 }}
                     viewport={{ once: true }}
                     whileHover={{ x: 10 }}
-                    className="flex items-start space-x-4 group"
+                    className="flex  items-center space-x-4 group"
                   >
                     <div className="shrink-0 w-10 h-10 rounded-full bg-linear-to-br from-green-400 to-green-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                       <svg

@@ -62,7 +62,7 @@ const VisionValues = () => {
     {
       stage: "Dignity",
       quote:
-        "Farming used to feel like a struggle—now people come to me for advice.",
+        "Farming used to feel like a struggle now people come to me for advice.",
       description: "Recognition and community leadership",
       icon: <Handshake className="w-10 h-10" />,
       color: "from-lime-500 to-green-600",
@@ -104,7 +104,7 @@ const VisionValues = () => {
       number: "03",
       title: "Every farmer has a fair chance",
       description:
-        "Women and youth lead savings groups and co-ops. Training is simple, local, and peer-to-peer. Even the most remote farmers access the knowledge, tools, and finance they need—free from bias or barriers.",
+        "Women and youth lead savings groups and co-ops. Training is simple, local, and peer-to-peer. Even the most remote farmers access the knowledge, tools, and finance they need free from bias or barriers.",
       icon: <Users className="w-7 h-7" />,
       color: "from-green-500 to-emerald-600",
       accentColor: "bg-green-100",
@@ -113,7 +113,7 @@ const VisionValues = () => {
       number: "04",
       title: "Change starts small but grows strong",
       description:
-        "Savings groups evolve into businesses. Farmers teach farmers. Local supply chains create jobs and reduce dependency. Profits are reinvested in the land, youth, and the future—reducing poverty one community at a time.",
+        "Savings groups evolve into businesses. Farmers teach farmers. Local supply chains create jobs and reduce dependency. Profits are reinvested in the land, youth, and the future reducing poverty one community at a time.",
       icon: <TrendingUp className="w-7 h-7" />,
       color: "from-green-500 to-emerald-600",
       accentColor: "bg-green-100",
@@ -512,7 +512,7 @@ const VisionValues = () => {
           </h3>
 
           <p className="text-xl md:text-2xl text-white/95 leading-relaxed mb-8">
-            Our values are more than words—they are the foundation of every
+            Our values are more than words they are the foundation of every
             decision we make. They keep us grounded, guide our actions, and
             ensure that our impact is both meaningful and lasting for the
             communities we serve.

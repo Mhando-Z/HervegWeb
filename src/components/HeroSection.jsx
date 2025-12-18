@@ -32,7 +32,7 @@ const data = [
     image: image5,
     text: "Empowering Tanzanian Farmers Through Sustainable Solutions",
     description:
-      "HERVeg.05 is a rapidly growing agricultural initiative founded in 2023, working to fight malnutrition and uplift farmers—especially women—through high‑quality seeds, training, and scalable community‑based models like VSLA groups.",
+      "HERVeg.05 is a rapidly growing agricultural initiative founded in 2023, working to fight malnutrition and uplift farmers especially women through high‑quality seeds, training, and scalable community‑based models like VSLA groups.",
   },
 ];
 
@@ -109,8 +109,8 @@ function HeroSection() {
           className="max-w-2xl font-raleway text-sm md:text-base mx-auto mb-6 text-gray-100"
         >
           HERVeg.05 is a rapidly growing agricultural initiative founded in
-          2023, working to fight malnutrition and uplift farmers—especially
-          women—through high‑quality seeds, training, and scalable
+          2023, working to fight malnutrition and uplift farmers especially
+          women through high‑quality seeds, training, and scalable
           community‑based models like VSLA groups.
         </motion.p>
       </motion.div>

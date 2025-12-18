@@ -156,7 +156,7 @@
 //             {/* Introduction */}
 //             <motion.div variants={fadeInUp} className="max-w-4xl mx-auto mb-16">
 //               <p className="text-xl text-gray-700 leading-relaxed text-center">
-//                 In rural areas, farming is more than work—it's life itself. But
+//                 In rural areas, farming is more than work it's life itself. But
 //                 for smallholder farmers, especially women and youth, every day
 //                 brings challenges:
 //               </p>
@@ -216,7 +216,7 @@
 //               <p className="text-emerald-50 text-lg max-w-3xl mx-auto">
 //                 Many come together in women's savings groups, supporting one
 //                 another, saving little by little, and sharing knowledge. These
-//                 groups are full of potential—they just need a boost to reach it.
+//                 groups are full of potential they just need a boost to reach it.
 //               </p>
 //             </motion.div>
 
@@ -290,7 +290,7 @@
 //                 </h3>
 //                 <p className="text-lg text-gray-700 leading-relaxed">
 //                   Help farmers grow more food, increase income, and improve
-//                   their families' lives—all while letting them make the
+//                   their families' lives all while letting them make the
 //                   decisions themselves.
 //                 </p>
 //               </div>
@@ -499,7 +499,7 @@ const HeroAndStory = () => {
               <p className="text-lg text-gray-700 leading-relaxed">
                 Many come together in women's savings groups, supporting one
                 another, saving little by little, and sharing knowledge. These
-                groups are full of potential—they just need a boost to reach it.
+                groups are full of potential they just need a boost to reach it.
               </p>
             </motion.div>
 
@@ -540,7 +540,7 @@ const HeroAndStory = () => {
               <p className="text-lg text-gray-700 leading-relaxed">
                 <span className="font-semibold text-gray-900">Our goal:</span>{" "}
                 help farmers grow more food, increase income, and improve their
-                families' lives—all while letting them make the decisions
+                families' lives all while letting them make the decisions
                 themselves.
               </p>
             </motion.div>

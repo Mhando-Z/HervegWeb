@@ -214,7 +214,7 @@ const Article2 = () => {
                 did, we had no seeds ready."
               </p>
               <footer className="text-slate-600 font-medium">
-                — Anna Msigwa, mother of three, Ludewa
+                Anna Msigwa, mother of three, Ludewa
               </footer>
             </motion.blockquote>
 
@@ -379,7 +379,7 @@ const Article2 = () => {
                 for my family."
               </p>
               <footer className="text-slate-600 font-medium">
-                — Julies Mligo, 39-year-old father of three, Ihalula village,
+                Julies Mligo, 39-year-old father of three, Ihalula village,
                 Njombe Region
               </footer>
             </motion.blockquote>

@@ -61,13 +61,13 @@ const CareersPage = () => {
       icon: <Sprout className="w-8 h-8" />,
       title: "We Start With Farmers",
       description:
-        "Everything begins with the people we serve—women, youth, and smallholder farmers. We listen to their needs and build alongside them.",
+        "Everything begins with the people we serve women, youth, and smallholder farmers. We listen to their needs and build alongside them.",
     },
     {
       icon: <Heart className="w-8 h-8" />,
       title: "Nutrition Is Power",
       description:
-        "We see food as more than a meal—it's a tool for growth, health, and resilience. This isn't charity; it's access to better futures.",
+        "We see food as more than a meal it's a tool for growth, health, and resilience. This isn't charity; it's access to better futures.",
     },
     {
       icon: <Users className="w-8 h-8" />,
@@ -79,13 +79,13 @@ const CareersPage = () => {
       icon: <Target className="w-8 h-8" />,
       title: "Impact Over Ego",
       description:
-        "Titles don't matter—outcomes do. We celebrate wins and learn from failures. No task is too small when it contributes to something big.",
+        "Titles don't matter outcomes do. We celebrate wins and learn from failures. No task is too small when it contributes to something big.",
     },
     {
       icon: <TrendingUp className="w-8 h-8" />,
       title: "Think Big, Stay Grounded",
       description:
-        "Our goal is national transformation—but our work happens one farmer, one community, one season at a time.",
+        "Our goal is national transformation but our work happens one farmer, one community, one season at a time.",
     },
     {
       icon: <Award className="w-8 h-8" />,
@@ -100,9 +100,9 @@ const CareersPage = () => {
       name: "Oscar Mugulusi",
       role: "Sales Lead",
       quote:
-        "I came from a retail background, but working at HERVeg.05 opened my eyes. I’m not just selling inputs—I’m helping a mother feed her family and a youth start their first agribusiness. Every sale is personal.",
+        "I came from a retail background, but working at HERVeg.05 opened my eyes. I’m not just selling inputs I’m helping a mother feed her family and a youth start their first agribusiness. Every sale is personal.",
       description:
-        "Zawadi leads our sales team across multiple districts. She trains field agents, manages inventory, and ensures our products reach even the most remote customers—on time and affordably",
+        "Zawadi leads our sales team across multiple districts. She trains field agents, manages inventory, and ensures our products reach even the most remote customers on time and affordably",
     },
     {
       name: "Patricia Pangani",
@@ -116,7 +116,7 @@ const CareersPage = () => {
       name: "Mhando Zuberi",
       role: "IT Support",
       quote:
-        "I grew up in a rural area, so building simple digital tools for farmers is more than a job—it’s personal. I make sure our systems work, even when networks don’t.",
+        "I grew up in a rural area, so building simple digital tools for farmers is more than a job it’s personal. I make sure our systems work, even when networks don’t.",
       description:
         "Mhando helps design and troubleshoot tech solutions that power our mobile layaway system and farmer records. He also supports our team with on-the-ground tech training",
     },
@@ -124,7 +124,7 @@ const CareersPage = () => {
       name: "Hilda Sanga",
       role: "Call Center Officer",
       quote:
-        "My job is to ask: Is it working? I visit farms, gather feedback, and track the results that matter—more harvests, better nutrition, and lasting change.",
+        "My job is to ask: Is it working? I visit farms, gather feedback, and track the results that matter more harvests, better nutrition, and lasting change.",
       description:
         "Hilda monitors everything from yield improvements to household diet diversity. Her data helps us learn fast, improve faster, and scale smarter.",
     },
@@ -151,36 +151,36 @@ const CareersPage = () => {
       icon: <MessageCircle className="w-6 h-6" />,
       title: "Intro Interview",
       description:
-        "If your application catches our eye, we’ll schedule a short call. This is a chance to hear your story, understand your motivation, and answer your early questions. It’s friendly and relaxed—we’re just getting to know each other.",
+        "If your application catches our eye, we’ll schedule a short call. This is a chance to hear your story, understand your motivation, and answer your early questions. It’s friendly and relaxed we’re just getting to know each other.",
     },
     {
       number: "03",
       icon: <CheckCircle className="w-6 h-6" />,
       title: "Role Task",
       description:
-        "We’ll send you a task or case based on the job you applied for. It’s not a test—it’s a window into how you think, solve problems, and communicate. We want to see how you approach real challenges, with clarity and creativity.",
+        "We’ll send you a task or case based on the job you applied for. It’s not a test it’s a window into how you think, solve problems, and communicate. We want to see how you approach real challenges, with clarity and creativity.",
     },
     {
       number: "04",
       icon: <MapPin className="w-6 h-6" />,
       title: "Field Visit",
       description:
-        "Here’s where it gets real. We’ll invite you to spend a day in the field—either shadowing our team or engaging with the people we serve.Why? Because you can’t fully understand HERVeg.05 from behind a desk. This is your chance to see the impact up close and feel what it’s like to work in our setting",
+        "Here’s where it gets real. We’ll invite you to spend a day in the field either shadowing our team or engaging with the people we serve.Why? Because you can’t fully understand HERVeg.05 from behind a desk. This is your chance to see the impact up close and feel what it’s like to work in our setting",
     },
     {
       number: "05",
       icon: <Video className="w-6 h-6" />,
       title: "Final Interview",
       description:
-        "This is the last step—a longer conversation with our leadership or program team. We’ll dive deeper into your experience, talk through your field visit, and explore what success in this role would look like. By this point, you’ll have a real feel for HERVeg.05. And we’ll have a clear sense of how you’d grow with us.",
+        "This is the last step a longer conversation with our leadership or program team. We’ll dive deeper into your experience, talk through your field visit, and explore what success in this role would look like. By this point, you’ll have a real feel for HERVeg.05. And we’ll have a clear sense of how you’d grow with us.",
     },
   ];
 
   const qualities = [
-    "You care about rural communities: You don’t see them as statistics. You see them as people—with stories, challenges, and dreams. You want to listen, learn, and help them grow stronger.",
-    "You believe in women and youth: We work where young people and women often get left behind. You’re someone who wants to change that—by supporting, training, and leading with them.",
+    "You care about rural communities: You don’t see them as statistics. You see them as people with stories, challenges, and dreams. You want to listen, learn, and help them grow stronger.",
+    "You believe in women and youth: We work where young people and women often get left behind. You’re someone who wants to change that by supporting, training, and leading with them.",
     "You’re driven by purpose, not position: We’re not here for titles. We’re here for impact. If you’re someone who rolls up your sleeves, takes initiative, and stays humble, you’ll thrive here.",
-    "You adapt and keep going: Plans change. Roads flood. Meetings move under trees. You don’t freeze—you adjust. You stay calm, find solutions, and keep the work moving",
+    "You adapt and keep going: Plans change. Roads flood. Meetings move under trees. You don’t freeze you adjust. You stay calm, find solutions, and keep the work moving",
     "You work well with others: We’re a team. That means sharing credit, asking for help, and giving support. We grow faster when we grow together.",
     "You think and act: You ask smart questions and you don’t wait for permission to solve a problem. You balance doing the work with thinking deeply about how to do it better.",
   ];
@@ -283,7 +283,7 @@ const CareersPage = () => {
               Our Culture & Values
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Culture is not something we write on a wall—it's something we live
+              Culture is not something we write on a wall it's something we live
               every day. Our values are rooted in the communities we serve.
             </p>
           </motion.div>

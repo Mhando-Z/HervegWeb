@@ -31,7 +31,7 @@ const successStories = [
   ======================== */
   {
     id: 1,
-    title: "From Struggling Farmer to Nutrition Champion — Amina’s Journey",
+    title: "From Struggling Farmer to Nutrition Champion   Amina’s Journey",
     image_url: amina,
     sections: [
       {
@@ -63,13 +63,13 @@ const successStories = [
       {
         type: "quote",
         content:
-          "The drought wiped out much of what little we had. I worried constantly—how would I feed my children tomorrow?",
+          "The drought wiped out much of what little we had. I worried constantly how would I feed my children tomorrow?",
         author: "Amina",
       },
       {
         type: "paragraph",
         content:
-          "After enrolling in HERVeg.05’s program, Amina received a bundle of five nutrient-dense vegetable seeds—kale, beetroot, Chinese cabbage, amaranth, and spinach—perfect for her small garden. She was also given five vaccinated SASO chicks to start poultry farming.",
+          "After enrolling in HERVeg.05’s program, Amina received a bundle of five nutrient-dense vegetable seeds kale, beetroot, Chinese cabbage, amaranth, and spinach perfect for her small garden. She was also given five vaccinated SASO chicks to start poultry farming.",
       },
       {
         type: "paragraph",
@@ -95,7 +95,7 @@ const successStories = [
   ======================== */
   {
     id: 2,
-    title: "Juma’s Breakthrough — From Debt and Despair to Stability and Pride",
+    title: "Juma’s Breakthrough   From Debt and Despair to Stability and Pride",
     image_url: juma,
     sections: [
       {
@@ -116,7 +116,7 @@ const successStories = [
       {
         type: "quote",
         content:
-          "I felt trapped — every season was a gamble. I kept borrowing, but the harvest never came through. My children went hungry, and I had no answers.",
+          "I felt trapped   every season was a gamble. I kept borrowing, but the harvest never came through. My children went hungry, and I had no answers.",
         author: "Juma",
       },
       {
@@ -149,12 +149,12 @@ const successStories = [
       {
         type: "paragraph",
         content:
-          "Today, Juma enjoys a flourishing garden and a thriving poultry business. His children are healthier, attend school regularly, and the family is free from debt for the first time in years. Juma’s success has made him a pillar of his community — a symbol of hope for other farmers caught in similar struggles.",
+          "Today, Juma enjoys a flourishing garden and a thriving poultry business. His children are healthier, attend school regularly, and the family is free from debt for the first time in years. Juma’s success has made him a pillar of his community   a symbol of hope for other farmers caught in similar struggles.",
       },
       {
         type: "quote",
         content:
-          "I’m proud to say I’m no longer just surviving — I’m building a future. Now, other farmers come to me for advice, and that fills me with pride.",
+          "I’m proud to say I’m no longer just surviving   I’m building a future. Now, other farmers come to me for advice, and that fills me with pride.",
         author: "Juma",
       },
     ],
@@ -165,7 +165,7 @@ const successStories = [
   ======================== */
   {
     id: 3,
-    title: "Empowering Women and Changing Lives — Neema’s Transformation",
+    title: "Empowering Women and Changing Lives   Neema’s Transformation",
     image_url: neema,
     sections: [
       {
@@ -181,7 +181,7 @@ const successStories = [
       {
         type: "paragraph",
         content:
-          "Neema’s household income was barely enough to cover basic needs—about 50,000 Tanzanian shillings (~$21) per month from sporadic farming. Her small 0.3-acre garden produced less than 100 kg of mixed crops annually, insufficient to feed her family of five. Her youngest daughter suffered repeated illnesses, often due to a lack of dietary diversity.",
+          "Neema’s household income was barely enough to cover basic needs about 50,000 Tanzanian shillings (~$21) per month from sporadic farming. Her small 0.3-acre garden produced less than 100 kg of mixed crops annually, insufficient to feed her family of five. Her youngest daughter suffered repeated illnesses, often due to a lack of dietary diversity.",
       },
       {
         type: "quote",
@@ -230,7 +230,7 @@ const successStories = [
       {
         type: "quote",
         content:
-          "I am no longer just farming for survival—I am farming to thrive. Together, we are changing lives, one garden at a time.",
+          "I am no longer just farming for survival I am farming to thrive. Together, we are changing lives, one garden at a time.",
         author: "Neema",
       },
     ],
@@ -241,7 +241,7 @@ const successStories = [
   {
     id: 4,
     title:
-      "Overcoming Climate Challenges with Innovation — Juma Msemo's Resilient Farm",
+      "Overcoming Climate Challenges with Innovation   Juma Msemo's Resilient Farm",
     image_url: mgeta,
     sections: [
       {
@@ -433,7 +433,7 @@ export default function SuccessStories() {
                                   "{section.content}"
                                 </p>
                                 <footer className="text-emerald-700 font-semibold text-sm">
-                                  — {section.author}
+                                  {section.author}
                                 </footer>
                               </blockquote>
                               <div className="absolute -right-2 -bottom-2 z-10">

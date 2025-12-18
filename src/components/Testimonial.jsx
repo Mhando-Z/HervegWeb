@@ -45,7 +45,7 @@ const testimonials = [
     role: "Youth Farmer – Songea",
     image: man2,
     content:
-      "Their training changed everything for me. I didn’t just receive inputs—I received knowledge. Now I understand soil health, spacing, and how to increase ROI with simple techniques.",
+      "Their training changed everything for me. I didn’t just receive inputs I received knowledge. Now I understand soil health, spacing, and how to increase ROI with simple techniques.",
     rating: 5,
   },
   {
@@ -63,7 +63,7 @@ const testimonials = [
     role: "Farmer – Kigoma",
     image: man2,
     content:
-      "The model is BIG, SIMPLE, and CHEAP—just like they say. With mobile payment options and easy-to-understand training, even older farmers in our group participate confidently.",
+      "The model is BIG, SIMPLE, and CHEAP just like they say. With mobile payment options and easy-to-understand training, even older farmers in our group participate confidently.",
     rating: 5,
   },
   {

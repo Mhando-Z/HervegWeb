@@ -107,7 +107,7 @@ const ArticleComponent = () => {
                 mobile technology that works on all phones, even basic feature
                 phones. By dialing shortcodes like *123# farmers can access
                 menus to save money, buy seeds and fertilizers, receive farming
-                tips, or make payments — all without the internet or apps.
+                tips, or make payments all without the internet or apps.
               </p>
               <p>
                 USSD offers a low-cost, inclusive ag-tech solution that bridges
@@ -224,7 +224,7 @@ const ArticleComponent = () => {
                 quick, giving them control over their farming plans. This
                 one-minute USSD interaction empowers farmers to take control of
                 their financial planning, enabling flexible micro-payments
-                toward climate-resilient input bundles—laying the foundation for
+                toward climate-resilient input bundles laying the foundation for
                 long-term food security and economic stability.
               </p>
               <p>
@@ -345,7 +345,7 @@ const ArticleComponent = () => {
                   she had fully paid for her Veg + Poultry bundle.
                 </p>
                 <p>
-                  Her package—10 SASSO chicks and a set of vegetable seeds—was
+                  Her package 10 SASSO chicks and a set of vegetable seeds was
                   delivered directly to her village. With the chicks growing and
                   vegetables thriving, Amina now feeds her family better and
                   sells the surplus at the local market. She's already saving

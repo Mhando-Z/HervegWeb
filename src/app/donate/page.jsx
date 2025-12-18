@@ -40,7 +40,7 @@ const DonatePage = () => {
       amount: 12,
       icon: <Sprout className="w-8 h-8" />,
       description:
-        "Provides 5 fully vaccinated SASSO chickens to one youth farmer—diversifying their diet and generating up to $30 in income through egg and meat sales.",
+        "Provides 5 fully vaccinated SASSO chickens to one youth farmer diversifying their diet and generating up to $30 in income through egg and meat sales.",
       color: "from-emerald-500 to-green-600",
     },
     {
@@ -176,7 +176,7 @@ const DonatePage = () => {
                 className="text-lg opacity-90 max-w-2xl "
               >
                 Your donation makes this possible. Every gift helps build a
-                stronger, more resilient food system—starting at the village
+                stronger, more resilient food system starting at the village
                 level.
               </motion.p>
             </div>
@@ -202,7 +202,7 @@ const DonatePage = () => {
               What Your Donation Can Do
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              We believe in action—and impact you can see. Here's how your
+              We believe in action and impact you can see. Here's how your
               support creates change on the ground:
             </p>
           </motion.div>
@@ -347,7 +347,7 @@ const DonatePage = () => {
             Be Part of the Change
           </h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Your donation doesn't just help a farmer—it fuels a movement.
+            Your donation doesn't just help a farmer it fuels a movement.
             Whether you give once or monthly, your support builds pathways out
             of poverty and into self-reliance.
           </p>
@@ -420,7 +420,7 @@ const DonatePage = () => {
                 >
                   Contact us
                 </a>{" "}
-                — we're here to help.
+                we're here to help.
               </span>
             </div>
           </motion.div>

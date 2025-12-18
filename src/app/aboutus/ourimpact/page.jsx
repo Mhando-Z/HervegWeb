@@ -104,8 +104,8 @@ const ImpactPage = () => {
                 Our Impact
               </h1>
               <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
-                We're helping farmers grow more than food — we're growing
-                income, resilience, and hope.
+                We're helping farmers grow more than food we're growing income,
+                resilience, and hope.
               </p>
             </motion.div>
           </div>
@@ -336,7 +336,7 @@ const ImpactPage = () => {
                   the first time."
                 </blockquote>
                 <p className="font-semibold">
-                  — Amina, Mother of Four, Kilosa District
+                  Amina, Mother of Four, Kilosa District
                 </p>
               </motion.div>
             </div>
@@ -463,12 +463,10 @@ const ImpactPage = () => {
                   and food. After getting my first batch from HERVeg.05, I
                   started selling eggs in just three weeks. Now I feed them with
                   leftover vegetables and use their manure for my maize.
-                  Everything is connected — and I don't depend on expensive
-                  feeds anymore."
+                  Everything is connected and I don't depend on expensive feeds
+                  anymore."
                 </blockquote>
-                <p className="font-semibold">
-                  — Neema, 23, Young Farmer, Ludewa
-                </p>
+                <p className="font-semibold">Neema, 23, Young Farmer, Ludewa</p>
               </motion.div>
 
               <motion.div variants={fadeInUp} className="space-y-4">
@@ -618,7 +616,7 @@ const ImpactPage = () => {
                   from selling surplus food has made all the difference for my
                   family."
                 </blockquote>
-                <p className="font-semibold">— Amina, 36, Farmer, Mvomero</p>
+                <p className="font-semibold"> Amina, 36, Farmer, Mvomero</p>
               </motion.div>
 
               <motion.div
@@ -758,7 +756,7 @@ const ImpactPage = () => {
                   tough seasons. I feel more secure and ready for anything."
                 </blockquote>
                 <p className="font-semibold">
-                  — Mwajuma, 44, Smallholder Farmer, Iringa
+                  Mwajuma, 44, Smallholder Farmer, Iringa
                 </p>
               </motion.div>
 
@@ -1152,7 +1150,7 @@ const ImpactPage = () => {
               </h3>
               <p className="text-lg mb-6">
                 RCTs enable us to go beyond assumptions and anecdotes, providing
-                the confidence to say our programs work—and prove it with data.
+                the confidence to say our programs work and prove it with data.
               </p>
               <p className="text-green-100">
                 We are actively developing partnerships with research

@@ -75,7 +75,7 @@ const Article3 = () => {
           <p className="text-lg leading-relaxed text-slate-700 mb-8 first-letter:text-6xl first-letter: first-letter:font-bold first-letter:text-slate-900 first-letter:float-left first-letter:mr-3 first-letter:leading-none first-letter:mt-1">
             The morning air in Njombe carries a strange mix these days, the damp
             scent of soil before rain, and the soft chorus of chickens. Not the
-            scrawny local kind scratching for scraps, but sturdy SASSO birds —
+            scrawny local kind scratching for scraps, but sturdy SASSO birds
             brown, full-bodied, confident. For women like Anna Mkalawa, a
             42-year-old farmer in Ihalula village, those birds are more than
             livestock. They're insurance against hunger, and a small rebellion
@@ -236,7 +236,7 @@ const Article3 = () => {
             When people speak of "women's empowerment," it often sounds
             abstract. But in the villages where we work, it looks like this: a
             woman counting coins from egg sales, deciding whether to buy salt or
-            save for a water tank — and realizing she no longer has to ask
+            save for a water tank and realizing she no longer has to ask
             anyone's permission.
           </p>
         </Section>

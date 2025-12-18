@@ -59,7 +59,7 @@ const HomePage = () => {
       icon: <DollarSign className="w-8 h-8" />,
       title: "How Farmers Save",
       description:
-        "Farmers save small amounts on their phones via USSD — a debt-free system that builds confidence and control.",
+        "Farmers save small amounts on their phones via USSD   a debt-free system that builds confidence and control.",
     },
     {
       icon: <Sprout className="w-8 h-8" />,
@@ -77,7 +77,7 @@ const HomePage = () => {
       icon: <BookOpen className="w-8 h-8" />,
       title: "How Farmers Learn",
       description:
-        "Hands-on learning builds real skills — from composting to poultry care and climate-smart farming.",
+        "Hands-on learning builds real skills   from composting to poultry care and climate-smart farming.",
     },
   ];
 
@@ -102,7 +102,7 @@ const HomePage = () => {
       title:
         "Feathers of Resilience: How SASSO Poultry Is Feeding Hope in Tanzania’s Highlands",
       summary:
-        "The morning air in Njombe carries a strange mix these days, the damp scent of soil before rain, and the soft chorus of chickens. Not the scrawny local kind scratching for scraps, but sturdy SASSO birds — brown, full-bodied, confident. For women like Anna Mkalawa, a 42-year-old farmer in Ihalula village, those birds are more than livestock. They’re insurance against hunger, and a small rebellion against poverty.",
+        "The morning air in Njombe carries a strange mix these days, the damp scent of soil before rain, and the soft chorus of chickens. Not the scrawny local kind scratching for scraps, but sturdy SASSO birds   brown, full-bodied, confident. For women like Anna Mkalawa, a 42-year-old farmer in Ihalula village, those birds are more than livestock. They’re insurance against hunger, and a small rebellion against poverty.",
       link: "/articles/article3/",
     },
     {
@@ -160,7 +160,7 @@ const HomePage = () => {
             className="text-lg md:text-xl mb-10 max-w-3xl mx-auto font-light leading-relaxed"
           >
             We help women and youth farmers grow more nutritious food, earn
-            steady income, and restore their soil — using simple tools that work
+            steady income, and restore their soil using simple tools that work
             in real villages.
           </motion.p>
 
@@ -338,7 +338,7 @@ const HomePage = () => {
               </h2>
               <p className="text-xl mb-8 leading-relaxed">
                 HERVeg.05 farmers grow 3× more vegetables, raise healthy
-                poultry, and increase incomes by 60% — all without debt.
+                poultry, and increase incomes by 60% all without debt.
               </p>
 
               <div className="flex flex-wrap gap-4">
