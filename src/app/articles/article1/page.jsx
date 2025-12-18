@@ -419,21 +419,21 @@ const Article1 = () => {
                 </p>
               </div>
 
-              <div className="bg-linear-to-br from-blue-500 to-blue-600 rounded-lg p-6 text-white shadow-lg">
+              <div className="bg-linear-to-br from-emerald-500 to-emerald-600 rounded-lg p-6 text-white shadow-lg">
                 <p className="text-5xl font-bold mb-2">64%</p>
                 <p className="text-blue-100">
                   generate surplus they can sell locally
                 </p>
               </div>
 
-              <div className="bg-linear-to-br from-amber-500 to-amber-600 rounded-lg p-6 text-white shadow-lg">
+              <div className="bg-linear-to-br from-emerald-500 to-emerald-600 rounded-lg p-6 text-white shadow-lg">
                 <p className="text-5xl font-bold mb-2">30%</p>
                 <p className="text-amber-100">
                   average increase in household income (within one season)
                 </p>
               </div>
 
-              <div className="bg-linear-to-br from-purple-500 to-purple-600 rounded-lg p-6 text-white shadow-lg">
+              <div className="bg-linear-to-br from-emerald-500 to-emerald-600 rounded-lg p-6 text-white shadow-lg">
                 <p className="text-5xl font-bold mb-2">0%</p>
                 <p className="text-purple-100">
                   took on debt to purchase inputs
