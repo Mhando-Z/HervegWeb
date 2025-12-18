@@ -82,7 +82,7 @@ const HomePage = () => {
       image: "/images/story1.jpg",
       title: "How Women Farmers Are Saving Their Way to Food Security",
       summary:
-        "Discover how Village Savings and Loan Associations empower young farmers to build financial independence.",
+        "When people think about financial inclusion in rural Africa, the image that often comes to mind is one of sleek fintech apps, digital wallets, or readily available micro-loans. However, for millions of smallholder farmers, particularly women and youth, the real challenges are fundamental",
       link: "/articles/article1/",
     },
     {
@@ -90,8 +90,8 @@ const HomePage = () => {
       title:
         "Before the Rain: How Tanzania’s Farmers Could Win or Lose the Season After the Elections",
       summary:
-        "See how farmers adapt to climate change using sustainable techniques that restore soil health.",
-      link: "/stories/climate",
+        "In a few weeks, Tanzanians will cast their votes. By the time the ballots are counted and the speeches fade, the skies will begin to shift, the smell of rain hanging in the air. For millions of smallholder farmers, this is not just another season. It’s the moment that decides whether the next year will bring food to the table or another stretch of hunger.",
+      link: "/articles/article2/",
     },
     {
       image: "/images/story3.jpg",
@@ -418,7 +418,7 @@ const HomePage = () => {
                   <h3 className="text-xl font-bold mb-3 text-gray-900">
                     {story.title}
                   </h3>
-                  <p className="text-gray-600 mb-4 leading-relaxed">
+                  <p className="text-gray-600 mb-4 line-clamp-4 leading-relaxed">
                     {story.summary}
                   </p>
                   <Link href={story.link}>

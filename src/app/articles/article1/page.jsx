@@ -57,7 +57,7 @@ const Article1 = () => {
           </motion.p>
 
           <motion.blockquote
-            className="border-l-4 border-emerald-500 pl-6 py-4 my-8 bg-emerald-50 rounded-r-lg"
+            className=" border-emerald-500 pl-6 py-4 my-8 bg-emerald-50 rounded-r-lg"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
@@ -93,7 +93,7 @@ const Article1 = () => {
               real challenges are fundamental:
             </p>
 
-            <div className="bg-slate-50 rounded-lg p-6 space-y-3 border-l-4 border-slate-300">
+            <div className="bg-slate-50 rounded-lg p-6 space-y-3  border-slate-300">
               <p className="text-slate-700">
                 <span className="font-semibold text-slate-900">
                   No bank accounts:
@@ -144,7 +144,7 @@ const Article1 = () => {
               Tanzania:
             </p>
 
-            <div className="bg-amber-50 rounded-lg p-6 space-y-3 border-l-4 border-amber-400">
+            <div className="bg-amber-50 rounded-lg p-6 space-y-3  border-amber-400">
               <p className="text-slate-700">
                 <span className="font-semibold text-slate-900">30%</span> of
                 children under five suffer from stunting due to inadequate
@@ -196,7 +196,7 @@ const Article1 = () => {
               The core reasons why women farmers remain stuck are multifaceted:
             </p>
 
-            <div className="bg-rose-50 rounded-lg p-6 space-y-4 border-l-4 border-rose-400">
+            <div className="bg-rose-50 rounded-lg p-6 space-y-4  border-rose-400">
               <div>
                 <p className="font-semibold text-slate-900 mb-2">
                   Limited Autonomy:
@@ -305,7 +305,7 @@ const Article1 = () => {
               they're building assets.
             </p>
 
-            <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-400">
+            <div className="bg-blue-50 rounded-lg p-6  border-blue-400">
               <p className="text-slate-700 leading-relaxed mb-3">
                 <span className="font-semibold text-slate-900">Example:</span>{" "}
                 Asteria Mligo saves TZS 5,000 ($3) toward her chicken package in
@@ -364,7 +364,7 @@ const Article1 = () => {
               Real Farmer Story: Ritha
             </h3>
 
-            <div className="bg-amber-50 rounded-lg p-8 border-l-4 border-amber-500">
+            <div className="bg-amber-50 rounded-lg p-8  border-amber-500">
               <p className="text-lg text-slate-700 leading-relaxed mb-4">
                 Ritha Kilasi, a 43-year-old mother of three from Ihalula village
                 in Njombe, had never planted with her own resources. Every
@@ -379,7 +379,7 @@ const Article1 = () => {
                 garden, eggs on the table, and zero debt.
               </p>
 
-              <blockquote className="border-l-4 border-amber-600 pl-4 my-6">
+              <blockquote className=" border-amber-600 pl-4 my-6">
                 <p className="text-xl italic text-slate-800 leading-relaxed">
                   "I used to plant with fear, knowing I'd owe someone at
                   harvest. Now I grow with pride—this garden is fully mine,"
@@ -479,7 +479,7 @@ const Article1 = () => {
             </p>
 
             <div className="space-y-4">
-              <div className="bg-slate-50 rounded-lg p-6 border-l-4 border-slate-400">
+              <div className="bg-slate-50 rounded-lg p-6  border-slate-400">
                 <p className="text-slate-700 leading-relaxed">
                   <span className="font-semibold text-slate-900">
                     Transaction fees
@@ -490,7 +490,7 @@ const Article1 = () => {
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border-l-4 border-slate-400">
+              <div className="bg-slate-50 rounded-lg p-6  border-slate-400">
                 <p className="text-slate-700 leading-relaxed">
                   <span className="font-semibold text-slate-900">
                     Network coverage gaps
@@ -501,7 +501,7 @@ const Article1 = () => {
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6 border-l-4 border-slate-400">
+              <div className="bg-slate-50 rounded-lg p-6  border-slate-400">
                 <p className="text-slate-700 leading-relaxed">
                   <span className="font-semibold text-slate-900">
                     Life interruptions
@@ -532,7 +532,7 @@ const Article1 = () => {
               rural Tanzania, that model rarely works. Why?
             </p>
 
-            <div className="bg-red-50 rounded-lg p-6 space-y-3 border-l-4 border-red-400">
+            <div className="bg-red-50 rounded-lg p-6 space-y-3  border-red-400">
               <p className="text-slate-700">
                 Only <span className="font-semibold text-slate-900">38%</span>{" "}
                 of rural women in sub-Saharan Africa can access formal credit.
@@ -612,7 +612,7 @@ const Article1 = () => {
                 </div>
               </div>
 
-              <blockquote className="border-l-4 border-white/50 pl-4 my-6">
+              <blockquote className=" border-white/50 pl-4 my-6">
                 <p className="text-lg italic">
                   "Before HERVeg.05, I borrowed. Now I save — and my daughters
                   go to school."
