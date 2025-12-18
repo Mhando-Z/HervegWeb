@@ -19,7 +19,7 @@ const Article2 = () => {
   };
 
   return (
-    <div className="min-h-screen bg-Linear-to-br from-slate-50 via-white to-slate-50">
+    <div className="min-h-screen md:mt-16 bg-Linear-to-br from-slate-50 via-white to-slate-50">
       {/* Main Container */}
       <div className="container mx-auto px-6 py-16 sm:px-8 lg:px-12">
         {/* Header Section */}
