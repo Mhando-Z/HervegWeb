@@ -95,10 +95,10 @@ const successStories = [
         heading: "Profile:",
         name: "Juma Bakari",
         age: 45,
-        location: "Nyamagana Village, Mwanza Zone",
+        location: "Kisilo Village, Njombe Town Zone",
         family: "Father of 7",
         content:
-          "Juma Bakari, 45 years old, father of 7 children, Nyamagana Village, Mwanza Zone.",
+          "Juma Bakari, 45 years old, father of 7 children, Kisilio Village, Mwanza Zone.",
       },
       {
         type: "paragraph",
@@ -165,10 +165,10 @@ const successStories = [
         heading: "Profile:",
         name: "Neema",
         age: 30,
-        location: "Kisaki Village, Iringa Region",
+        location: "Kanani Village, Wanging'ombe Region",
         family: "Mother of 5",
         content:
-          "Neema, 30 years old, mother of 5 children, Kisaki Village, Iringa Region.",
+          "Neema, 30 years old, mother of 5 children, Kanani Village, Wanging'ombe Region.",
       },
       {
         type: "paragraph",
@@ -241,7 +241,7 @@ const successStories = [
         heading: "Profile:",
         name: "Juma Bakari",
         age: 45,
-        location: "Nyamagana Village, Mwanza Zone",
+        location: "Magoda Village, Njombe Town Zone",
         family: "Father of 7",
       },
       {

@@ -249,7 +249,7 @@ const successStories = [
         heading: "Profile:",
         name: "Juma Bakari",
         age: 45,
-        location: "Nyamagana Village, Mwanza Zone",
+        location: "Mambegu Village, Wang'ombe Zone",
         family: "Father of 7",
       },
       {
