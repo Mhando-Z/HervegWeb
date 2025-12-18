@@ -4,27 +4,6 @@ import React, { useState, useEffect } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 
 const Article2 = () => {
-  const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001,
-  });
-
-  const [readingProgress, setReadingProgress] = useState(0);
-
-  useEffect(() => {
-    const updateProgress = () => {
-      const scrolled = window.scrollY;
-      const height = document.documentElement.scrollHeight - window.innerHeight;
-      const progress = (scrolled / height) * 100;
-      setReadingProgress(progress);
-    };
-
-    window.addEventListener("scroll", updateProgress);
-    return () => window.removeEventListener("scroll", updateProgress);
-  }, []);
-
   const fadeInUp = {
     initial: { opacity: 0, y: 30 },
     animate: { opacity: 1, y: 0 },
@@ -41,12 +20,6 @@ const Article2 = () => {
 
   return (
     <div className="min-h-screen bg-Linear-to-br from-slate-50 via-white to-slate-50">
-      {/* Reading Progress Bar */}
-      <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-emerald-600 z-50 origin-left"
-        style={{ scaleX }}
-      />
-
       {/* Main Container */}
       <div className="container mx-auto px-6 py-16 sm:px-8 lg:px-12">
         {/* Header Section */}
@@ -63,7 +36,7 @@ const Article2 = () => {
             className="h-1 bg-Linear-to-r from-emerald-600 to-teal-500 mb-8"
           />
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold text-slate-900 leading-tight mb-6">
             Before the Rain: How Tanzania's Farmers Could Win or Lose the Season
             After the Elections
           </h1>
