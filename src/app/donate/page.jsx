@@ -55,7 +55,7 @@ const DonatePage = () => {
       icon: <Package className="w-8 h-8" />,
       description:
         "Supplies farming inputs like seedlings and organic fertilizer to 50 youth farmers, improving yields and soil health.",
-      color: "from-amber-500 to-orange-600",
+      color: "from-green-500 to-yellow-600",
     },
     {
       amount: 60,
