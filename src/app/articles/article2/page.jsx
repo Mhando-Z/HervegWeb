@@ -48,7 +48,7 @@ const Article2 = () => {
             <span className="px-3 py-1 bg-teal-100 text-teal-700 rounded-full font-medium">
               Food Security
             </span>
-            <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full font-medium">
+            <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full font-medium">
               Tanzania
             </span>
           </div>
@@ -160,7 +160,7 @@ const Article2 = () => {
                   <p className="text-sm text-slate-600">Irrigated farmland</p>
                 </div>
                 <div>
-                  <p className="text-4xl font-bold text-blue-600 mb-2">
+                  <p className="text-4xl font-bold text-green-600 mb-2">
                     10+ km
                   </p>
                   <p className="text-sm text-slate-600">
@@ -339,7 +339,7 @@ const Article2 = () => {
 
               <motion.div
                 whileHover={{ x: 5 }}
-                className="bg-white p-6 rounded-lg shadow-sm  border-blue-500"
+                className="bg-white p-6 rounded-lg shadow-sm  border-green-500"
               >
                 <h3 className="text-2xl font-bold text-slate-900 mb-4">
                   3. Clear Swahili Guides
@@ -409,15 +409,13 @@ const Article2 = () => {
                   <p className="text-slate-700">Adoption rate</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-5xl font-bold text-blue-600 mb-2">
+                  <p className="text-5xl font-bold text-green-600 mb-2">
                     50-70%
                   </p>
                   <p className="text-slate-700">Yield increase reported</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-5xl font-bold text-purple-600 mb-2">
-                    $125
-                  </p>
+                  <p className="text-5xl font-bold text-green-600 mb-2">$125</p>
                   <p className="text-slate-700">
                     Extra income per youth agent per season
                   </p>
@@ -562,7 +560,7 @@ const Article2 = () => {
           {/* Call to Action */}
           <motion.section
             variants={fadeInUp}
-            className="mb-16 bg-Linear-to-r from-emerald-600 to-teal-600 text-white p-12 rounded-2xl shadow-xl"
+            className="mb-16 bg-Linear-to-r from-emerald-600 to-teal-600  p-12 rounded-2xl shadow-xl"
           >
             <h2 className="text-4xl font-bold mb-6">Join Us</h2>
 
