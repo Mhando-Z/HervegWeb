@@ -20,7 +20,7 @@ const Article1 = () => {
   };
 
   return (
-    <div className="min-h-screen md:mt-20 bg-linear-to-b from-slate-50 to-white">
+    <div className="min-h-screen md:mt-20 ">
       <article className="container mx-auto px-6 py-12 sm:px-8 lg:px-12">
         {/* Header Section */}
         <motion.div
@@ -30,7 +30,7 @@ const Article1 = () => {
           className="mb-12"
         >
           <motion.h2
-            className="text-2xl font-bold lg:text-5xl  text-emerald-700 mb-6"
+            className="text-2xl font-bold lg:text-5xl mb-6"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
