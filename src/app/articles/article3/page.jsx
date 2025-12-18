@@ -56,7 +56,7 @@ const Article3 = () => {
         >
           <motion.h1
             variants={fadeInUp}
-            className="text-4xl sm:text-5xl lg:text-6xl  font-bold text-slate-900 leading-tight mb-6"
+            className="text-4xl sm:text-5xl lg:text-5xl  font-bold text-slate-900 leading-tight mb-6"
           >
             Feathers of Resilience: How SASSO Poultry Is Feeding Hope in
             Tanzania's Highlands
