@@ -464,7 +464,7 @@ const Article1 = () => {
           {/* Section 7 */}
           <motion.section variants={fadeInUp} className="space-y-6">
             <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
-              🧠 What We're Learning on the Ground
+              What We're Learning on the Ground
             </h3>
 
             <p className="text-lg text-slate-700 leading-relaxed">
@@ -522,7 +522,7 @@ const Article1 = () => {
           {/* Section 8 */}
           <motion.section variants={fadeInUp} className="space-y-6">
             <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
-              🔍 Why We're Different
+              Why We're Different
             </h3>
 
             <p className="text-lg text-slate-700 leading-relaxed">
@@ -583,7 +583,7 @@ const Article1 = () => {
           <motion.section variants={fadeInUp} className="space-y-6">
             <div className="bg-linear-to-r from-emerald-500 to-green-600 rounded-xl p-8 text-white shadow-xl">
               <h3 className="text-2xl sm:text-3xl font-bold mb-4">
-                💌 Call to Action: Let's Grow Without Debt
+                Call to Action: Let's Grow Without Debt
               </h3>
 
               <p className="text-lg leading-relaxed mb-4">
@@ -644,7 +644,7 @@ const Article1 = () => {
                   <tbody className="divide-y divide-slate-200">
                     <tr className="hover:bg-slate-50 transition-colors">
                       <td className="px-6 py-4 font-medium text-slate-900">
-                        🌱 Farm Packages
+                        Farm Packages
                       </td>
                       <td className="px-6 py-4 text-emerald-700 font-semibold">
                         $35,000
@@ -655,7 +655,7 @@ const Article1 = () => {
                     </tr>
                     <tr className="hover:bg-slate-50 transition-colors">
                       <td className="px-6 py-4 font-medium text-slate-900">
-                        🚚 Last-Mile Delivery
+                        Last-Mile Delivery
                       </td>
                       <td className="px-6 py-4 text-emerald-700 font-semibold">
                         $20,000
@@ -666,7 +666,7 @@ const Article1 = () => {
                     </tr>
                     <tr className="hover:bg-slate-50 transition-colors">
                       <td className="px-6 py-4 font-medium text-slate-900">
-                        🌾 Climate Resilience Training
+                        Climate Resilience Training
                       </td>
                       <td className="px-6 py-4 text-emerald-700 font-semibold">
                         $10,000
@@ -677,7 +677,7 @@ const Article1 = () => {
                     </tr>
                     <tr className="hover:bg-slate-50 transition-colors">
                       <td className="px-6 py-4 font-medium text-slate-900">
-                        📱 Zero-Fee Mobile Accounts
+                        Zero-Fee Mobile Accounts
                       </td>
                       <td className="px-6 py-4 text-emerald-700 font-semibold">
                         $5,000
