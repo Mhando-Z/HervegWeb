@@ -24,6 +24,10 @@ import donate from "../../public/hero/donate1.jpg";
 import Donorbox from "@/app/donate/Donorbox";
 import PromoStats from "./PromoStats";
 import Link from "next/link";
+import image1 from "../../public/images/11.png";
+import image2 from "../../public/images/22.jpg";
+import image3 from "../../public/profiles/Mgeta.jpg";
+import image4 from "../../public/images/06.jpg";
 
 const HomePage = () => {
   const [Visible, setIsVisible] = useState(false);
@@ -79,14 +83,14 @@ const HomePage = () => {
 
   const stories = [
     {
-      image: "/images/story1.jpg",
+      image_url: image1,
       title: "How Women Farmers Are Saving Their Way to Food Security",
       summary:
         "When people think about financial inclusion in rural Africa, the image that often comes to mind is one of sleek fintech apps, digital wallets, or readily available micro-loans. However, for millions of smallholder farmers, particularly women and youth, the real challenges are fundamental",
       link: "/articles/article1/",
     },
     {
-      image: "/images/story2.jpg",
+      image_url: image2,
       title:
         "Before the Rain: How Tanzania’s Farmers Could Win or Lose the Season After the Elections",
       summary:
@@ -94,7 +98,7 @@ const HomePage = () => {
       link: "/articles/article2/",
     },
     {
-      image: "/images/story3.jpg",
+      image_url: image3,
       title:
         "Feathers of Resilience: How SASSO Poultry Is Feeding Hope in Tanzania’s Highlands",
       summary:
@@ -102,12 +106,12 @@ const HomePage = () => {
       link: "/articles/article3/",
     },
     {
-      image: "/images/story4.jpg",
+      image_url: image4,
       title:
         "Six Steps to Change Farming Forever: How USSD Puts Power in Farmers’ Hands",
       summary:
-        "Meet the women farmers breaking barriers and creating prosperity in their communities.",
-      link: "/stories/women",
+        "Farming is the main source of income for millions of smallholder farmers in Tanzania and across Sub-Saharan Africa. Yet, many still struggle to make a decent living. For instance, in Rwanda, agriculture makes up over 30% of the country's GDP, but most farmers work on less than one hectare of land. They face challenges such as limited access to quality seeds, credit, farming advice, and reliable markets. Many depend on costly middlemen to sell their crops.",
+      link: "/articles/article4/",
     },
   ];
 
@@ -397,7 +401,7 @@ const HomePage = () => {
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {stories.map((story, index) => (
+            {stories?.map((story, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
@@ -408,9 +412,10 @@ const HomePage = () => {
                 className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="relative h-48 overflow-hidden">
-                  <img
-                    src={story.image}
+                  <Image
+                    src={story?.image_url}
                     alt={story.title}
+                    fill
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                   />
                 </div>
