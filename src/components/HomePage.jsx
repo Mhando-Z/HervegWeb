@@ -19,11 +19,11 @@ import {
 } from "lucide-react";
 import farmers from "../../public/hero/03.jpg";
 import Image from "next/image";
-import Link from "next/link";
 import youth from "../../public/hero/youth.jpg";
 import donate from "../../public/hero/donate1.jpg";
 import Donorbox from "@/app/donate/Donorbox";
 import PromoStats from "./PromoStats";
+import Link from "next/link";
 
 const HomePage = () => {
   const [Visible, setIsVisible] = useState(false);
@@ -83,7 +83,7 @@ const HomePage = () => {
       title: "How Women Farmers Are Saving Their Way to Food Security",
       summary:
         "Discover how Village Savings and Loan Associations empower young farmers to build financial independence.",
-      link: "/stories/vsla",
+      link: "/articles/article1/",
     },
     {
       image: "/images/story2.jpg",
@@ -421,12 +421,12 @@ const HomePage = () => {
                   <p className="text-gray-600 mb-4 leading-relaxed">
                     {story.summary}
                   </p>
-                  <a href={story.link}>
-                    <button className="text-emerald-600 font-semibold hover:text-emerald-700 inline-flex items-center gap-2 group">
+                  <Link href={story.link}>
+                    <button className="text-emerald-600 cursor-pointer font-semibold hover:text-emerald-700 inline-flex items-center gap-2 group">
                       Read More
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </button>
-                  </a>
+                  </Link>
                 </div>
               </motion.div>
             ))}
