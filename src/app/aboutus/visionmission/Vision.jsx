@@ -519,15 +519,15 @@ const VisionValues = () => {
             communities we serve.
           </p>
 
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="inline-flex items-center  gap-3 bg-white text-emerald-700 px-8 py-4 rounded-full font-semibold text-lg shadow-2xl cursor-pointer"
-          >
-            <Link href="/career/">
+          <Link href="/career/">
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="inline-flex items-center  gap-3 bg-white text-emerald-700 px-8 py-4 rounded-full font-semibold text-lg shadow-2xl cursor-pointer"
+            >
               <span>Join Our Mission</span>
               <ArrowRight className="w-5 h-5" />
-            </Link>
-          </motion.div>
+            </motion.div>
+          </Link>
         </motion.div>
       </section>
     </div>
