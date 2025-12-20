@@ -674,7 +674,7 @@ const CareersPage = () => {
               opportunities.
             </p>
             <p>
-              To apply, please send your application to hr@herveg.org. In your
+              To apply, please send your application to jobs@herveg.org. In your
               application, clearly state:
             </p>
             <div className="flex mt-2 flex-col items-center justify-center">
