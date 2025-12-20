@@ -103,10 +103,10 @@ const successStories = [
         heading: "Profile:",
         name: "Juma Bakari",
         age: 45,
-        location: "Nyamagana Village, Mwanza Zone",
+        location: "Luilo Village, Njombe Rural Zone",
         family: "Father of 7",
         content:
-          "Juma Bakari, 45 years old, father of 7 children, Nyamagana Village, Mwanza Zone.",
+          "Juma Bakari, 45 years old, father of 7 children,  Village, Mwanza Zone.",
       },
       {
         type: "paragraph",

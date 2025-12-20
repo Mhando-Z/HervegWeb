@@ -100,7 +100,7 @@ const PromoStats = () => {
               </motion.div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
                 What We've Built
-                <span className="text-green-400">and Where We're Going</span>
+                <span className="text-green-400"> and Where We're Going</span>
               </h2>
               <p className="text-xl text-gray-200 max-w-3xl leading-relaxed">
                 We've reached{" "}
