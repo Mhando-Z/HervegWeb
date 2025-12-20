@@ -102,7 +102,7 @@ const CareersPage = () => {
       quote:
         "I came from a retail background, but working at HERVeg.05 opened my eyes. I’m not just selling inputs I’m helping a mother feed her family and a youth start their first agribusiness. Every sale is personal.",
       description:
-        "Zawadi leads our sales team across multiple districts. She trains field agents, manages inventory, and ensures our products reach even the most remote customers on time and affordably",
+        "Oscar leads our sales team across multiple districts. She trains field agents, manages inventory, and ensures our products reach even the most remote customers on time and affordably",
     },
     {
       name: "Patricia Pangani",
@@ -110,7 +110,7 @@ const CareersPage = () => {
       quote:
         "Numbers tell stories. I track every shilling because I know our budgets feed real people, fund local jobs, and support future growth. That responsibility matters to me.",
       description:
-        "Bakari keeps our books clean and our spending focused. From managing VSLA transactions to budgeting field logistics, he ensures every coin is used for impact.",
+        "Patricia keeps our books clean and our spending focused. From managing VSLA transactions to budgeting field logistics, he ensures every coin is used for impact.",
     },
     {
       name: "Mhando Zuberi",
