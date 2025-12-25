@@ -281,7 +281,7 @@ function NavBar() {
             {/* Controls */}
             <div className="flex items-center gap-4">
               <motion.div
-                className="hidden md:block"
+                className="hidden "
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -433,7 +433,7 @@ function NavBar() {
                 })}
 
                 {/* Mobile Theme Switcher */}
-                <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+                <div className="mt-4 hidden pt-4 border-t border-gray-200 dark:border-gray-700">
                   <div className="flex items-center justify-between px-3">
                     <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
                       Theme
