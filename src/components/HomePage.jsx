@@ -305,19 +305,11 @@ const HomePage = () => {
                   chickens and seeds delivered to my village, and learned by
                   doing. Now I feed my siblings and sell the extra vegetables.
                 </p>
+                <p className="text-lg text-gray-600 mb-8">
+                  Rehema now feeds her siblings and sells 50% of her extra
+                  harvest locally.
+                </p>
               </div>
-
-              <p className="text-lg text-gray-600 mb-8">
-                Rehema now feeds her siblings and sells 50% of her extra harvest
-                locally.
-              </p>
-
-              <a href="/impact">
-                <button className="bg-gray-900 hidden hover:bg-gray-800 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105  items-center gap-2">
-                  Meet Our Farmers
-                  <ArrowRight className="w-5 h-5" />
-                </button>
-              </a>
             </motion.div>
           </div>
         </div>
