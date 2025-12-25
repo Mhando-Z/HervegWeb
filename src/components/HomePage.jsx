@@ -129,7 +129,7 @@ const HomePage = () => {
       >
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-linear-to-r from-black/60 to-black/40 z-10" />
+          <div className="absolute inset-0 bg-linear-to-r mask-l-from-60% mask-r-from-60% from-black/60 to-black/40 z-10" />
           <Image
             src={farmers}
             alt="Woman farmer in field"
