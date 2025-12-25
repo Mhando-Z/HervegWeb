@@ -3,19 +3,13 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import {
-  ChevronRight,
-  ChevronLeft,
-  Mail,
   Users,
   DollarSign,
   Sprout,
   Truck,
   BookOpen,
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
   ArrowRight,
+  CloudDrizzle,
 } from "lucide-react";
 import farmers from "../../public/hero/03.jpg";
 import Image from "next/image";
@@ -78,6 +72,12 @@ const HomePage = () => {
       title: "How Farmers Learn",
       description:
         "Hands-on learning builds real skills   from composting to poultry care and climate-smart farming.",
+    },
+    {
+      icon: <CloudDrizzle className="w-8 h-8" />,
+      title: "How We Build Climate Resilience: ",
+      description:
+        "Organic inputs and diversified production reduce climate risk and dependence on costly chemicals.",
     },
   ];
 
