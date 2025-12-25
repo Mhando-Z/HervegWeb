@@ -80,7 +80,7 @@ const PromoStats = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={containerVariants}
-            className="space-y-12"
+            className="space-y-12 "
           >
             {/* Header */}
             <motion.div
@@ -118,7 +118,7 @@ const PromoStats = () => {
             {/* Stats Grid */}
             <motion.div
               variants={containerVariants}
-              className="hidden grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6"
+              className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6"
             >
               {stats.map((stat, index) => (
                 <motion.div
