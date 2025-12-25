@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import farmerImage from "../../../../public/hero/05.jpg";
+import farmerImage from "../../../../public/hero/03.jpg";
 
 const ImpactPage = () => {
   const [activeSection, setActiveSection] = useState(null);

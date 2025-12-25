@@ -11,7 +11,7 @@ import {
   ArrowRight,
   CloudDrizzle,
 } from "lucide-react";
-import farmers from "../../public/hero/03.jpg";
+import farmers from "../../public/hero/05.jpg";
 import Image from "next/image";
 import youth from "../../public/hero/youth.jpg";
 import donate from "../../public/hero/donate1.jpg";
