@@ -262,9 +262,6 @@ const ImpactPage = () => {
               <h2 className="text-4xl font-bold mb-4 text-emerald-800">
                 Income & Yield Growth
               </h2>
-              <p className="text-xl text-gray-700">
-                Transforming Farming into a Reliable Source of Income
-              </p>
             </motion.div>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -417,9 +414,6 @@ const ImpactPage = () => {
               <h2 className="text-4xl font-bold mb-4 text-emerald-800">
                 Poultry Sustainability
               </h2>
-              <p className="text-xl text-gray-700">
-                A Circular, Profitable, and Resilient Model for Smallholders
-              </p>
             </motion.div>
 
             <div className="grid md:grid-cols-3 gap-6 mb-12">
@@ -576,9 +570,6 @@ const ImpactPage = () => {
               <h2 className="text-4xl font-bold mb-4 text-green-800">
                 Nutrition & Food Security
               </h2>
-              <p className="text-xl text-gray-700">
-                Improving Health and Resilience for Farming Families
-              </p>
             </motion.div>
 
             <div className="grid md:grid-cols-4 gap-6 mb-12">
@@ -713,9 +704,6 @@ const ImpactPage = () => {
               <h2 className="text-4xl font-bold mb-4 text-green-800">
                 Building Climate Resilience
               </h2>
-              <p className="text-xl text-gray-700">
-                Empowering Farmers with Climate-Smart Practices
-              </p>
             </motion.div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-12">
@@ -827,9 +815,6 @@ const ImpactPage = () => {
               <h2 className="text-4xl font-bold mb-4 text-green-800">
                 How We Measure Impact
               </h2>
-              <p className="text-xl text-gray-700">
-                Evidence-Based Approach to Understanding Our Impact
-              </p>
             </motion.div>
 
             {/* What is Impact */}
