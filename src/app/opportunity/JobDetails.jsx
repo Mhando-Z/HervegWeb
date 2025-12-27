@@ -13,7 +13,12 @@ import {
   AlertCircle,
 } from "lucide-react";
 
-export default function JobDetailsModal({ job, isOpen, onClose }) {
+export default function JobDetailsModal({
+  job,
+  isOpen,
+  onClose,
+  setIsDetailsOpen,
+}) {
   const [showApplicationForm, setShowApplicationForm] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -28,6 +33,10 @@ export default function JobDetailsModal({ job, isOpen, onClose }) {
     if (e.target.files && e.target.files[0]) {
       setCvFile(e.target.files[0]);
     }
+  };
+
+  const handleCloseDetails = () => {
+    setIsDetailsOpen(false);
   };
 
   const handleSubmit = async (e) => {
@@ -103,30 +112,31 @@ export default function JobDetailsModal({ job, isOpen, onClose }) {
                 />
               </div>
 
-              <button
-                onClick={onClose}
-                className="absolute top-6 right-6 w-10 h-10 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-all duration-200 backdrop-blur-sm border border-white/30 z-10"
-              >
-                <X className="w-5 h-5" />
-              </button>
-
               <div className="relative z-10">
-                <motion.h2
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.2 }}
-                  className="text-3xl md:text-4xl font-bold mb-2 tracking-tight"
+                <div>
+                  <motion.h2
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2 }}
+                    className="text-3xl md:text-4xl font-bold mb-2 tracking-tight"
+                  >
+                    {job.title}
+                  </motion.h2>
+                  <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.3 }}
+                    className="text-emerald-100 text-lg"
+                  >
+                    Full Job Description
+                  </motion.p>
+                </div>
+                <button
+                  onClick={handleCloseDetails}
+                  className="absolute top-6 cursor-pointer right-6 w-10 h-10 bg-white/40 hover:bg-red-600 rounded-full flex items-center justify-center transition-all duration-200 backdrop-blur-sm border border-white/30 z-10"
                 >
-                  {job.title}
-                </motion.h2>
-                <motion.p
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.3 }}
-                  className="text-emerald-100 text-lg"
-                >
-                  Full Job Description
-                </motion.p>
+                  <X className="w-5 h-5" />
+                </button>
               </div>
             </div>
 
