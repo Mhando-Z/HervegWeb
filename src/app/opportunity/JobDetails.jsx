@@ -425,7 +425,7 @@ function ApplicationForm({
   }
 
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className=" mx-auto">
       <div className="mb-8">
         <button
           onClick={onBack}
@@ -481,7 +481,7 @@ function ApplicationForm({
         <div>
           <label className="block text-sm font-semibold text-gray-900 mb-2">
             <FileText className="w-4 h-4 inline mr-2" />
-            Upload Your CV *
+            Upload Your CV, Letter amd etc
           </label>
           <div className="relative">
             <input
@@ -505,7 +505,7 @@ function ApplicationForm({
         </div>
 
         {/* Motivation Letter */}
-        <div>
+        <div className="hidden">
           <label className="block text-sm font-semibold text-gray-900 mb-2">
             Motivational Letter *
           </label>
@@ -526,9 +526,9 @@ function ApplicationForm({
         </div>
 
         {/* Info Box */}
-        <div className="flex items-start gap-3 p-4 bg-blue-50 border border-blue-200 rounded-xl">
-          <AlertCircle className="w-5 h-5 text-blue-600 mt-0.5 shrink-0" />
-          <p className="text-sm text-blue-900">
+        <div className="flex items-start gap-3 p-4 bg-green-50 border border-green-200 rounded-xl">
+          <AlertCircle className="w-5 h-5 text-green-600 mt-0.5 shrink-0" />
+          <p className="text-sm text-green-900">
             Your application will be sent directly to{" "}
             <strong>jobs@herveg.org</strong>. Make sure all information is
             accurate before submitting.
@@ -541,7 +541,7 @@ function ApplicationForm({
           disabled={isSubmitting}
           whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
           whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
-          className="w-full py-4 bg-linear-to-r from-emerald-600 via-teal-600 to-cyan-600 text-white rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+          className="w-full py-2 bg-linear-to-r from-emerald-600 via-teal-600 to-cyan-600 text-white rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
         >
           {isSubmitting ? (
             <>
