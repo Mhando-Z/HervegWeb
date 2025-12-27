@@ -104,7 +104,7 @@ export default function JobListingPage() {
           />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 py-20 md:py-28">
+        <div className="relative max-w-7xl mt-20 mx-auto px-6 py-20 md:py-28">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -134,7 +134,7 @@ export default function JobListingPage() {
             </p>
           </motion.div>
 
-          <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+          <div className="grid gap-8 grid-cols-1 overflow-y-auto mt-10 md:grid-cols-2 xl:grid-cols-3 ">
             {/* Job Card */}
             {jobData.map((job) => (
               <motion.div
