@@ -8,6 +8,7 @@ import JobDetailsModal from "./JobDetails";
 const jobData = [
   {
     id: "data-analyst-intern",
+    date: "2025-12-15",
     title: "Data Analysis Intern",
     shortDescription:
       "Help us turn agricultural data into actionable insights. Work with real field data to support small-scale farmers in East Africa.",
@@ -138,12 +139,34 @@ export default function JobListingPage() {
                   {job.title}
                 </h2>
                 <p className="text-white/90 mb-4">{job.shortDescription}</p>
-                <button
-                  onClick={() => handleDetailsOpen(job)}
-                  className="px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg transition-colors duration-300"
-                >
-                  View Details
-                </button>
+
+                <div>
+                  <div className="flex items-center text-white/90 text-sm mb-2">
+                    <Calendar className="w-4 h-4 mr-2" />
+                    <span>Application Deadline: {job.date}</span>
+                  </div>
+                  <div className="flex items-center text-white/90 text-sm mb-2">
+                    <Clock className="w-4 h-4 mr-2" />
+                    <span>Commitment: {job.commitment}</span>
+                  </div>
+                  <div className="flex items-center text-white/90 text-sm mb-2">
+                    <MapPin className="w-4 h-4 mr-2" />
+                    <span>Location: {job.location}</span>
+                  </div>
+                  <div className="flex items-center text-white/90 text-sm">
+                    <Briefcase className="w-4 h-4 mr-2" />
+                    <span>Type: {job.type}</span>
+                  </div>
+                </div>
+
+                <div className="w-full mt-5 justify-end flex flex-col items-end ">
+                  <button
+                    onClick={() => handleDetailsOpen(job)}
+                    className="px-4 py-2  bg-emerald-600 cursor-pointer hover:bg-emerald-600 text-white rounded-lg transition-colors duration-300"
+                  >
+                    View Details
+                  </button>
+                </div>
               </motion.div>
             ))}
           </div>
