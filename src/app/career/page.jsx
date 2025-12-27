@@ -22,6 +22,7 @@ import {
 import Image from "next/image";
 import agents from "../../../public/images/05.jpg";
 import city from "../../../public/city.png";
+import Link from "next/link";
 
 const CareersPage = () => {
   const [activeSection, setActiveSection] = useState("landing");
@@ -222,13 +223,15 @@ const CareersPage = () => {
                 farmers, communities, and families across Tanzania
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="bg-white text-green-700 px-8 py-4 rounded-lg font-semibold flex items-center gap-2 shadow-lg hover:shadow-xl transition-shadow"
-                >
-                  View Open Positions <ArrowRight className="w-5 h-5" />
-                </motion.button>
+                <Link href="/opportunity">
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="bg-white cursor-pointer text-green-700 px-8 py-4 rounded-lg font-semibold flex items-center gap-2 shadow-lg hover:shadow-xl transition-shadow"
+                  >
+                    View Open Positions <ArrowRight className="w-5 h-5" />
+                  </motion.button>
+                </Link>
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
