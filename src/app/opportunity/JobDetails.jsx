@@ -23,7 +23,6 @@ export default function JobDetailsModal({
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    motivation: "",
   });
   const [cvFile, setCvFile] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -52,7 +51,7 @@ export default function JobDetailsModal({
       setTimeout(() => {
         setShowApplicationForm(false);
         setSubmitStatus("idle");
-        setFormData({ name: "", email: "", motivation: "" });
+        setFormData({ name: "", email: "" });
         setCvFile(null);
       }, 3000);
     }, 2000);
@@ -502,27 +501,6 @@ function ApplicationForm({
               </span>
             </label>
           </div>
-        </div>
-
-        {/* Motivation Letter */}
-        <div className="hidden">
-          <label className="block text-sm font-semibold text-gray-900 mb-2">
-            Motivational Letter *
-          </label>
-          <p className="text-sm text-gray-600 mb-2">
-            Tell us: Why this role? Why HERVeg.05? Why data + impact matters to
-            you?
-          </p>
-          <textarea
-            required
-            value={formData.motivation}
-            onChange={(e) =>
-              setFormData({ ...formData, motivation: e.target.value })
-            }
-            rows={8}
-            className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200 outline-none resize-none"
-            placeholder="Share your story... No fancy words needed. Just be real."
-          />
         </div>
 
         {/* Info Box */}
