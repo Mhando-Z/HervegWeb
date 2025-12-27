@@ -370,7 +370,6 @@ function Section({ title, children, delay }) {
       transition={{ delay }}
     >
       <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
-        <span className="w-1.5 h-8 bg-linear-to-b from-emerald-500 to-teal-500 rounded-full" />
         {title}
       </h3>
       <div className="ml-6">{children}</div>

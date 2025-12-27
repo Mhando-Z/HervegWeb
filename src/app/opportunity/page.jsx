@@ -82,6 +82,8 @@ export default function JobListingPage() {
     setIsDetailsOpen(true);
   };
 
+  
+
   return (
     <div className="min-h-screen bg-linear-to-br from-emerald-50 via-teal-50 to-cyan-50">
       {/* Hero Section with Pattern Background */}
