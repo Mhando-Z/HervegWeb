@@ -90,7 +90,7 @@ export default function JobDetailsModal({ job, isOpen, onClose }) {
           <motion.div
             variants={contentVariants}
             onClick={(e) => e.stopPropagation()}
-            className="bg-white rounded-3xl shadow-2xl max-w-5xl w-full max-h-[90vh] overflow-hidden flex flex-col"
+            className="bg-white rounded-xl shadow-2xl max-w-5xl w-full max-h-[90vh] overflow-hidden flex flex-col"
           >
             {/* Header */}
             <div className="relative bg-linear-to-br from-emerald-600 via-teal-600 to-cyan-600 text-white p-8">
