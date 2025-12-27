@@ -38,23 +38,41 @@ export default function JobDetailsModal({
     setIsDetailsOpen(false);
   };
 
+  //   const handleSubmit = async (e) => {
+  //     e.preventDefault();
+  //     setIsSubmitting(true);
+
+  //     // Simulate form submission
+  //     setTimeout(() => {
+  //       setIsSubmitting(false);
+  //       setSubmitStatus("success");
+
+  //       // Reset form after 3 seconds
+  //       setTimeout(() => {
+  //         setShowApplicationForm(false);
+  //         setSubmitStatus("idle");
+  //         setFormData({ name: "", email: "" });
+  //         setCvFile(null);
+  //       }, 3000);
+  //     }, 2000);
+  //   };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitStatus("success");
+    const form = new FormData();
+    form.append("name", formData.name);
+    form.append("email", formData.email);
+    form.append("cv", cvFile);
 
-      // Reset form after 3 seconds
-      setTimeout(() => {
-        setShowApplicationForm(false);
-        setSubmitStatus("idle");
-        setFormData({ name: "", email: "" });
-        setCvFile(null);
-      }, 3000);
-    }, 2000);
+    const res = await fetch("https://formspree.io/f/xjgvyajo", {
+      method: "POST",
+      body: form,
+    });
+
+    setIsSubmitting(false);
+    setSubmitStatus(res.ok ? "success" : "error");
   };
 
   const modalVariants = {
@@ -295,6 +313,30 @@ export default function JobDetailsModal({
                       </div>
                     </Section>
 
+                    {/* How to Apply */}
+                    <Section title="How to Apply" delay={0.8}>
+                      <p className="text-gray-700 text-lg leading-relaxed mb-4">
+                        Send us to {job.howToApply?.email} with:
+                      </p>
+                      <ul className="list-disc list-inside space-y-2 mb-4">
+                        {job.howToApply.requirements.map((req, index) => (
+                          <li key={index} className="text-gray-700">
+                            {req}
+                          </li>
+                        ))}
+                      </ul>
+                      <p className="text-gray-700 leading-relaxed">
+                        Guidance on what to include:
+                      </p>
+                      <ul className="list-disc list-inside space-y-2">
+                        {job.howToApply.guidance.map((guide, index) => (
+                          <li key={index} className="text-gray-700">
+                            {guide}
+                          </li>
+                        ))}
+                      </ul>
+                    </Section>
+
                     {/* Quick Details */}
                     <Section title="Quick Details" delay={0.8}>
                       <div className="grid md:grid-cols-2 gap-4 bg-gray-50 rounded-2xl p-6 border border-gray-200">
@@ -342,7 +384,7 @@ export default function JobDetailsModal({
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.9 }}
-                className="p-2 bg-linear-to-br from-gray-50 to-gray-100 border-t border-gray-200"
+                className="p-2 bg-linear-to-br hidden from-gray-50 to-gray-100 border-t border-gray-200"
               >
                 <div className="flex flex-col  md:flex-row items-center gap-4">
                   <div className="flex-1">

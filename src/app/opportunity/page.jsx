@@ -70,6 +70,15 @@ const jobData = [
         startDate: "January (rolling applications)",
       },
     },
+    howToApply: {
+      email: "jobs@herveg.org",
+      requirements: ["Your CV", "A short motivational letter"],
+      guidance: [
+        "Why this role",
+        "Why HERVeg.05",
+        "Why data + impact matters to you",
+      ],
+    },
   },
 ];
 
