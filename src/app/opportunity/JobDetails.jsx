@@ -93,7 +93,7 @@ export default function JobDetailsModal({ job, isOpen, onClose }) {
             className="bg-white rounded-3xl shadow-2xl max-w-5xl w-full max-h-[90vh] overflow-hidden flex flex-col"
           >
             {/* Header */}
-            <div className="relative bg-gradient-to-br from-emerald-600 via-teal-600 to-cyan-600 text-white p-8">
+            <div className="relative bg-linear-to-br from-emerald-600 via-teal-600 to-cyan-600 text-white p-8">
               <div className="absolute inset-0 opacity-10">
                 <div
                   className="absolute inset-0"
@@ -167,7 +167,7 @@ export default function JobDetailsModal({ job, isOpen, onClose }) {
                               transition={{ delay: 0.3 + index * 0.05 }}
                               className="flex items-start gap-3 text-gray-700"
                             >
-                              <span className="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0" />
+                              <span className="w-2 h-2 bg-emerald-500 rounded-full mt-2 shrink-0" />
                               <span>{item}</span>
                             </motion.li>
                           )
@@ -187,7 +187,7 @@ export default function JobDetailsModal({ job, isOpen, onClose }) {
                               transition={{ delay: 0.4 + index * 0.05 }}
                               className="flex items-start gap-3 text-gray-700"
                             >
-                              <CheckCircle className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" />
+                              <CheckCircle className="w-5 h-5 text-emerald-500 mt-0.5 shrink-0" />
                               <span>{item}</span>
                             </motion.li>
                           )
@@ -211,7 +211,7 @@ export default function JobDetailsModal({ job, isOpen, onClose }) {
                               transition={{ delay: 0.5 + index * 0.05 }}
                               className="flex items-start gap-3 text-gray-700"
                             >
-                              <span className="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0" />
+                              <span className="w-2 h-2 bg-teal-500 rounded-full mt-2 shrink-0" />
                               <span>{item}</span>
                             </motion.li>
                           )
@@ -275,9 +275,9 @@ export default function JobDetailsModal({ job, isOpen, onClose }) {
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ delay: 0.7 + index * 0.05 }}
-                            className="flex items-start gap-3 p-4 bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl border border-teal-100"
+                            className="flex items-start gap-3 p-4 bg-linear-to-br from-teal-50 to-cyan-50 rounded-xl border border-teal-100"
                           >
-                            <CheckCircle className="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" />
+                            <CheckCircle className="w-5 h-5 text-teal-600 mt-0.5 shrink-0" />
                             <span className="text-gray-700 text-sm">
                               {benefit}
                             </span>
@@ -333,7 +333,7 @@ export default function JobDetailsModal({ job, isOpen, onClose }) {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.9 }}
-                className="p-8 bg-gradient-to-br from-gray-50 to-gray-100 border-t border-gray-200"
+                className="p-8 bg-linear-to-br from-gray-50 to-gray-100 border-t border-gray-200"
               >
                 <div className="flex flex-col md:flex-row items-center gap-4">
                   <div className="flex-1">
@@ -346,7 +346,7 @@ export default function JobDetailsModal({ job, isOpen, onClose }) {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     onClick={() => setShowApplicationForm(true)}
-                    className="w-full md:w-auto px-8 py-4 bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 text-white rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2"
+                    className="w-full md:w-auto px-8 py-4 bg-linear-to-r from-emerald-600 via-teal-600 to-cyan-600 text-white rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2"
                   >
                     <Send className="w-5 h-5" />
                     Apply Now
@@ -370,7 +370,7 @@ function Section({ title, children, delay }) {
       transition={{ delay }}
     >
       <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
-        <span className="w-1.5 h-8 bg-gradient-to-b from-emerald-500 to-teal-500 rounded-full" />
+        <span className="w-1.5 h-8 bg-linear-to-b from-emerald-500 to-teal-500 rounded-full" />
         {title}
       </h3>
       <div className="ml-6">{children}</div>
@@ -518,7 +518,7 @@ function ApplicationForm({
 
         {/* Info Box */}
         <div className="flex items-start gap-3 p-4 bg-blue-50 border border-blue-200 rounded-xl">
-          <AlertCircle className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+          <AlertCircle className="w-5 h-5 text-blue-600 mt-0.5 shrink-0" />
           <p className="text-sm text-blue-900">
             Your application will be sent directly to{" "}
             <strong>jobs@herveg.org</strong>. Make sure all information is
@@ -532,7 +532,7 @@ function ApplicationForm({
           disabled={isSubmitting}
           whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
           whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
-          className="w-full py-4 bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 text-white rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+          className="w-full py-4 bg-linear-to-r from-emerald-600 via-teal-600 to-cyan-600 text-white rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
         >
           {isSubmitting ? (
             <>

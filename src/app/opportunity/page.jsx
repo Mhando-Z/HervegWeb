@@ -74,6 +74,12 @@ const jobData = [
 
 export default function JobListingPage() {
   const [isDetailsOpen, setIsDetailsOpen] = useState(false);
+  const [selectedJob, setSelectedJob] = useState(null);
+
+  const handleDetailsOpen = (job) => {
+    setSelectedJob(job);
+    setIsDetailsOpen(true);
+  };
 
   return (
     <div className="min-h-screen bg-linear-to-br from-emerald-50 via-teal-50 to-cyan-50">
@@ -118,7 +124,7 @@ export default function JobListingPage() {
             </p>
           </motion.div>
 
-          <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
             {/* Job Card */}
             {jobData.map((job) => (
               <motion.div
@@ -128,12 +134,12 @@ export default function JobListingPage() {
                 transition={{ duration: 0.5 }}
                 className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300"
               >
-                <h2 className="text-xl font-semibold text-white mb-2">
+                <h2 className="text-xl md:text-2xl font-semibold text-white mb-2">
                   {job.title}
                 </h2>
-                <p className="text-white/80 mb-4">{job.shortDescription}</p>
+                <p className="text-white/90 mb-4">{job.shortDescription}</p>
                 <button
-                  onClick={() => setIsDetailsOpen(true)}
+                  onClick={() => handleDetailsOpen(job)}
                   className="px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg transition-colors duration-300"
                 >
                   View Details
@@ -146,7 +152,7 @@ export default function JobListingPage() {
 
       {/* Job Details Modal */}
       <JobDetailsModal
-        job={jobData}
+        job={selectedJob}
         isOpen={isDetailsOpen}
         onClose={() => setIsDetailsOpen(false)}
       />
