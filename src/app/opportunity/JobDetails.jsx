@@ -93,7 +93,7 @@ export default function JobDetailsModal({ job, isOpen, onClose }) {
             className="bg-white rounded-xl shadow-2xl max-w-5xl w-full max-h-[90vh] overflow-hidden flex flex-col"
           >
             {/* Header */}
-            <div className="relative bg-linear-to-br from-emerald-600 via-teal-600 to-cyan-600 text-white p-8">
+            <div className="relative bg-linear-to-br from-emerald-600 via-teal-600 to-green-600 text-white p-8">
               <div className="absolute inset-0 opacity-10">
                 <div
                   className="absolute inset-0"
@@ -333,9 +333,9 @@ export default function JobDetailsModal({ job, isOpen, onClose }) {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.9 }}
-                className="p-8 bg-linear-to-br from-gray-50 to-gray-100 border-t border-gray-200"
+                className="p-2 bg-linear-to-br from-gray-50 to-gray-100 border-t border-gray-200"
               >
-                <div className="flex flex-col md:flex-row items-center gap-4">
+                <div className="flex flex-col  md:flex-row items-center gap-4">
                   <div className="flex-1">
                     <p className="text-sm text-gray-600">
                       Ready to make an impact? No fancy words needed. Just be
@@ -346,7 +346,7 @@ export default function JobDetailsModal({ job, isOpen, onClose }) {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     onClick={() => setShowApplicationForm(true)}
-                    className="w-full md:w-auto px-8 py-4 bg-linear-to-r from-emerald-600 via-teal-600 to-cyan-600 text-white rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2"
+                    className="w-full md:w-auto px-8 py-2 bg-linear-to-r from-emerald-600 via-teal-600 to-green-600 text-white rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2"
                   >
                     <Send className="w-5 h-5" />
                     Apply Now
