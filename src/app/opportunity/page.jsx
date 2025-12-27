@@ -104,7 +104,7 @@ export default function JobListingPage() {
           />
         </div>
 
-        <div className="relative max-w-7xl mt-20 mx-auto px-6 py-20 md:py-28">
+        <div className="relative max-w-7xl mt-16 mx-auto px-6 py-20 md:py-28">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
