@@ -7,6 +7,7 @@ import { Send } from "lucide-react";
 export default function ContactUs() {
   const [formData, setFormData] = useState({
     name: "",
+    title: "",
     email: "",
     phone: "",
     message: "",
@@ -200,10 +201,10 @@ export default function ContactUs() {
 
               <div className="grid md:grid-cols-2 gap-4">
                 <motion.input
-                  type="email"
-                  name="email"
-                  placeholder="Email*"
-                  value={formData.email}
+                  type="text"
+                  name="title"
+                  placeholder="Subject"
+                  value={formData.title}
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all"
                   whileFocus={{ scale: 1.02 }}
@@ -219,10 +220,20 @@ export default function ContactUs() {
                   whileFocus={{ scale: 1.02 }}
                 />
               </div>
+              <motion.input
+                type="email"
+                name="email"
+                placeholder="Email"
+                value={formData.email}
+                onChange={handleChange}
+                className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all"
+                whileFocus={{ scale: 1.02 }}
+                required
+              />
 
               <motion.textarea
                 name="message"
-                placeholder="Tell Us About Project *"
+                placeholder="Tell Us About Your Message..."
                 value={formData.message}
                 onChange={handleChange}
                 rows="6"
