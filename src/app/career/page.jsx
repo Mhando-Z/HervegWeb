@@ -368,7 +368,7 @@ const CareersPage = () => {
                     <p className="text-green-600 font-medium">{story.role}</p>
                   </div>
                 </div>
-                <blockquote className="border-l-4 border-green-500 pl-4 mb-4 italic text-gray-700">
+                <blockquote className="bg-green-50 p-2 mb-4 italic text-gray-700">
                   "{story.quote}"
                 </blockquote>
                 <p className="text-gray-600 text-sm">{story.description}</p>
