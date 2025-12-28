@@ -190,18 +190,18 @@ const CareersPage = () => {
     <div className="min-h-screen bg-linear-to-b from-green-50 to-white">
       {/* Hero Section */}
       <div
-        className={`relative min-h-screen ${Visible ? "mask-b-from-80%" : ""}`}
+        className={`relative min-h-screen ${Visible ? "md:mask-b-from-80%" : ""}`}
       >
         <Image
           src={agents}
           alt="Career Hero"
           className={`absolute inset-0 w-full h-full object-cover ${
-            Visible ? "mask-b-from-70%" : ""
+            Visible ? "md:mask-b-from-70%" : ""
           }`}
         />
         <motion.section
           className={`absolute top-0 left-0 right-0 bottom-0 ${
-            Visible ? "mask-b-from-95%" : ""
+            Visible ? "md:mask-b-from-95%" : ""
           } bg-linear-to-br min-h-screen from-green-700/20 to-green-800 text-white py-24 px-6`}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -218,11 +218,11 @@ const CareersPage = () => {
                 Grow Your Impact With
                 <br />A Team Rooted in Purpose
               </h1>
-              <p className="text-xl md:text-2xl text-green-100 max-w-3xl mx-auto mb-12">
+              <p className="text-xl md:text-2xl text-green-100 max-w-3xl mx-auto mb-5 md:mb-12">
                 Join HERVeg.05 where your work creates lasting change for
                 farmers, communities, and families across Tanzania
               </p>
-              <div className="flex flex-wrap gap-4 justify-center">
+              <div className="flex flex-wrap justify-center">
                 <Link href="/opportunity">
                   <motion.button
                     whileHover={{ scale: 1.05 }}
@@ -232,13 +232,6 @@ const CareersPage = () => {
                     View Open Positions <ArrowRight className="w-5 h-5" />
                   </motion.button>
                 </Link>
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="border-2 border-white hidden text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-green-700 transition-colors"
-                >
-                  Learn About Our Culture
-                </motion.button>
               </div>
             </motion.div>
           </div>

@@ -317,7 +317,7 @@ function SuccessStoriesPage() {
   const [hoveredCard, setHoveredCard] = useState(null);
 
   return (
-    <div className="min-h-screen bg-linear-to-br md:mt-20  from-slate-50 via-white to-slate-50 py-8 px-4">
+    <div className="min-h-screen bg-linear-to-br md:mt-20 mt-10 from-slate-50 via-white to-slate-50 py-8 px-4">
       {/* Header Section */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
