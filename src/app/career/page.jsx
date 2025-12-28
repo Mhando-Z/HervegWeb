@@ -229,7 +229,7 @@ const CareersPage = () => {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-white cursor-pointer text-green-700 px-8 py-3  rounded-4xl font-semibold flex items-center gap-2 shadow-lg hover:shadow-xl transition-shadow"
+                    className="bg-white cursor-pointer text-green-700 px-8 py-3 lg:py-4 rounded-4xl font-semibold flex items-center gap-2 shadow-lg hover:shadow-xl transition-shadow"
                   >
                     View Open Positions <ArrowRight className="w-5 h-5" />
                   </motion.button>
