@@ -47,7 +47,7 @@ export default function ContactUs() {
           ...prev,
           { type: "success", message: "Message sent successfully!" },
         ]);
-        setFormData({ name: "", email: "", subject: "", message: "" });
+        setFormData({ name: "", email: "", title: "", message: "", phone: "" });
         setLoading(false);
       })
       .catch((error) => {
