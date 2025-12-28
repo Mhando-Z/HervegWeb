@@ -281,7 +281,7 @@ export default function ContactUs() {
               <div className="flex flex-row justify-between w-full">
                 <motion.button
                   type="submit"
-                  className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-8 py-3 rounded-lg flex items-center gap-2 transition-all shadow-md hover:shadow-lg"
+                  className="bg-yellow-400 cursor-pointer hover:bg-yellow-500 text-gray-900 font-semibold px-8 py-3 rounded-lg flex items-center gap-2 transition-all shadow-md hover:shadow-lg"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -301,7 +301,6 @@ export default function ContactUs() {
                 {notifications && (
                   <div className="flex flex-col space-y-2">
                     <motion.div
-                      key={index}
                       className={`px-4 py-3 rounded-lg text-white ${
                         notifications.type === "success"
                           ? "bg-green-500"
