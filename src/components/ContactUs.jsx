@@ -300,21 +300,19 @@ export default function ContactUs() {
 
                 {notifications && (
                   <div className="flex flex-col space-y-2">
-                    {notifications?.map((note, index) => (
-                      <motion.div
-                        key={index}
-                        className={`px-4 py-3 rounded-lg text-white ${
-                          note.type === "success"
-                            ? "bg-green-500"
-                            : "bg-red-500"
-                        }`}
-                        initial={{ opacity: 0, y: -10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.3 }}
-                      >
-                        {note.message}
-                      </motion.div>
-                    ))}
+                    <motion.div
+                      key={index}
+                      className={`px-4 py-3 rounded-lg text-white ${
+                        notifications.type === "success"
+                          ? "bg-green-500"
+                          : "bg-red-500"
+                      }`}
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      {notifications.message}
+                    </motion.div>
                   </div>
                 )}
               </div>
