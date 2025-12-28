@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Send } from "lucide-react";
 import emailjs from "@emailjs/browser";
+import { FiLoader } from "react-icons/fi";
 
 export default function ContactUs() {
   const [loading, setLoading] = useState(false);
@@ -286,7 +287,7 @@ export default function ContactUs() {
               >
                 {loading ? (
                   <span className="flex items-center gap-2">
-                    <Spinner size={20} />
+                    <FiLoader className="animate-spin text-2xl text-green-600 [animation-duration:0.6s]" />
                     Sending...
                   </span>
                 ) : (
