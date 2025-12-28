@@ -3,8 +3,11 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Send } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 export default function ContactUs() {
+  const [loading, setLoading] = useState(false);
+  const [notifications, setNotifications] = useState([]);
   const [formData, setFormData] = useState({
     name: "",
     title: "",
@@ -22,12 +25,45 @@ export default function ContactUs() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Add your form submission logic here
+    setLoading(true);
+
+    emailjs
+      .send(
+        "service_gpt016c",
+        "template_qt375qt",
+        {
+          name: formData.name,
+          email: formData.email,
+          title: formData.subject, // Make sure this matches template
+          message: formData.message,
+          email: formData.email,
+          phone: formData.phone,
+        },
+        "Ic-MOmkvjhwy6hyug"
+      )
+      .then(() => {
+        setNotifications((prev) => [
+          ...prev,
+          { type: "success", message: "Message sent successfully!" },
+        ]);
+        setFormData({ name: "", email: "", subject: "", message: "" });
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("EmailJS Error:", error);
+        setNotifications((prev) => [
+          ...prev,
+          {
+            type: "error",
+            message: "Failed to send message. Please try again.",
+          },
+        ]);
+        setLoading(false);
+      });
   };
 
   return (
-    <div className="flex container items-center justify-center p-4">
+    <div className="flex container items-center justify-center md:p-4">
       <div className=" w-full  rounded-3xl  overflow-hidden">
         <div className="grid md:grid-cols-2 gap-0">
           {/* Left Section - Form */}
@@ -176,7 +212,7 @@ export default function ContactUs() {
               <p className="text-green-600 font-handwriting text-xl mb-2 text-center">
                 Have Questions?
               </p>
-              <h2 className="text-4xl font-bold  text-gray-900 mb-8 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold  text-gray-900 mb-8 text-center">
                 Send us a message
               </h2>
             </motion.div>
@@ -248,8 +284,17 @@ export default function ContactUs() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Send size={20} />
-                Get In Touch
+                {loading ? (
+                  <span className="flex items-center gap-2">
+                    <Spinner size={20} />
+                    Sending...
+                  </span>
+                ) : (
+                  <>
+                    <Send size={20} />
+                    Get In Touch
+                  </>
+                )}
               </motion.button>
             </motion.form>
           </motion.div>
