@@ -35,7 +35,7 @@ export default function ContactUs() {
         {
           name: formData.name,
           email: formData.email,
-          title: formData.subject, // Make sure this matches template
+          title: formData.title, // Make sure this matches template
           message: formData.message,
           email: formData.email,
           phone: formData.phone,
