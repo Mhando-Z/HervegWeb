@@ -287,7 +287,7 @@ export default function ContactUs() {
               >
                 {loading ? (
                   <span className="flex items-center gap-2">
-                    <FiLoader className="animate-spin text-2xl text-green-600 [animation-duration:0.6s]" />
+                    <FiLoader className="animate-spin text-2xl text-white [animation-duration:0.6s]" />
                     Sending...
                   </span>
                 ) : (
