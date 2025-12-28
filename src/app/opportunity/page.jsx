@@ -95,6 +95,7 @@ export default function JobListingPage() {
     <div className="min-h-screen bg-linear-to-br from-emerald-50 via-teal-50 to-cyan-50">
       {/* Hero Section with Pattern Background */}
       <div className="relative overflow-hidden bg-linear-to-br min-h-screen  from-emerald-900 via-teal-800 to-cyan-900">
+        {/* background image section */}
         <div className="absolute inset-0 opacity-10">
           <div
             className="absolute inset-0"
