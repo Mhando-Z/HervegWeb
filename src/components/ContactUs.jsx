@@ -278,7 +278,7 @@ export default function ContactUs() {
 
               {/* button and notification section */}
 
-              <div className="flex flex-row justify-between w-full">
+              <div className="flex flex-col gap-2 md:flex-row justify-between w-full">
                 <motion.button
                   type="submit"
                   className="bg-yellow-400 cursor-pointer hover:bg-yellow-500 text-gray-900 font-semibold px-8 py-3 rounded-lg flex items-center gap-2 transition-all shadow-md hover:shadow-lg"
