@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Send } from "lucide-react";
 import emailjs from "@emailjs/browser";
@@ -23,6 +23,16 @@ export default function ContactUs() {
       [e.target.name]: e.target.value,
     });
   };
+
+  useEffect(() => {
+    if (!notifications) return;
+
+    const timer = setTimeout(() => {
+      setNotifications(null);
+    }, 3000); // 3 seconds
+
+    return () => clearTimeout(timer);
+  }, [notifications]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
