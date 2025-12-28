@@ -51,11 +51,11 @@ function NewsLetter() {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Your email address"
                   required
-                  className="flex-1 px-6 py-4 rounded-full border border-gray-100 text-gray-100 focus:outline-none focus:ring-4 focus:ring-white/30 text-lg"
+                  className="flex-1 px-6 py-2 md:py-3 rounded-full border border-gray-100 text-gray-100 focus:outline-none focus:ring-4 focus:ring-white/30 text-lg"
                 />
                 <button
                   type="submit"
-                  className="bg-white text-emerald-700 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                  className="bg-white text-emerald-700 px-8 py-2 md:py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
                 >
                   Subscribe
                 </button>
