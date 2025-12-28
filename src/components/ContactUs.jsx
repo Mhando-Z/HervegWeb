@@ -8,7 +8,7 @@ import { FiLoader } from "react-icons/fi";
 
 export default function ContactUs() {
   const [loading, setLoading] = useState(false);
-  const [notifications, setNotifications] = useState([]);
+  const [notifications, setNotifications] = useState(null);
   const [formData, setFormData] = useState({
     name: "",
     title: "",
@@ -43,22 +43,19 @@ export default function ContactUs() {
         "Ic-MOmkvjhwy6hyug"
       )
       .then(() => {
-        setNotifications((prev) => [
-          ...prev,
-          { type: "success", message: "Message sent successfully!" },
-        ]);
+        setNotifications({
+          type: "success",
+          message: "Message sent successfully!",
+        });
         setFormData({ name: "", email: "", title: "", message: "", phone: "" });
         setLoading(false);
       })
       .catch((error) => {
         console.error("EmailJS Error:", error);
-        setNotifications((prev) => [
-          ...prev,
-          {
-            type: "error",
-            message: "Failed to send message. Please try again.",
-          },
-        ]);
+        setNotifications({
+          type: "error",
+          message: "Failed to send message. Please try again.",
+        });
         setLoading(false);
       });
   };
@@ -279,24 +276,48 @@ export default function ContactUs() {
                 required
               />
 
-              <motion.button
-                type="submit"
-                className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-8 py-3 rounded-lg flex items-center gap-2 transition-all shadow-md hover:shadow-lg"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                {loading ? (
-                  <span className="flex items-center gap-2">
-                    <FiLoader className="animate-spin text-2xl text-white [animation-duration:0.6s]" />
-                    Sending...
-                  </span>
-                ) : (
-                  <>
-                    <Send size={20} />
-                    Get In Touch
-                  </>
+              {/* button and notification section */}
+
+              <div className="flex flex-row justify-between w-full">
+                <motion.button
+                  type="submit"
+                  className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-8 py-3 rounded-lg flex items-center gap-2 transition-all shadow-md hover:shadow-lg"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  {loading ? (
+                    <span className="flex items-center gap-2">
+                      <FiLoader className="animate-spin text-2xl text-black [animation-duration:0.6s]" />
+                      Sending...
+                    </span>
+                  ) : (
+                    <>
+                      <Send size={20} />
+                      Get In Touch
+                    </>
+                  )}
+                </motion.button>
+
+                {notifications && (
+                  <div className="flex flex-col space-y-2">
+                    {notifications?.map((note, index) => (
+                      <motion.div
+                        key={index}
+                        className={`px-4 py-3 rounded-lg text-white ${
+                          note.type === "success"
+                            ? "bg-green-500"
+                            : "bg-red-500"
+                        }`}
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.3 }}
+                      >
+                        {note.message}
+                      </motion.div>
+                    ))}
+                  </div>
                 )}
-              </motion.button>
+              </div>
             </motion.form>
           </motion.div>
 
