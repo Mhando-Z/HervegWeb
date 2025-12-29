@@ -181,10 +181,7 @@ const Whoweare = () => {
             </motion.div>
 
             {/* Key Principle */}
-            <motion.div
-              variants={fadeInUp}
-              className="border-l-4 border-emerald-600 pl-8 py-4"
-            >
+            <motion.div variants={fadeInUp} className="bg-green-100 pl-8 py-4">
               <p className="text-xl font-semibold text-gray-900 mb-3">
                 Key Principle: Respect.
               </p>
