@@ -28,6 +28,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-Q7LL7B97XG"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-Q7LL7B97XG');
+          `}
+        </Script>
+      </head>
       <body className="flex flex-col min-h-screen justify-between overflow-x-hidden">
         {/* <header /> */}
         <div>
