@@ -212,6 +212,7 @@ const ImpactPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {sections?.map((section, idx) => (
               <motion.button
+                key={idx}
                 variants={scaleIn}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
