@@ -33,6 +33,12 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/aboutus/ourimpact`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/aboutus/visionmission`,
       lastModified: new Date(),
       changeFrequency: "monthly",

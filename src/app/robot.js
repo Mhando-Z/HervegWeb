@@ -11,6 +11,7 @@ export default function robots() {
           "/aboutus/visionmission",
           "/aboutus/successstories",
           "/aboutus/awards",
+          "/aboutus/ourimpact",
           "/contactus",
         ],
       },
