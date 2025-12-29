@@ -143,9 +143,12 @@ export default function Footer() {
               <button className="mx-2 text-gray-200 cursor-pointer hover:text-blue-600">
                 <FaFacebook />
               </button>
-              <button className="mx-2 text-gray-200 cursor-pointer hover:text-orange-600">
+              <Link
+                href="https://www.instagram.com/herveg05"
+                className="mx-2 text-gray-200 cursor-pointer hover:text-orange-600"
+              >
                 <RiInstagramFill />
-              </button>
+              </Link>
               <button className="mx-2 text-gray-200 cursor-pointer hover:text-red-600">
                 <FaYoutube />
               </button>
