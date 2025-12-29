@@ -29,6 +29,7 @@ import twentytwo from "../../../public/images/22.jpg";
 import twentythree from "../../../public/hero/04.jpg";
 import twentyfour from "../../../public/images/34.jpeg";
 import twentyfive from "../../../public/images/23.jpeg";
+import twentysix from "../../../public/hero/sasso.jpg";
 
 const data = [
   {
@@ -145,6 +146,11 @@ const data = [
     id: 25,
     image_url: twentyfive,
     title: "image twentyfive",
+  },
+  {
+    id: 26,
+    image_url: twentysix,
+    title: "image twentysix",
   },
 ];
 
