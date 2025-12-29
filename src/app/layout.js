@@ -1,6 +1,7 @@
 import "./globals.css";
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
+import Script from "next/script";
 
 export const metadata = {
   title: "Herveg.05",
@@ -30,18 +31,18 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* Google Analytics */}
-        <script
+        <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-Q7LL7B97XG"
           strategy="afterInteractive"
         />
-        <script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-Q7LL7B97XG');
           `}
-        </script>
+        </Script>
       </head>
       <body className="flex flex-col min-h-screen justify-between overflow-x-hidden">
         {/* <header /> */}
