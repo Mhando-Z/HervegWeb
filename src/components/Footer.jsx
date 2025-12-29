@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 // social medial icons
-import { FaFacebook } from "react-icons/fa6";
+import { FaFacebook, FaLinkedin } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -152,9 +152,12 @@ export default function Footer() {
               <button className="mx-2 text-gray-200 cursor-pointer hover:text-red-600">
                 <FaYoutube />
               </button>
-              <button className="mx-2 text-gray-200 cursor-pointer hover:text-black">
-                <FaSquareXTwitter />
-              </button>
+              <Link
+                href="https://www.linkedin.com/company/herveg-05"
+                className="mx-2 text-gray-200 cursor-pointer hover:text-blue-600"
+              >
+                <FaLinkedin />
+              </Link>
             </div>
           </div>
         </div>
