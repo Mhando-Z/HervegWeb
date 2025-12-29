@@ -145,6 +145,8 @@ export default function Footer() {
               </button>
               <Link
                 href="https://www.instagram.com/herveg05"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mx-2 text-gray-200 cursor-pointer hover:text-orange-600"
               >
                 <RiInstagramFill />
@@ -154,6 +156,8 @@ export default function Footer() {
               </button>
               <Link
                 href="https://www.linkedin.com/company/herveg-05"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mx-2 text-gray-200 cursor-pointer hover:text-blue-600"
               >
                 <FaLinkedin />
