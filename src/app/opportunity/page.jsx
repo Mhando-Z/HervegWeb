@@ -8,7 +8,7 @@ import JobDetailsModal from "./JobDetails";
 const jobData = [
   {
     id: "data-analyst-intern",
-    date: "2025-12-15",
+    date: "Rolling basis",
     title: "Data Analysis Intern",
     shortDescription:
       "Help us turn agricultural data into actionable insights. Work with real field data to support small-scale farmers in East Africa.",
