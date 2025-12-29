@@ -1,11 +1,17 @@
-"use client";
-
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Mail } from "lucide-react";
 import agents from "../../../../public/aboutus/011.png";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata = {
+  title: "Who We Are - Herveg.05",
+  description:
+    "Learn about Herveg.05, a mission-driven organization dedicated to combating malnutrition among rural women farmers through nutrient-dense vegetable and poultry bundles. Discover our story, values, and commitment to improving dietary diversity and health outcomes in underserved communities.",
+  Keywords:
+    "Herveg Who We Are, Herveg.05 Story, Nutrition Mission, Rural Farmers Support, Vegetable Bundles Overview, Poultry Bundles Information, Dietary Diversity Commitment, Health Outcomes Focus,HERVEG05 About Us,Tanzania Farmers Story, African Nutrition Mission, Sustainable Agriculture Overview, Community Support Values",
+};
 
 const HeroAndStory = () => {
   // Animation variants
@@ -73,7 +79,6 @@ const HeroAndStory = () => {
             </motion.div>
           </motion.div>
         </div>
-
       </section>
 
       {/* Our Founding Story Section */}
