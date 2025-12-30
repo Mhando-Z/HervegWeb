@@ -25,9 +25,9 @@ function NavBar() {
   const [open, setOpen] = useState(false);
   const [aboutDropdown, setAboutDropdown] = useState(false);
   const [mobileAboutDropdown, setMobileAboutDropdown] = useState(false);
-  const pathname = usePathname();
   const [visible, setIsVisible] = useState(false);
   const dropdownRef = useRef(null);
+  const pathname = usePathname();
 
   const toggleVisibility = () => {
     if (window.pageYOffset > 600) {
@@ -88,7 +88,9 @@ function NavBar() {
         initial={{ y: -10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ type: "spring", stiffness: 100, damping: 20 }}
-        className="fixed top-0 left-0 w-full z-50 px-4 md:px-8 py-3"
+        className={`fixed top-0 left-0 w-full z-50 px-4 md:px-0 py-3 ${
+          visible ? "md:bg-white/80 md:backdrop-blur-xl" : ""
+        }`}
       >
         <div className="container mx-auto">
           <div className="flex items-center justify-between">
@@ -120,7 +122,7 @@ function NavBar() {
 
             {/* Desktop Menu */}
             <motion.div
-              className="hidden md:flex items-center gap-2 px-4 py-1 bg-white/90 dark:bg-gray-800/90 backdrop-blur-xl rounded-full shadow-sm border border-gray-200 dark:border-gray-700"
+              className={`hidden md:flex items-center gap-2 px-4 py-1backdrop-blur-xl rounded-full dark:border-gray-700`}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
             >
@@ -140,14 +142,14 @@ function NavBar() {
                     >
                       <motion.button
                         onClick={() => setAboutDropdown(!aboutDropdown)}
-                        className="relative px-5 py-2 rounded-full cursor-pointer text-sm font-medium transition-colors duration-200"
+                        className="relative px-5 py-2 rounded-full  cursor-pointer text-sm font-medium transition-colors duration-200"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                       >
                         {isActive && (
                           <motion.div
                             layoutId="activeNav"
-                            className="absolute inset-0 bg-linear-to-r from-green-500 to-green-600 rounded-full shadow-lg"
+                            className="absolute inset-0 bg-linear-to-r from-green-500 to-green-600 rounded-full"
                             transition={{
                               type: "spring",
                               stiffness: 380,
@@ -158,7 +160,7 @@ function NavBar() {
 
                         {!isActive && (
                           <motion.div
-                            className="absolute inset-0 bg-linear-to-r from-green-400/20 to-green-600/20 rounded-full opacity-0"
+                            className={`absolute inset-0 bg-linear-to-r  from-green-400/20 to-green-600/20 rounded-full opacity-0`}
                             whileHover={{ opacity: 1 }}
                           />
                         )}
@@ -167,7 +169,20 @@ function NavBar() {
                           className={`relative z-10 flex items-center gap-2 ${
                             isActive
                               ? "text-white"
-                              : "text-gray-700 dark:text-gray-300"
+                              : `${
+                                  visible
+                                    ? "text-gray-700"
+                                    : `${
+                                        [
+                                          "/",
+                                          "/career",
+                                          "/donate",
+                                          "/aboutus/whoweare",
+                                        ].includes(pathname)
+                                          ? "text-white"
+                                          : ""
+                                      }`
+                                }`
                           }`}
                         >
                           <Icon className="w-4 h-4" />
@@ -188,7 +203,20 @@ function NavBar() {
                             animate={{ opacity: 1, y: 0, scale: 1 }}
                             exit={{ opacity: 0, y: -10, scale: 0.95 }}
                             transition={{ duration: 0.2 }}
-                            className="absolute top-full mt-2 left-0 w-56 bg-white dark:bg-gray-800 rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-700 overflow-hidden backdrop-blur-xl"
+                            className={`absolute top-full mt-3 left-0 w-56 p-2 ${
+                              visible
+                                ? "bg-white"
+                                : ` ${
+                                    [
+                                      "/",
+                                      "/career",
+                                      "/donate",
+                                      "/aboutus/whoweare",
+                                    ].includes(pathname)
+                                      ? "bg-black/20"
+                                      : "bg-white"
+                                  }`
+                            } rounded-2xl shadow-2xl overflow-hidden backdrop-blur-xl`}
                           >
                             {aboutSubLinks.map((subLink, idx) => {
                               const SubIcon = subLink.icon;
@@ -203,8 +231,21 @@ function NavBar() {
                                   <motion.div
                                     className={`flex items-center gap-3 px-4 py-3 cursor-pointer transition-colors ${
                                       isSubActive
-                                        ? "bg-green-50 dark:bg-green-900/20 text-green-600 dark:text-green-400"
-                                        : "text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700/50"
+                                        ? "bg-green-50 text-green-600 dark:text-green-400"
+                                        : `${
+                                            visible
+                                              ? "text-gray-700 hover:bg-green-200"
+                                              : `${
+                                                  [
+                                                    "/",
+                                                    "/career",
+                                                    "/donate",
+                                                    "/aboutus/whoweare",
+                                                  ].includes(pathname)
+                                                    ? "text-white hover:bg-green-700/50"
+                                                    : "text-gray-700 hover:bg-green-200"
+                                                }`
+                                          } `
                                     }`}
                                     whileHover={{ x: 4 }}
                                     initial={{ opacity: 0, x: -10 }}
@@ -258,7 +299,21 @@ function NavBar() {
                         className={`relative z-10 flex items-center gap-2 ${
                           isActive
                             ? "text-white"
-                            : "text-gray-700 dark:text-gray-300"
+                            : `${
+                                visible
+                                  ? "text-gray-700"
+                                  : `${
+                                      [
+                                        "/",
+                                        "/career",
+                                        "/donate",
+                                        "/aboutus/whoweare",
+                                        "/aboutus/ourimpact",
+                                      ].includes(pathname)
+                                        ? "text-white"
+                                        : ""
+                                    }`
+                              }`
                         }`}
                       >
                         <Icon className="w-4 h-4" />
@@ -279,21 +334,13 @@ function NavBar() {
             </motion.div>
 
             {/* Controls */}
-            <div className="flex items-center gap-4">
-              <motion.div
-                className="hidden "
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <Switcher />
-              </motion.div>
-
+            <div className="flex md:hidden items-center gap-4">
               {/* Mobile toggle */}
               <motion.button
                 whileHover={{ scale: 1.1, rotate: 90 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={() => setOpen(!open)}
-                className="md:hidden w-10 h-10 flex items-center justify-center rounded-full bg-green-600 text-white shadow-lg hover:bg-green-700 transition-colors"
+                className=" w-10 h-10 flex items-center justify-center rounded-full bg-green-600 text-white shadow-lg hover:bg-green-700 transition-colors"
               >
                 <AnimatePresence mode="wait">
                   {open ? (

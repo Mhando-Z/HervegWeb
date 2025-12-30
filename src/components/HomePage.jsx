@@ -123,13 +123,13 @@ const HomePage = () => {
     <div className="min-h-screen w-full">
       {/* Hero Section */}
       <section
-        className={`relative h-screen flex items-center justify-center overflow-hidden ${
+        className={`relative h-screen flex justify-center items-center overflow-hidden ${
           Visible ? "mask-b-from-95%" : ""
         }`}
       >
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-linear-to-r mask-l-from-60% mask-r-from-60% from-black/60 to-black/40 z-10" />
+          <div className="absolute inset-0 bg-linear-to-t md:bg-linear-to-r md:via-20% from-black/60 to-transparent via-black/60 md:to-black/40 z-10" />
           <Image
             src={farmers}
             alt="Woman farmer in field"
@@ -142,13 +142,13 @@ const HomePage = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="relative z-20 max-w-5xl mx-auto px-6 text-center text-white"
+          className="relative z-20 w-full text-center md:text-left px-6 md:px-0 container mx-auto md:mt-72  text-white"
         >
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
+            className="text-4xl md:text-6xl max-w-5xl lg:text-7xl font-bold mb-6 leading-tight"
           >
             Ending Malnutrition and Poverty for Tanzania's Farmers
           </motion.h1>
@@ -157,7 +157,7 @@ const HomePage = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.6 }}
-            className="text-lg md:text-xl mb-10 max-w-3xl mx-auto font-light leading-relaxed"
+            className="text-lg md:text-xl mb-10 max-w-3xl  font-light leading-relaxed"
           >
             We help women and youth farmers grow more nutritious food, earn
             steady income, and restore their soil using simple tools that work
@@ -170,7 +170,7 @@ const HomePage = () => {
             transition={{ delay: 0.8, duration: 0.6 }}
           >
             <Link href="/aboutus/whoweare/">
-              <button className="bg-emerald-600 cursor-pointer hover:bg-emerald-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+              <button className="bg-green-600 cursor-pointer hover:bg-green-700 text-white px-8 py-3 md:py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
                 Learn About Us
               </button>
             </Link>
