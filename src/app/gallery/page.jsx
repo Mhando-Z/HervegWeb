@@ -232,7 +232,7 @@ function Gallery() {
   };
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-slate-50 via-white to-slate-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-linear-to-br mt-10 md:mt-0 from-slate-50 via-white to-slate-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto md:mt-20">
         <motion.div
           initial="hidden"
