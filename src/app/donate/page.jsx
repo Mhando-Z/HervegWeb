@@ -140,7 +140,7 @@ const DonatePage = () => {
           transition={{ duration: 0.8 }}
           className="md:absolute top-0  bottom-0 left-0 right-0  py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-r md:from-green-600/40 from-green-600 md:to-emerald-700/80 to-emerald-700 text-white overflow-hidden"
         >
-          <div className="container gap-5 min-h-screen justify-between flex flex-col md:flex-row  mx-auto">
+          <div className="xl:container gap-5 min-h-screen xl:items-center justify-between flex flex-col md:flex-row  mx-auto">
             <div className="w-full flex flex-col  items-start justify-center">
               <motion.div
                 initial={{ scale: 0 }}
@@ -181,7 +181,7 @@ const DonatePage = () => {
               </motion.p>
             </div>
 
-            <div className="flex flex-col items-center justify-center w-full">
+            <div className="flex h-[650px] overflow-y-auto flex-col items-end justify-end  w-full">
               <Donorbox />
             </div>
           </div>
