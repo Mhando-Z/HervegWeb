@@ -24,7 +24,7 @@ const Whoweare = () => {
   };
 
   return (
-    <div className="bg-white ">
+    <div className="md:mt-16">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image with Overlay */}
