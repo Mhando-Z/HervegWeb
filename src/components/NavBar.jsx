@@ -88,11 +88,11 @@ function NavBar() {
         initial={{ y: -10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ type: "spring", stiffness: 100, damping: 20 }}
-        className={`fixed top-0 left-0 w-full z-50 px-4 md:px-0 py-3 ${
+        className={`fixed top-0 left-0 w-full z-50 px-4 py-3 ${
           visible ? "md:bg-white/80 md:backdrop-blur-xl" : ""
         }`}
       >
-        <div className="container mx-auto">
+        <div className="xl:container mx-auto">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>

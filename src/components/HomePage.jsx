@@ -142,13 +142,13 @@ const HomePage = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="relative z-20 w-full text-center md:text-left px-6 md:px-0 container mx-auto xl:mt-72  text-white"
+          className="relative z-20 w-full text-center md:text-left px-4 xl:container md:mt-60 mx-auto xl:mt-72  text-white"
         >
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
-            className="text-4xl md:text-6xl max-w-5xl lg:text-7xl font-bold mb-6 leading-tight"
+            className="text-4xl md:text-6xl max-w-3xl xl:max-w-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight"
           >
             Ending Malnutrition and Poverty for Tanzania's Farmers
           </motion.h1>
