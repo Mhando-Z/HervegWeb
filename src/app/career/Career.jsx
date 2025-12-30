@@ -187,7 +187,7 @@ const CareersPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-linear-to-b from-green-50 to-white">
+    <div className="min-h-screen md:mt-10 bg-linear-to-b from-green-50 to-white">
       {/* Hero Section */}
       <div
         className={`relative min-h-screen ${

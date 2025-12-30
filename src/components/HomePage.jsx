@@ -120,7 +120,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="min-h-screen w-full mt-16 md:mt-0">
+    <div className="min-h-screen w-full md:mt-16">
       {/* Hero Section */}
       <section
         className={`relative h-screen flex justify-center items-center overflow-hidden ${
