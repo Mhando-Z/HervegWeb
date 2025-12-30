@@ -20,6 +20,7 @@ import logo1 from "../../public/whitelogo.png";
 import Switcher from "@/Darktheme/Switcher";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import DonationCard from "./DonateCard";
 
 function NavBar() {
   const [open, setOpen] = useState(false);
@@ -331,6 +332,14 @@ function NavBar() {
                   </Link>
                 );
               })}
+
+              <div
+                className={` ${
+                  pathname === "/donate" ? "hidden" : "md:flex flex-col hidden"
+                }`}
+              >
+                <DonationCard />
+              </div>
             </motion.div>
 
             {/* Controls */}
