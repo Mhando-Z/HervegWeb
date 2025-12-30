@@ -89,8 +89,8 @@ function NavBar() {
         initial={{ y: -10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ type: "spring", stiffness: 100, damping: 20 }}
-        className={`fixed top-0 left-0 w-full z-50 px-4 py-3 ${
-          visible ? "md:bg-white/80 md:backdrop-blur-xl" : ""
+        className={`fixed top-0 left-0 w-full z-50 px-4 py-3  ${
+          visible ? "md:bg-white/80 md:backdrop-blur-xl" : "md:bg-white"
         }`}
       >
         <div className="xl:container mx-auto">
@@ -110,7 +110,7 @@ function NavBar() {
                     ["/", "/career", "/donate", "/aboutus/whoweare"].includes(
                       pathname
                     )
-                      ? logo1
+                      ? logo
                       : logo
                   }
                   alt="Historical association of Tanzania Logo"
@@ -180,7 +180,7 @@ function NavBar() {
                                           "/donate",
                                           "/aboutus/whoweare",
                                         ].includes(pathname)
-                                          ? "text-white"
+                                          ? "text-gray-700"
                                           : ""
                                       }`
                                 }`
@@ -214,7 +214,7 @@ function NavBar() {
                                       "/donate",
                                       "/aboutus/whoweare",
                                     ].includes(pathname)
-                                      ? "bg-black/20"
+                                      ? "bg-white"
                                       : "bg-white"
                                   }`
                             } rounded-2xl shadow-2xl overflow-hidden backdrop-blur-xl`}
@@ -243,7 +243,7 @@ function NavBar() {
                                                     "/donate",
                                                     "/aboutus/whoweare",
                                                   ].includes(pathname)
-                                                    ? "text-white hover:bg-green-700/50"
+                                                    ? "text-gray-700 hover:bg-green-700/50"
                                                     : "text-gray-700 hover:bg-green-50"
                                                 }`
                                           } `
@@ -311,7 +311,7 @@ function NavBar() {
                                         "/aboutus/whoweare",
                                         "/aboutus/ourimpact",
                                       ].includes(pathname)
-                                        ? "text-white"
+                                        ? "text-gray-700"
                                         : ""
                                     }`
                               }`
