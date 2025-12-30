@@ -141,7 +141,7 @@ export default function DonationCard() {
             <motion.button
               whileHover={{ scale: 1.05, backgroundColor: "#059669" }}
               whileTap={{ scale: 0.95 }}
-              className="bg-emerald-700 text-white p-3 rounded-full shadow-lg"
+              className="bg-emerald-700 text-white p-3 cursor-pointer rounded-full shadow-lg"
             >
               <svg
                 className="w-4 h-4"
