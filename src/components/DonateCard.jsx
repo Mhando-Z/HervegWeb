@@ -10,7 +10,7 @@ export default function DonationCard() {
   const [isAmountOpen, setIsAmountOpen] = useState(false);
   const [isFrequencyOpen, setIsFrequencyOpen] = useState(false);
 
-  const amounts = ["$50", "$100", "$500", "$1,000"];
+  const amounts = ["$12", "$25", "$45", "$60"];
   const frequencies = ["Monthly", "Yearly"];
 
   return (
