@@ -26,6 +26,10 @@ export const metadata = {
     "Dietary Diversity",
     "Sustainable Agriculture",
     "African Nutrition",
+    "Kilimo Tanzania",
+    "Mbolea nzuri Tanzania",
+    "Ufugaji wa kuku Tanzania",
+    "Mboga mboga Tanzania",
   ],
 
   openGraph: {
