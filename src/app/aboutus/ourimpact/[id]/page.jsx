@@ -97,7 +97,7 @@ function page() {
           exit={{ opacity: 1, height: 0 }}
           className="py-16 px-6 "
         >
-          <div className="container mx-auto px-2">
+          <div className="xl:container mx-auto px-2">
             <motion.div variants={fadeInUp} className="mb-12">
               <h2 className="text-4xl font-bold mb-4 text-emerald-800">
                 Income & Yield Growth
@@ -995,7 +995,7 @@ function page() {
         viewport={{ once: true }}
         variants={staggerChildren}
       >
-        <div className="container mx-auto px-2">
+        <div className="xl:container mx-auto px-2">
           <motion.h2
             variants={fadeInUp}
             className="text-3xl font-bold text-left mb-12 text-gray-800"
