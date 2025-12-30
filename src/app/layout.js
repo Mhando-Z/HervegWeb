@@ -4,24 +4,54 @@ import NavBar from "@/components/NavBar";
 import Script from "next/script";
 
 export const metadata = {
-  title: "Herveg.05",
+  metadataBase: new URL("https://hervegweb.vercel.app"),
+
+  title: {
+    default: "Herveg05",
+    template: "%s | Herveg05",
+  },
+
   description:
-    "We combat malnutrition by providing nutrient-dense vegetable and poultry bundles to women rural farmers. The protein-rich chickens and home planted nutrient vegetables are crucial for improving dietary diversity and health outcomes in women communities with limited access to nutritious food.",
-  Keywords:
-    "Herveg, Herveg.05, Herveg05, Herveg 05, Herveg 0.5, Herveg 0.5, nutrition, malnutrition, rural farmers, vegetable bundles, poultry bundles, dietary diversity, health outcomes,HERVEG05,Tanzania Farmers, African Nutrition, Sustainable Agriculture, Community",
+    "We combat malnutrition by providing nutrient-dense vegetable and poultry bundles to women rural farmers in Tanzania.",
+
+  keywords: [
+    "Herveg05",
+    "Herveg",
+    "Herveg 05",
+    "Nutrition Tanzania",
+    "Malnutrition",
+    "Women Farmers",
+    "Poultry Farming",
+    "Vegetable Bundles",
+    "Dietary Diversity",
+    "Sustainable Agriculture",
+    "African Nutrition",
+  ],
+
   openGraph: {
-    title: "Herveg.05",
+    title: "Herveg05",
     description:
-      "We combat malnutrition by providing nutrient-dense vegetable and poultry bundles to women rural farmers. The protein-rich chickens and home planted nutrient vegetables are crucial for improving dietary diversity and health outcomes in women communities with limited access to nutritious food.",
+      "Empowering women farmers with nutrient-dense vegetables and protein-rich poultry to fight malnutrition.",
     url: "https://hervegweb.vercel.app/",
-    siteName: "Herveg.05",
+    siteName: "Herveg05",
+    type: "website",
     images: [
       {
         url: "https://wntuibswfzfjjqlwlwzd.supabase.co/storage/v1/object/public/images/HerVeg.png",
         width: 1200,
         height: 630,
-        alt: "Herveg.05",
+        alt: "Herveg05",
       },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Herveg05",
+    description:
+      "Improving nutrition for women farmers through vegetables and poultry.",
+    images: [
+      "https://wntuibswfzfjjqlwlwzd.supabase.co/storage/v1/object/public/images/HerVeg.png",
     ],
   },
 };
