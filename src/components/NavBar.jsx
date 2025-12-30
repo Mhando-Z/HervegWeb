@@ -231,7 +231,7 @@ function NavBar() {
                                   <motion.div
                                     className={`flex items-center gap-3 px-4 py-3 cursor-pointer transition-colors ${
                                       isSubActive
-                                        ? "bg-green-50 text-green-600 dark:text-green-400"
+                                        ? "bg-green-200 text-black"
                                         : `${
                                             visible
                                               ? "text-gray-700 hover:bg-green-200"
@@ -243,7 +243,7 @@ function NavBar() {
                                                     "/aboutus/whoweare",
                                                   ].includes(pathname)
                                                     ? "text-white hover:bg-green-700/50"
-                                                    : "text-gray-700 hover:bg-green-200"
+                                                    : "text-gray-700 hover:bg-green-50"
                                                 }`
                                           } `
                                     }`}
