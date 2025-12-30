@@ -86,7 +86,7 @@ const ImpactPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-green-50 via-white to-emerald-50">
+    <div className="min-h-screen md:mt-16 bg-linear-to-br from-green-50 via-white to-emerald-50">
       {/* Hero Section */}
       <div className="min-h-screen md:relative pb-40 md:pb-56">
         <Image
