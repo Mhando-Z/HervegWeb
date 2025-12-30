@@ -20,7 +20,7 @@ export default function DonationCard() {
         animate={{ opacity: 1, y: 0 }}
         className=""
       >
-        <div className="flex items-center gap-4 bg-emerald-600 rounded-full p-1">
+        <div className="flex items-center gap-4 bg-emerald-600 rounded-full ">
           {/* Donate Label */}
           <div className="text-white font-semibold px-4 text-sm">Donate</div>
 
@@ -33,7 +33,7 @@ export default function DonationCard() {
                 setIsAmountOpen(!isAmountOpen);
                 setIsFrequencyOpen(false);
               }}
-              className="w-full bg-white text-gray-800 font-medium py-2 px-4 rounded-lg flex items-center justify-between"
+              className="w-full bg-white text-gray-800 font-medium py-1 px-4 rounded-lg flex items-center justify-between"
             >
               <span>{selectedAmount}</span>
               <motion.svg
@@ -89,7 +89,7 @@ export default function DonationCard() {
                 setIsFrequencyOpen(!isFrequencyOpen);
                 setIsAmountOpen(false);
               }}
-              className="w-full bg-white text-gray-800 font-medium py-2 px-4 rounded-lg flex items-center justify-between"
+              className="w-full bg-white text-gray-800 font-medium py-1 px-4 rounded-lg flex items-center justify-between"
             >
               <span>{selectedFrequency}</span>
               <motion.svg
