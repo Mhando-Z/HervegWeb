@@ -302,7 +302,7 @@ export default function SuccessStories() {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-teal-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
       </div>
 
-      <div className="container mx-auto relative z-10">
+      <div className="xl:container mx-auto relative z-10">
         <div className="flex flex-col  gap-5">
           {/* Main Content Card */}
           <motion.div
