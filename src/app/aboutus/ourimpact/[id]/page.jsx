@@ -173,7 +173,7 @@ function page() {
                   the first time."
                 </blockquote>
                 <p className="font-semibold">
-                  Amina, Mother of Four, Kilosa District
+                  Amina, Mother of Four, Magoda District
                 </p>
               </motion.div>
             </div>
@@ -299,7 +299,7 @@ function page() {
                   Everything is connected and I don't depend on expensive feeds
                   anymore."
                 </blockquote>
-                <p className="font-semibold">Neema, 23, Young Farmer, Ludewa</p>
+                <p className="font-semibold">Neema, 23, Young Farmer, Kanani</p>
               </motion.div>
 
               <motion.div variants={fadeInUp} className="space-y-4">
@@ -445,7 +445,7 @@ function page() {
                   from selling surplus food has made all the difference for my
                   family."
                 </blockquote>
-                <p className="font-semibold"> Amina, 36, Farmer, Mvomero</p>
+                <p className="font-semibold"> Amina, 36, Farmer, Itulaumba</p>
               </motion.div>
 
               <motion.div
@@ -581,7 +581,7 @@ function page() {
                   tough seasons. I feel more secure and ready for anything."
                 </blockquote>
                 <p className="font-semibold">
-                  Mwajuma, 44, Smallholder Farmer, Iringa
+                  Mwajuma, 44, Smallholder Farmer, Kisilo
                 </p>
               </motion.div>
 
