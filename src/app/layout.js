@@ -108,8 +108,7 @@ export const metadata = {
   metadataBase: new URL("https://hervegweb.vercel.app"),
 
   title: {
-    default:
-      "Herveg05 - Fighting Malnutrition in Tanzania Through Sustainable Agriculture",
+    default: "Herveg05 - Small plots, big impact",
     template: "%s | Herveg05 - Empowering Women Farmers Tanzania",
   },
 
