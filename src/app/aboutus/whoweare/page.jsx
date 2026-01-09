@@ -2,7 +2,7 @@ import React from "react";
 import Whoweare from "./Whoweare";
 
 export const metadata = {
-  title: "Who We Are - Herveg.05",
+  title: "Who We Are",
   description:
     "Learn about Herveg.05, a mission-driven organization dedicated to combating malnutrition among rural women farmers through nutrient-dense vegetable and poultry bundles. Discover our story, values, and commitment to improving dietary diversity and health outcomes in underserved communities.",
   Keywords:

@@ -2,7 +2,7 @@ import React from "react";
 import VisionValues from "./Vision";
 
 export const metadata = {
-  title: "Vision & Mission - Herveg.05",
+  title: "Vision & Mission",
   description:
     "Discover Herveg.05's vision and mission to combat malnutrition through nutrient-dense vegetable and poultry bundles for women rural farmers. Learn how we aim to improve dietary diversity and health outcomes in underserved communities.",
   Keywords:
