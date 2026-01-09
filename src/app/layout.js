@@ -4,8 +4,6 @@ import NavBar from "@/components/NavBar";
 import Script from "next/script";
 
 export const metadata = {
-  metadataBase: new URL("https://hervegweb.vercel.app"),
-
   title: {
     default: "Herveg05 - Small plots, big impact",
     template: "%s | Herveg05 -  Small plots, big impact",
@@ -46,6 +44,8 @@ export const metadata = {
   creator: "Herveg05",
 
   publisher: "Herveg05",
+
+  metadataBase: new URL("https://hervegweb.vercel.app"),
 
   robots: {
     index: true,
@@ -147,7 +147,7 @@ export default function RootLayout({ children }) {
         </Script>
 
         {/* Structured Data for Organization */}
-        <Script
+        <script
           id="organization-schema"
           type="application/ld+json"
           strategy="afterInteractive"
@@ -155,7 +155,7 @@ export default function RootLayout({ children }) {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "Herveg05",
+            name: "Herveg05 - Small plots, big impact",
             url: "https://hervegweb.vercel.app",
             logo: "https://wntuibswfzfjjqlwlwzd.supabase.co/storage/v1/object/public/images/HerVeg.png",
             description:
@@ -172,7 +172,7 @@ export default function RootLayout({ children }) {
               },
             },
           })}
-        </Script>
+        </script>
       </head>
       <body className="flex flex-col min-h-screen justify-between overflow-x-hidden">
         <div>
