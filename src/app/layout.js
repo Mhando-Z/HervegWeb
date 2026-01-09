@@ -110,7 +110,7 @@ export default function RootLayout({ children }) {
           name="viewport"
           content="width=device-width, initial-scale=1, viewport-fit=cover"
         />
-        <meta name="theme-color" content="#10b981" />
+        <meta name="theme-color" content="#ffffff" />
         <link rel="canonical" href="https://hervegweb.vercel.app" />
 
         {/* Additional SEO meta tags */}
