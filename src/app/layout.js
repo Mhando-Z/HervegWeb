@@ -8,7 +8,7 @@ export const metadata = {
 
   title: {
     default: "Herveg05 - Small plots, big impact",
-    template: "%s | Herveg05 - Empowering Women Farmers Tanzania",
+    template: "%s | Herveg05 -  Small plots, big impact",
   },
 
   description:
@@ -107,10 +107,21 @@ export default function RootLayout({ children }) {
         <title>Herveg05</title>
         <meta charSet="utf-8" />
         <meta
+          property="og:title"
+          content="Hervag05 - Small plots, big impact"
+        />
+        <meta property="og:image" content="../../public/leaflogo.png" />
+        <meta property="og:url" content="https://www.herveg05.org" />
+        <meta property="og:type" content="website" />
+        <meta
           name="viewport"
           content="width=device-width, initial-scale=1, viewport-fit=cover"
         />
         <meta name="theme-color" content="#ffffff" />
+        <meta
+          name="keywords"
+          content="Herveg05,Herveg,fight malnutrition Tanzania,women farmers Tanzania,sustainable agriculture Tanzania,rural nutrition programs,vegetable farming Tanzania,poultry farming Tanzania,food security Tanzania,dietary diversity Africa,agricultural empowerment,smallholder farmers support,nutrition intervention programs,Dar es Salaam agriculture,Tanzania farming initiatives,women empowerment agriculture,organic vegetables Tanzania,chicken farming Tanzania,kilimo endelevu Tanzania,chakula chenye virutubishi,ufugaji wa kuku,mboga mboga Tanzania,lishe bora Tanzania,wanawake wakulima,"
+        />
         <link rel="canonical" href="https://hervegweb.vercel.app" />
 
         {/* Additional SEO meta tags */}
