@@ -2,7 +2,7 @@ import React from "react";
 import ContactUs from "@/components/ContactUs";
 
 export const metadata = {
-  title: "Contact Us - Herveg.05",
+  title: "Contact Us",
   description:
     "Get in touch with Herveg.05 to learn more about our mission to combat malnutrition through nutrient-dense vegetable and poultry bundles for women rural farmers. We're here to answer your questions and provide support.",
   Keywords:
