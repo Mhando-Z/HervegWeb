@@ -10,7 +10,7 @@ export const metadata = {
   },
 
   description:
-    "Herveg05 combats malnutrition in Tanzania by providing nutrient-dense vegetable bundles and protein-rich poultry to rural women farmers. Empowering communities through sustainable agriculture, dietary diversity, and food security solutions.",
+    "Empowering rural women farmers in Tanzania with nutrient-dense vegetables and protein-rich poultry to combat malnutrition. Join us in building food security and improving dietary diversity through sustainable agricultural practices.",
 
   keywords: [
     "Herveg05",
@@ -45,7 +45,7 @@ export const metadata = {
 
   publisher: "Herveg05",
 
-  metadataBase: new URL("https://hervegweb.vercel.app"),
+  metadataBase: new URL("https://www.herveg.org"),
 
   robots: {
     index: true,
@@ -60,15 +60,14 @@ export const metadata = {
   },
 
   alternates: {
-    canonical: "https://hervegweb.vercel.app",
+    canonical: "https://www.herveg.org",
   },
 
   openGraph: {
-    title:
-      "Herveg05 - Fighting Malnutrition in Tanzania Through Sustainable Agriculture",
+    title: "Herveg05 - Small plots, big impact",
     description:
       "Empowering rural women farmers in Tanzania with nutrient-dense vegetables and protein-rich poultry to combat malnutrition. Join us in building food security and improving dietary diversity through sustainable agricultural practices.",
-    url: "https://hervegweb.vercel.app",
+    url: "https://www.herveg.org",
     siteName: "Herveg05",
     type: "website",
     locale: "en_US",
@@ -122,7 +121,7 @@ export default function RootLayout({ children }) {
           name="keywords"
           content="Herveg05,Herveg,fight malnutrition Tanzania,women farmers Tanzania,sustainable agriculture Tanzania,rural nutrition programs,vegetable farming Tanzania,poultry farming Tanzania,food security Tanzania,dietary diversity Africa,agricultural empowerment,smallholder farmers support,nutrition intervention programs,Dar es Salaam agriculture,Tanzania farming initiatives,women empowerment agriculture,organic vegetables Tanzania,chicken farming Tanzania,kilimo endelevu Tanzania,chakula chenye virutubishi,ufugaji wa kuku,mboga mboga Tanzania,lishe bora Tanzania,wanawake wakulima,"
         />
-        <link rel="canonical" href="https://hervegweb.vercel.app" />
+        <link rel="canonical" href="https://www.herveg.org" />
 
         {/* Additional SEO meta tags */}
         <meta name="geo.region" content="TZ" />
@@ -156,7 +155,7 @@ export default function RootLayout({ children }) {
             "@context": "https://schema.org",
             "@type": "Organization",
             name: "Herveg05 - Small plots, big impact",
-            url: "https://hervegweb.vercel.app",
+            url: "https://www.herveg.org",
             logo: "https://wntuibswfzfjjqlwlwzd.supabase.co/storage/v1/object/public/images/HerVeg.png",
             description:
               "Combating malnutrition in Tanzania by providing nutrient-dense vegetable and poultry bundles to women rural farmers.",
