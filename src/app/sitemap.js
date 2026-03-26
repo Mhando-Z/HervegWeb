@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = "https://hervegweb.vercel.app";
+  const baseUrl = "https://www.herveg.org";
 
   return [
     {

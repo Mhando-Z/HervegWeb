@@ -16,6 +16,6 @@ export default function robots() {
         ],
       },
     ],
-    sitemap: "https://hervegweb.vercel.app/sitemap.xml",
+    sitemap: "https://www.herveg.org/sitemap.xml",
   };
 }
