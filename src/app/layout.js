@@ -84,7 +84,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Herveg05 - Fighting Malnutrition in Tanzania",
+    title: "Herveg05 - Small plots, big impact",
     description:
       "Empowering rural women farmers with nutrient-dense vegetables and protein-rich poultry. Building food security through sustainable agriculture in Tanzania.",
     images: [
