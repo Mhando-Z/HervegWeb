@@ -144,7 +144,7 @@ export default function Footer() {
                 <FaFacebook />
               </button>
               <Link
-                href="https://www.instagram.com/herveg05"
+                href="https://www.instagram.com/herveg.05/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mx-2 text-gray-200 cursor-pointer hover:text-orange-600"
