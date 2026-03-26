@@ -110,7 +110,7 @@ export default function RootLayout({ children }) {
           content="Hervag05 - Small plots, big impact"
         />
         <meta property="og:image" content="../../public/leaflogo.png" />
-        <meta property="og:url" content="https://www.herveg05.org" />
+        <meta property="og:url" content="https://www.herveg.org" />
         <meta property="og:type" content="website" />
         <meta
           name="viewport"
