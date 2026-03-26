@@ -145,6 +145,20 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-Q7LL7B97XG"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', 'G-Q7LL7B97XG');
+          `}
+        </Script>
+
         {/* Structured Data for Organization */}
         <script
           id="organization-schema"
