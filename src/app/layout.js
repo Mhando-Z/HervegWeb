@@ -13,8 +13,8 @@ export const metadata = {
     width: "device-width",
     initialScale: 1,
     viewportFit: "cover",
+    themeColor: "#ffffff",
   },
-  themeColor: "#ffffff",
 
   description:
     "Herveg05 empowers women farmers in Tanzania with nutrient-rich vegetables and poultry to fight malnutrition and strengthen food security.",
