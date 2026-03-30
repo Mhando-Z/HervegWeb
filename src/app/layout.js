@@ -84,7 +84,7 @@ export const metadata = {
         width: 1200,
         height: 630,
         alt: "Herveg05 - Empowering Women Farmers in Tanzania with Sustainable Agriculture",
-        type: "image/png",
+        type: "image/jpeg",
       },
     ],
   },
