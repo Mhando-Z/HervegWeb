@@ -20,6 +20,7 @@ export const metadata = {
 
   keywords: [
     "Herveg05",
+    "small plots big impact",
     "Herveg",
     "fight malnutrition Tanzania",
     "women farmers Tanzania",
