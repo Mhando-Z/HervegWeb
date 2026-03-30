@@ -9,6 +9,13 @@ export const metadata = {
     template: "%s | Herveg05 -  Small plots, big impact",
   },
 
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    viewportFit: "cover",
+  },
+  themeColor: "#ffffff",
+
   description:
     "Empowering rural women farmers in Tanzania with nutrient-dense vegetables and protein-rich poultry to combat malnutrition. Join us in building food security and improving dietary diversity through sustainable agricultural practices.",
 
@@ -103,18 +110,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, viewport-fit=cover"
-        />
-        <meta name="theme-color" content="#ffffff" />
-
-        {/* Additional SEO meta tags */}
-        <meta name="geo.region" content="TZ" />
-        <meta name="geo.placename" content="Tanzania" />
-        <meta name="language" content="English" />
-        <meta httpEquiv="content-language" content="en-US" />
-
         {/* Google Analytics */}
         {/* <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-Q7LL7B97XG"
