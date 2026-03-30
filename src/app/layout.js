@@ -140,7 +140,7 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-        {/* Structured Data for Organization */}
+        {/* Structured Data for Organization JSON Schema */}
         <script
           id="organization-schema"
           type="application/ld+json"
