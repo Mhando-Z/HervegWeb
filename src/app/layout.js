@@ -17,7 +17,7 @@ export const metadata = {
   themeColor: "#ffffff",
 
   description:
-    "Empowering rural women farmers in Tanzania with nutrient-dense vegetables and protein-rich poultry to combat malnutrition. Join us in building food security and improving dietary diversity through sustainable agricultural practices.",
+    "Herveg05 empowers women farmers in Tanzania with nutrient-rich vegetables and poultry to fight malnutrition and strengthen food security.",
 
   keywords: [
     "Herveg05",
@@ -73,7 +73,7 @@ export const metadata = {
   openGraph: {
     title: "Herveg05 - Small plots, big impact",
     description:
-      "Empowering rural women farmers in Tanzania with nutrient-dense vegetables and protein-rich poultry to combat malnutrition. Join us in building food security and improving dietary diversity through sustainable agricultural practices.",
+      "Herveg05 empowers women farmers in Tanzania with nutrient-rich vegetables and poultry to fight malnutrition and strengthen food security.",
     url: "https://www.herveg.org",
     siteName: "Herveg05",
     type: "website",
@@ -93,9 +93,9 @@ export const metadata = {
     card: "summary_large_image",
     title: "Herveg05 - Small plots, big impact",
     description:
-      "Empowering rural women farmers with nutrient-dense vegetables and protein-rich poultry. Building food security through sustainable agriculture in Tanzania.",
+      "Herveg05 empowers women farmers in Tanzania with nutrient-rich vegetables and poultry to fight malnutrition and strengthen food security.",
     images: [
-      "https://wntuibswfzfjjqlwlwzd.supabase.co/storage/v1/object/public/images/HerVeg.png",
+      "https://wntuibswfzfjjqlwlwzd.supabase.co/storage/v1/object/public/images/Og-banner.jpg",
     ],
     creator: "@Herveg05",
   },
