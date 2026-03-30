@@ -32,7 +32,7 @@ const Whoweare = () => {
           <div className="absolute inset-0 bg-linear-to-br from-emerald-900/90 via-emerald-800/85 to-green-900/90 z-10" />
           <Image
             src={agents}
-            alt="Women farmers in the field"
+            alt="Herveg05 - Women farmers in the field"
             className="w-full h-full object-cover"
           />
         </div>

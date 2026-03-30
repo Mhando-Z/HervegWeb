@@ -125,7 +125,7 @@ export default function HeroSect() {
                               transition={{ type: "spring", ease: "easeOut" }}
                               loading="lazy"
                               src={item?.image_url}
-                              alt={`Hat conference pictures ${index}`}
+                              alt={`Herveg05 pictures ${index}`}
                               className="object-cover object-center w-full h-full"
                             />
                           </motion.div>
@@ -147,7 +147,7 @@ export default function HeroSect() {
                               transition={{ type: "spring", ease: "easeOut" }}
                               loading="lazy"
                               src={item?.image_url}
-                              alt={`Hat conference pictures ${index + 2}`}
+                              alt={`Herveg05 pictures ${index + 2}`}
                               className="object-cover object-center w-full h-full"
                             />
                           </motion.div>
@@ -169,7 +169,7 @@ export default function HeroSect() {
                               transition={{ type: "spring", ease: "easeOut" }}
                               loading="lazy"
                               src={item?.image_url}
-                              alt={`Hat conference pictures ${index + 5}`}
+                              alt={`Herveg05 pictures ${index + 5}`}
                               className="object-cover object-center w-full h-full"
                             />
                           </motion.div>

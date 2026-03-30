@@ -201,7 +201,7 @@ const FoundingStory = () => {
             <div className="absolute inset-0 flex items-center justify-center">
               <Image
                 src={agents}
-                alt="Founder with Community"
+                alt="Herveg05 Founder with Community"
                 className="object-cover mask-b-from-90% w-full h-full"
                 priority
               />

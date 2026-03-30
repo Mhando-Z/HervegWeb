@@ -173,7 +173,7 @@ const VisionValues = () => {
         <div className="absolute inset-0 bg-grid-pattern  opacity-20">
           <Image
             src={heroImage}
-            alt="heroimage"
+            alt="Herveg05 - small plots, big impact"
             className="w-full h-full object-cover mask-b-from-85% "
           />
         </div>

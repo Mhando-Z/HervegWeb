@@ -61,7 +61,7 @@ function HeroSection() {
 
   const handlePrev = () => {
     setValue((prevValue) =>
-      prevValue === 0 ? data.length - 1 : prevValue - 1
+      prevValue === 0 ? data.length - 1 : prevValue - 1,
     );
   };
 
@@ -82,7 +82,7 @@ function HeroSection() {
       >
         <Image
           src={image3}
-          alt="herveg herosection"
+          alt="Herveg05 - herosection"
           className="absolute inset-0 object-cover w-full h-full"
         />
         {/* Dark Overlay */}

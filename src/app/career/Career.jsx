@@ -196,7 +196,7 @@ const CareersPage = () => {
       >
         <Image
           src={agents}
-          alt="Career Hero"
+          alt="Herveg05 - Agents working in the field"
           className={`absolute inset-0 w-full h-full object-cover ${
             Visible ? "md:mask-b-from-70%" : ""
           }`}
@@ -648,7 +648,7 @@ const CareersPage = () => {
       <section className="py-20 px-6 md:px-0 bg-gray-900  text-white">
         <Image
           src={city}
-          alt="City"
+          alt="Herveg05 - City"
           className="w-full mb-8 mask-b-from-70% opacity-40 h-96 object-cover "
         />
         <div className="max-w-4xl mx-auto text-center">

@@ -30,7 +30,7 @@ export default function Footer() {
         <div className="absolute bottom-0 right-20 w-lg h-96">
           <Image
             src={tractor}
-            alt="farmer on a tractor"
+            alt="Herveg05 - farmer on a tractor"
             className="w-full h-full"
           />
         </div>

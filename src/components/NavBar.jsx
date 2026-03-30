@@ -108,12 +108,12 @@ function NavBar() {
                 <Image
                   src={
                     ["/", "/career", "/donate", "/aboutus/whoweare"].includes(
-                      pathname
+                      pathname,
                     )
                       ? logo
                       : logo
                   }
-                  alt="Historical association of Tanzania Logo"
+                  alt="Herveg05 - logo"
                   className={`lg:w-40 w-[120px] ${
                     visible ? "hidden" : "block"
                   }`}

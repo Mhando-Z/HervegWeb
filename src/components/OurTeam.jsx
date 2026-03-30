@@ -26,7 +26,7 @@ function OurTeam() {
       <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
         <Image
           src={agents}
-          alt="Herveg professional agents in the field"
+          alt="Herveg05 professional agents in the field"
           className="w-full h-[400px] md:h-[500px] lg:h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-linear-to-t from-black/40 via-black/10 to-transparent" />

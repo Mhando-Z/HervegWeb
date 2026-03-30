@@ -128,7 +128,7 @@ const DonatePage = () => {
       >
         <Image
           src={donateHero}
-          alt="Donate Hero"
+          alt="Herveg05 - Donate to Empower Youth Farmers in Tanzania"
           className={`absolute hidden md:block inset-0 w-full h-full object-cover brightness-75 ${
             Visible ? "mask-b-from-90%" : ""
           }`}

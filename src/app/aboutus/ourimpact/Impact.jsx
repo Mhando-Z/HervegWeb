@@ -91,7 +91,7 @@ const ImpactPage = () => {
       <div className="min-h-screen md:relative pb-40 md:pb-56">
         <Image
           src={farmerImage}
-          alt="Farmer working in field"
+          alt="Herveg05 Farmer working in field"
           className="w-full h-full hidden md:block object-cover mask-b-from-70% brightness-75"
           priority
         />

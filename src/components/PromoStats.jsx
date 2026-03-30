@@ -61,7 +61,7 @@ const PromoStats = () => {
       <div className="absolute inset-0 w-full h-full">
         <Image
           src={farmers}
-          alt="Happy woman farmer"
+          alt="Herveg05 - Happy woman farmer"
           fill
           className="object-cover"
           priority
