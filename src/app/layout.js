@@ -116,7 +116,7 @@ export default function RootLayout({ children }) {
         <meta httpEquiv="content-language" content="en-US" />
 
         {/* Google Analytics */}
-        <Script
+        {/* <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-Q7LL7B97XG"
           strategy="afterInteractive"
         />
@@ -129,7 +129,7 @@ export default function RootLayout({ children }) {
               page_path: window.location.pathname,
             });
           `}
-        </Script>
+        </Script> */}
 
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-Q7LL7B97XG"
