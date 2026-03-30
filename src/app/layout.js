@@ -80,7 +80,7 @@ export const metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://wntuibswfzfjjqlwlwzd.supabase.co/storage/v1/object/public/images/HerVeg.png",
+        url: "https://wntuibswfzfjjqlwlwzd.supabase.co/storage/v1/object/public/images/Og-banner.jpg",
         width: 1200,
         height: 630,
         alt: "Herveg05 - Empowering Women Farmers in Tanzania with Sustainable Agriculture",
