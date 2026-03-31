@@ -263,7 +263,7 @@ function Gallery() {
 
                 {/* Image Info */}
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <motion.h1
+                  <motion.span
                     key={`title-${mainIndex}`}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -271,7 +271,7 @@ function Gallery() {
                     className="text-2xl md:text-3xl font-bold mb-2"
                   >
                     {/* {gallery[mainIndex]?.title} */}
-                  </motion.h1>
+                  </motion.span>
                   <motion.p
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -463,8 +463,8 @@ function Gallery() {
                 />
 
                 <div className="absolute bottom-0 left-0 right-0 p-6 bg-linear-to-t from-black/80 to-transparent rounded-b-2xl">
-                  <h1 className="text-white text-xl md:text-2xl font-bold mb-1">
-                    {/* {gallery[lightboxIndex]?.title} */}
+                  <h1 className="text-white invisible text-xl md:text-2xl font-bold mb-1">
+                    {gallery[lightboxIndex]?.title}
                   </h1>
                   <p className="text-white/70 text-sm">
                     {lightboxIndex + 1} of {gallery?.length}
