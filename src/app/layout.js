@@ -67,10 +67,6 @@ export const metadata = {
     },
   },
 
-  alternates: {
-    canonical: "https://www.herveg.org",
-  },
-
   openGraph: {
     title: "Herveg05 - Small plots, big impact",
     description:
