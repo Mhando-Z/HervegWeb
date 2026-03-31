@@ -263,7 +263,7 @@ function Gallery() {
 
                 {/* Image Info */}
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <motion.h3
+                  <motion.h1
                     key={`title-${mainIndex}`}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -271,7 +271,7 @@ function Gallery() {
                     className="text-2xl md:text-3xl font-bold mb-2"
                   >
                     {/* {gallery[mainIndex]?.title} */}
-                  </motion.h3>
+                  </motion.h1>
                   <motion.p
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -289,7 +289,8 @@ function Gallery() {
                     whileTap={{ scale: 0.9 }}
                     onClick={() =>
                       setMainIndex(
-                        (prev) => (prev - 1 + gallery?.length) % gallery?.length
+                        (prev) =>
+                          (prev - 1 + gallery?.length) % gallery?.length,
                       )
                     }
                     className="p-3 rounded-full bg-white/90 backdrop-blur-sm text-slate-900 shadow-lg hover:bg-white transition-colors"
@@ -462,9 +463,9 @@ function Gallery() {
                 />
 
                 <div className="absolute bottom-0 left-0 right-0 p-6 bg-linear-to-t from-black/80 to-transparent rounded-b-2xl">
-                  <h3 className="text-white text-xl md:text-2xl font-bold mb-1">
+                  <h1 className="text-white text-xl md:text-2xl font-bold mb-1">
                     {/* {gallery[lightboxIndex]?.title} */}
-                  </h3>
+                  </h1>
                   <p className="text-white/70 text-sm">
                     {lightboxIndex + 1} of {gallery?.length}
                   </p>
