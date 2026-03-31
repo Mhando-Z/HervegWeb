@@ -333,9 +333,9 @@ function SuccessStoriesPage() {
             className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 rounded-full border border-emerald-200"
           >
             <Sparkles className="w-4 h-4 text-emerald-600" />
-            <span className="text-sm font-semibold text-emerald-700">
+            <h2 className="text-sm font-semibold text-emerald-700">
               Real Stories, Real Impact
-            </span>
+            </h2>
           </motion.div>
 
           <h1 className="text-4xl gap-2 md:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight">
@@ -360,7 +360,7 @@ function SuccessStoriesPage() {
             {successStories.map((story, index) => {
               const profile = story.sections.find((s) => s.type === "profile");
               const paragraph = story.sections.find(
-                (s) => s.type === "paragraph"
+                (s) => s.type === "paragraph",
               );
               const colors = colorConfigs[story.color] || colorConfigs.emerald;
 
@@ -381,7 +381,7 @@ function SuccessStoriesPage() {
                 >
                   <Link
                     href={`/aboutus/successstories/${encodeURIComponent(
-                      story?.id
+                      story?.id,
                     )}`}
                     className="block h-full"
                   >
@@ -400,7 +400,7 @@ function SuccessStoriesPage() {
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                         />
                         <div
-                          className={`absolute inset-0 bg-gradient-to-t ${colors.gradient} opacity-60`}
+                          className={`absolute inset-0 bg-linear-to-t ${colors.gradient} opacity-60`}
                         />
 
                         {/* Category Badge */}
@@ -437,14 +437,14 @@ function SuccessStoriesPage() {
                       {/* Content Section */}
                       <div className="p-5 flex flex-col space-y-4">
                         {/* Title */}
-                        <h3
+                        <h1
                           className={`text-base md:text-lg font-bold text-gray-900 leading-snug transition-colors duration-300 ${colors.hover} line-clamp-2 min-h-[3.5rem]`}
                         >
                           {story.title}
-                        </h3>
+                        </h1>
 
                         {/* Description */}
-                        <p className="text-gray-600 text-sm leading-relaxed line-clamp-3 flex-grow">
+                        <p className="text-gray-600 text-sm leading-relaxed line-clamp-3 grow">
                           {paragraph?.content}
                         </p>
 
@@ -453,9 +453,9 @@ function SuccessStoriesPage() {
                           <div className="flex flex-wrap items-center gap-3 pt-3 border-t border-gray-100">
                             <div className="flex items-center gap-1.5">
                               <Users className={`w-4 h-4 ${colors.icon}`} />
-                              <span className="text-xs font-semibold text-gray-700">
+                              <h2 className="text-xs font-semibold text-gray-700">
                                 {profile.name}
-                              </span>
+                              </h2>
                             </div>
                             <div className="hidden sm:flex items-center gap-1.5">
                               <MapPin className={`w-4 h-4 ${colors.icon}`} />
