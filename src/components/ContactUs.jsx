@@ -50,7 +50,7 @@ export default function ContactUs() {
           email: formData.email,
           phone: formData.phone,
         },
-        "Ic-MOmkvjhwy6hyug"
+        "Ic-MOmkvjhwy6hyug",
       )
       .then(() => {
         setNotifications({
@@ -217,9 +217,9 @@ export default function ContactUs() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.5 }}
             >
-              <p className="text-green-600 font-handwriting text-xl mb-2 text-center">
+              <h1 className="text-green-600 font-handwriting text-xl mb-2 text-center">
                 Have Questions?
-              </p>
+              </h1>
               <h2 className="text-3xl md:text-4xl font-bold  text-gray-900 mb-8 text-center">
                 Send us a message
               </h2>
@@ -340,11 +340,11 @@ export default function ContactUs() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.5 }}
             >
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">
+              <h1 className="text-4xl font-bold text-gray-900 mb-6">
                 Contact
                 <br />
                 Information
-              </h2>
+              </h1>
 
               <p className="text-gray-600 mb-12 leading-relaxed">
                 If you have any questions or are interested in getting involved,
@@ -357,9 +357,9 @@ export default function ContactUs() {
                   whileHover={{ x: 10 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  <h2 className="text-xl font-bold text-gray-900 mb-2">
                     Our Location
-                  </h3>
+                  </h2>
                   <p className="text-gray-700">59101 Njombe Mjini, Tanzania</p>
                 </motion.div>
 
@@ -367,9 +367,9 @@ export default function ContactUs() {
                   whileHover={{ x: 10 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  <h2 className="text-xl font-bold text-gray-900 mb-2">
                     Official Email
-                  </h3>
+                  </h2>
                   <a
                     href="mailto:info@herveg.org"
                     className="text-gray-700 hover:text-green-600 transition-colors"
