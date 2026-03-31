@@ -99,9 +99,9 @@ function page() {
         >
           <div className="xl:container mx-auto px-2">
             <motion.div variants={fadeInUp} className="mb-12">
-              <h2 className="text-4xl font-bold mb-4 text-emerald-800">
+              <h1 className="text-4xl font-bold mb-4 text-emerald-800">
                 Income & Yield Growth
-              </h2>
+              </h1>
             </motion.div>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -109,9 +109,9 @@ function page() {
                 variants={fadeInUp}
                 className="bg-white p-8 rounded-2xl shadow-lg"
               >
-                <h3 className="text-2xl font-bold mb-6 text-emerald-700">
+                <h2 className="text-2xl font-bold mb-6 text-emerald-700">
                   2024 Impact Metrics
-                </h3>
+                </h2>
                 <div className="space-y-4">
                   {[
                     {
@@ -147,11 +147,11 @@ function page() {
                     >
                       <div className="flex items-center gap-3">
                         <metric.icon className="w-6 h-6 text-emerald-600" />
-                        <span className="text-gray-700">{metric.label}</span>
+                        <h1 className="text-gray-700">{metric.label}</h1>
                       </div>
-                      <span className="text-2xl font-bold text-emerald-700">
+                      <h2 className="text-2xl font-bold text-emerald-700">
                         {metric.value}
-                      </span>
+                      </h2>
                     </motion.div>
                   ))}
                 </div>
@@ -163,7 +163,7 @@ function page() {
               >
                 <div className="mb-6">
                   <Users className="w-12 h-12 mb-4" />
-                  <h3 className="text-2xl font-bold mb-4">Farmer Story</h3>
+                  <h2 className="text-2xl font-bold mb-4">Farmer Story</h2>
                 </div>
                 <blockquote className="text-lg italic leading-relaxed mb-4">
                   "Before HERVeg.05, I only planted maize. I struggled to feed
@@ -222,9 +222,9 @@ function page() {
                   },
                 ].map((item, idx) => (
                   <div key={idx} className="p-6 bg-emerald-50 rounded-xl">
-                    <h4 className="font-bold text-lg mb-3 text-emerald-800">
+                    <h1 className="font-bold text-lg mb-3 text-emerald-800">
                       {item.title}
-                    </h4>
+                    </h1>
                     <ul className="space-y-2">
                       {item.points.map((point, i) => (
                         <li key={i} className="flex items-start gap-2">
@@ -290,7 +290,7 @@ function page() {
                 className="bg-linear-to-br from-emerald-600 to-emerald-700 text-white p-8 rounded-2xl shadow-lg"
               >
                 <Sprout className="w-12 h-12 mb-4" />
-                <h3 className="text-2xl font-bold mb-4">Farmer Story</h3>
+                <h2 className="text-2xl font-bold mb-4">Farmer Story</h2>
                 <blockquote className="text-lg italic leading-relaxed mb-4">
                   "I never thought I could raise chickens that bring in money
                   and food. After getting my first batch from HERVeg.05, I
@@ -379,9 +379,9 @@ function page() {
                   },
                 ].map((section, idx) => (
                   <div key={idx} className="p-6 bg-emerald-50 rounded-xl">
-                    <h4 className="font-bold text-lg mb-3 text-emerald-800">
+                    <h1 className="font-bold text-lg mb-3 text-emerald-800">
                       {section.title}
-                    </h4>
+                    </h1>
                     <ul className="space-y-2">
                       {section.items.map((item, i) => (
                         <li key={i} className="flex items-start gap-2">
@@ -439,7 +439,7 @@ function page() {
                 className="bg-linear-to-br from-green-600 to-green-700 text-white p-8 rounded-2xl shadow-lg"
               >
                 <Heart className="w-12 h-12 mb-4" />
-                <h3 className="text-2xl font-bold mb-4">Farmer Story</h3>
+                <h2 className="text-2xl font-bold mb-4">Farmer Story</h2>
                 <blockquote className="text-lg italic leading-relaxed mb-4">
                   "I used to worry about feeding my children during the dry
                   season. Now, with the support from HERVeg.05, I have a steady
@@ -577,7 +577,7 @@ function page() {
                 className="bg-linear-to-br from-green-600 to-green-700 text-white p-8 rounded-2xl shadow-lg"
               >
                 <Shield className="w-12 h-12 mb-4" />
-                <h3 className="text-2xl font-bold mb-4">Farmer Story</h3>
+                <h2 className="text-2xl font-bold mb-4">Farmer Story</h2>
                 <blockquote className="text-lg italic leading-relaxed mb-4">
                   "Before learning about adaptive farming, drought would
                   devastate my crops. Now, with manure to improve soil health
@@ -835,7 +835,7 @@ function page() {
                   <div key={idx} className="flex gap-4">
                     <CheckCircle2 className="w-6 h-6 shrink-0 mt-1" />
                     <div>
-                      <h4 className="font-bold mb-1">{reason.title}</h4>
+                      <h1 className="font-bold mb-1">{reason.title}</h1>
                       <p className="text-green-100 text-sm">{reason.desc}</p>
                     </div>
                   </div>
