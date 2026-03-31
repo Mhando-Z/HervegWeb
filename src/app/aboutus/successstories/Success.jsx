@@ -355,9 +355,9 @@ export default function SuccessStories() {
                               <div className="w-10 h-10 bg-linear-to-br from-emerald-500 to-teal-500 rounded-full flex items-center justify-center">
                                 <Users className="w-5 h-5 text-white" />
                               </div>
-                              <h4 className="font-bold text-gray-800 text-lg">
+                              <h1 className="font-bold text-gray-800 text-lg">
                                 {profileSection.name}
-                              </h4>
+                              </h1>
                             </div>
                             <div className="space-y-2 text-sm">
                               <div className="flex items-center gap-2 text-gray-600">
@@ -392,14 +392,14 @@ export default function SuccessStories() {
                     className="p-2 md:p-12 space-y-6 max-h-[700px] overflow-y-auto custom-scrollbar"
                   >
                     {/* Story Title */}
-                    <motion.h3
+                    <motion.h1
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.2 }}
                       className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight"
                     >
                       {story.title}
-                    </motion.h3>
+                    </motion.h1>
 
                     {/* Story Content */}
                     <div className="space-y-6">
@@ -468,10 +468,10 @@ export default function SuccessStories() {
             <AnimatePresence>
               {remainingStories.map(({ story, index }) => {
                 const profile = story.sections.find(
-                  (s) => s.type === "profile"
+                  (s) => s.type === "profile",
                 );
                 const paragraph = story.sections.find(
-                  (s) => s.type === "paragraph"
+                  (s) => s.type === "paragraph",
                 );
 
                 return (
@@ -502,9 +502,9 @@ export default function SuccessStories() {
 
                         {/* Content */}
                         <div className="md:col-span-2 p-2 flex flex-col justify-center">
-                          <h4 className="text-sm md:text-lg font-bold text-gray-900 mb-3 group-hover:text-emerald-700 transition-colors duration-300">
+                          <h2 className="text-sm md:text-lg font-bold text-gray-900 mb-3 group-hover:text-emerald-700 transition-colors duration-300">
                             {story.title}
-                          </h4>
+                          </h2>
 
                           <p className="text-gray-600 text-xs md:text-base line-clamp-2 mb-4">
                             {paragraph?.content.substring(0, 150)}...

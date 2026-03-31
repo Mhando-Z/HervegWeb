@@ -333,14 +333,14 @@ function SuccessStoriesPage() {
             className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 rounded-full border border-emerald-200"
           >
             <Sparkles className="w-4 h-4 text-emerald-600" />
-            <h2 className="text-sm font-semibold text-emerald-700">
+            <h1 className="text-sm font-semibold text-emerald-700">
               Real Stories, Real Impact
-            </h2>
+            </h1>
           </motion.div>
 
-          <h1 className="text-4xl gap-2 md:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight">
+          <h2 className="text-4xl gap-2 md:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight">
             Success<span className="text-green-700 ml-2">Stories</span>
-          </h1>
+          </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Discover how HERVeg.05 is transforming lives across Tanzania through
             sustainable farming and community empowerment
