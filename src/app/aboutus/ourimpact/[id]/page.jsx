@@ -250,9 +250,9 @@ function page() {
         >
           <div className="container mx-auto px-2">
             <motion.div variants={fadeInUp} className="mb-12">
-              <h2 className="text-4xl font-bold mb-4 text-emerald-800">
+              <h1 className="text-4xl font-bold mb-4 text-emerald-800">
                 Poultry Sustainability
-              </h2>
+              </h1>
             </motion.div>
 
             <div className="grid md:grid-cols-3 gap-6 mb-12">
@@ -407,9 +407,9 @@ function page() {
         >
           <div className="container mx-auto px-2">
             <motion.div variants={fadeInUp} className="mb-12">
-              <h2 className="text-4xl font-bold mb-4 text-green-800">
+              <h1 className="text-4xl font-bold mb-4 text-green-800">
                 Nutrition & Food Security
-              </h2>
+              </h1>
             </motion.div>
 
             <div className="grid md:grid-cols-4 gap-6 mb-12">
@@ -542,9 +542,9 @@ function page() {
         >
           <div className="container mx-auto px-2">
             <motion.div variants={fadeInUp} className="mb-12">
-              <h2 className="text-4xl font-bold mb-4 text-green-800">
+              <h1 className="text-4xl font-bold mb-4 text-green-800">
                 Building Climate Resilience
-              </h2>
+              </h1>
             </motion.div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-12">
@@ -652,9 +652,9 @@ function page() {
         >
           <div className="container mx-auto px-2">
             <motion.div variants={fadeInUp} className="mb-12">
-              <h2 className="text-4xl font-bold mb-4 text-green-800">
+              <h1 className="text-4xl font-bold mb-4 text-green-800">
                 How We Measure Impact
-              </h2>
+              </h1>
             </motion.div>
 
             {/* SROI Section */}
@@ -1026,7 +1026,7 @@ function page() {
                       : `text-${section.color}-600`
                   }`}
                 />
-                <h3 className="text-xl font-bold mb-2">{section.title}</h3>
+                <h1 className="text-xl font-bold mb-2">{section.title}</h1>
                 {activeSection === section?.id ? (
                   <div />
                 ) : (
