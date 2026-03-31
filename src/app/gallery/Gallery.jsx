@@ -371,7 +371,7 @@ function Gallery() {
           <motion.div variants={itemVariants}>
             <div className="flex items-center gap-2 mb-6">
               <Grid3x3 className="w-5 h-5 text-green-600" />
-              <h2 className="text-2xl font-bold text-slate-900">All Photos</h2>
+              <h1 className="text-2xl font-bold text-slate-900">All Photos</h1>
             </div>
 
             <motion.div
@@ -394,9 +394,9 @@ function Gallery() {
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="absolute bottom-0  left-0 right-0 p-3">
-                      <p className="text-white text-sm font-medium truncate">
-                        {/* {item.title} */}
-                      </p>
+                      <h2 className="text-black text-sm font-medium truncate">
+                        {item.title}
+                      </h2>
                     </div>
                   </div>
                 </motion.div>
@@ -463,9 +463,9 @@ function Gallery() {
                 />
 
                 <div className="absolute bottom-0 left-0 right-0 p-6 bg-linear-to-t from-black/80 to-transparent rounded-b-2xl">
-                  <h1 className="text-white invisible text-xl md:text-2xl font-bold mb-1">
+                  <span className="text-white invisible text-xl md:text-2xl font-bold mb-1">
                     {gallery[lightboxIndex]?.title}
-                  </h1>
+                  </span>
                   <p className="text-white/70 text-sm">
                     {lightboxIndex + 1} of {gallery?.length}
                   </p>
