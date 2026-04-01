@@ -9,7 +9,7 @@ export const metadata = {
     "Herveg Impact, Herveg.05 Success Stories, Nutrition Impact, Sustainable Agriculture",
 };
 
-function page() {
+function Page() {
   return (
     <div>
       <ImpactPage />
@@ -17,4 +17,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

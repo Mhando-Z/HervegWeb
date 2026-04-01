@@ -9,7 +9,7 @@ export const metadata = {
     "Herveg Awards, Herveg.05 Recognition, Nutrition Awards, Rural Farmers Recognition, Vegetable Bundles Awards, Poultry Bundles Recognition, Dietary Diversity Awards, Health Outcomes Recognition,HERVEG05 Awards,Tanzania Farmers Recognition, African Nutrition Awards, Sustainable Agriculture Recognition, Community Support Awards",
 };
 
-function page() {
+function Page() {
   return (
     <div>
       <RecognitionAwards />
@@ -17,4 +17,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

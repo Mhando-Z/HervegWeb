@@ -9,7 +9,7 @@ export const metadata = {
     "Herveg Impact, Herveg.05 Success Stories, Nutrition Impact,  Women's Empowerment Impact, Sustainable Agriculture Impact, Rural Farmers Impact, Dietary Diversity Impact, Health Outcomes Impact, Tanzania Agriculture Impact, African Nutrition Impact, Community Engagement Impact, Food Security Impact, Herveg Success Stories, Herveg.05 Community Impact",
 };
 
-function page() {
+function Page() {
   return (
     <div>
       <ImpactPage />
@@ -17,4 +17,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
