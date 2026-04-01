@@ -138,7 +138,7 @@ export default function RootLayout({ children }) {
         </Script>
 
         {/* Structured Data for Organization JSON Schema */}
-        <script
+        <Script
           id="organization-schema"
           type="application/ld+json"
           strategy="afterInteractive"
@@ -163,7 +163,7 @@ export default function RootLayout({ children }) {
               },
             },
           })}
-        </script>
+        </Script>
         <div>
           <NavBar />
         </div>
