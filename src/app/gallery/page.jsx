@@ -9,7 +9,7 @@ export const metadata = {
     "Herveg Gallery, Herveg.05 Photos, Nutrition Programs Images, Rural Farmers Gallery, Vegetable Bundles Photos, Poultry Bundles Images, Dietary Diversity Pictures, Health Outcomes Gallery,HERVEG05 Photos,Tanzania Farmers Images, African Nutrition Gallery, Sustainable Agriculture Photos, Community Support Images",
 };
 
-function page() {
+function Page() {
   return (
     <div>
       <Gallery />
@@ -17,4 +17,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
