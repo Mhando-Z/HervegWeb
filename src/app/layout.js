@@ -3,17 +3,17 @@ import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 import Script from "next/script";
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: "#ffffff",
+};
+
 export const metadata = {
   title: {
     default: "Herveg05 - Small plots, big impact",
     template: "%s | Herveg05 -  Small plots, big impact",
-  },
-
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    viewportFit: "cover",
-    themeColor: "#ffffff",
   },
 
   description:
