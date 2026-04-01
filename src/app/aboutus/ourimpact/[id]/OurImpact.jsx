@@ -248,7 +248,7 @@ function ImpactPage() {
           exit={{ opacity: 1, height: 0 }}
           className="py-16 px-6 "
         >
-          <div className="container mx-auto px-2">
+          <div className="xl:container mx-auto px-2">
             <motion.div variants={fadeInUp} className="mb-12">
               <h1 className="text-4xl font-bold mb-4 text-emerald-800">
                 Poultry Sustainability
@@ -405,7 +405,7 @@ function ImpactPage() {
           exit={{ opacity: 1, height: 0 }}
           className="py-16 px-6 "
         >
-          <div className="container mx-auto px-2">
+          <div className="xl:container mx-auto px-2">
             <motion.div variants={fadeInUp} className="mb-12">
               <h1 className="text-4xl font-bold mb-4 text-green-800">
                 Nutrition & Food Security
@@ -540,7 +540,7 @@ function ImpactPage() {
           exit={{ opacity: 1, height: 0 }}
           className="py-16 px-6 "
         >
-          <div className="container mx-auto px-2">
+          <div className="xl:container mx-auto px-2">
             <motion.div variants={fadeInUp} className="mb-12">
               <h1 className="text-4xl font-bold mb-4 text-green-800">
                 Building Climate Resilience
@@ -650,7 +650,7 @@ function ImpactPage() {
           exit={{ opacity: 1, height: 0 }}
           className="py-16 px-6 "
         >
-          <div className="container mx-auto px-2">
+          <div className="xl:container mx-auto px-2">
             <motion.div variants={fadeInUp} className="mb-12">
               <h1 className="text-4xl font-bold mb-4 text-green-800">
                 How We Measure Impact
