@@ -225,7 +225,7 @@ const HomePage = () => {
             ))}
           </div>
           {/* hidden button */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -238,7 +238,7 @@ const HomePage = () => {
                 <ArrowRight className="w-5 h-5" />
               </button>
             </a>
-          </motion.div>
+          </motion.div> */}
         </div>
       </section>
 
