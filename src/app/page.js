@@ -4,12 +4,10 @@ import PromoStats from "@/components/PromoStats";
 
 export const metadata = {
   title: {
-    default: "Herveg05 - Small plots, big impact",
-    template: "%s | Herveg05 -  Small plots, big impact",
+    default: "Ending Malnutrition and Poverty for Tanzania's Farmers",
   },
-
   description:
-    "Herveg05 empowers women farmers in Tanzania with nutrient-rich vegetables and poultry to fight malnutrition and strengthen food security.",
+    "A transformative initiative empowering rural farmers in Tanzania with nutrient-dense vegetable and poultry bundles. Explore our impact on nutrition, sustainable agriculture, and community empowerment. Join us in our mission to improve dietary diversity and health outcomes for vulnerable communities.",
 
   keywords: [
     "Herveg05",
@@ -38,61 +36,6 @@ export const metadata = {
     "lishe bora Tanzania",
     "wanawake wakulima",
   ],
-
-  authors: [{ name: "Mhando Zuberi" }],
-
-  creator: "Herveg05",
-
-  publisher: "Herveg05",
-
-  metadataBase: new URL("https://www.herveg.org"),
-
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-
-  openGraph: {
-    title: "Herveg05 - Small plots, big impact",
-    description:
-      "Herveg05 empowers women farmers in Tanzania with nutrient-rich vegetables and poultry to fight malnutrition and strengthen food security.",
-    url: "https://www.herveg.org",
-    siteName: "Herveg05",
-    type: "website",
-    locale: "en_US",
-    images: [
-      {
-        url: "https://wntuibswfzfjjqlwlwzd.supabase.co/storage/v1/object/public/images/Og-banner.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Herveg05 - Empowering Women Farmers in Tanzania with Sustainable Agriculture",
-        type: "image/jpeg",
-      },
-    ],
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Herveg05 - Small plots, big impact",
-    description:
-      "Herveg05 empowers women farmers in Tanzania with nutrient-rich vegetables and poultry to fight malnutrition and strengthen food security.",
-    images: [
-      "https://wntuibswfzfjjqlwlwzd.supabase.co/storage/v1/object/public/images/Og-banner.jpg",
-    ],
-    creator: "@Herveg05",
-  },
-
-  category: "Agriculture & Nutrition",
-
-  classification:
-    "Social Enterprise, Agriculture, Nutrition, Community Development",
 };
 
 export default function Home() {
