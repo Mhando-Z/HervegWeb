@@ -95,7 +95,7 @@ export default function FAQ() {
   };
 
   return (
-    <div className="min-h-screen w-screen relative overflow-hidden">
+    <div className="min-h-screen mt-20 w-screen relative overflow-hidden">
       {/* Background Image with Opacity */}
       <div
         className="absolute inset-0 z-0 opacity-10"
