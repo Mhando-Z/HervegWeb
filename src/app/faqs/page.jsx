@@ -1,5 +1,5 @@
-import FAQ from "@/components/FAQ";
 import React from "react";
+import FAQ from "@/components/FAQ";
 
 export const metadata = {
   title: "FAQs",
