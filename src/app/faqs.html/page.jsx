@@ -7,7 +7,7 @@ function Page() {
   const router = useRouter();
   useLayoutEffect(() => {
     // navigate to aboutus page
-    router.push("/faqs");
+    router.push("/frequentlyQnA");
   }, []);
   return <div>loading....</div>;
 }
