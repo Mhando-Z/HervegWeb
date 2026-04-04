@@ -13,7 +13,7 @@ export const viewport = {
 export const metadata = {
   title: {
     default: "Herveg05 - Small plots, big impact",
-    template: "%s | Herveg05 -  Small plots, big impact",
+    // template: "%s | Herveg05 -  Small plots, big impact",
   },
 
   description:
